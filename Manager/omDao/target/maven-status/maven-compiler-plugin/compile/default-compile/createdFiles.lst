@@ -1,0 +1,11 @@
+org\ppl\mall\mapper\TbOrderMapper.class
+org\ppl\mall\mapper\TbUserMapper.class
+org\ppl\mall\mapper\TbItemParamItemMapper.class
+org\ppl\mall\mapper\TbContentMapper.class
+org\ppl\mall\mapper\TbOrderItemMapper.class
+org\ppl\mall\mapper\TbItemCatMapper.class
+org\ppl\mall\mapper\TbOrderShippingMapper.class
+org\ppl\mall\mapper\TbItemMapper.class
+org\ppl\mall\mapper\TbContentCategoryMapper.class
+org\ppl\mall\mapper\TbItemParamMapper.class
+org\ppl\mall\mapper\TbItemDescMapper.class
