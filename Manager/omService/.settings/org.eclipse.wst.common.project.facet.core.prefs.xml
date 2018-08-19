@@ -4,4 +4,8 @@
       <attribute name="provider-id" value="maven-lib-provider"/>
     </node>
   </facet>
+  <facet id="java"/>
+  <facet id="maven"/>
+  <facet id="jst.web"/>
+  <facet id="wst.jsdt.web"/>
 </root>

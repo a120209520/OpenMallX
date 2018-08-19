@@ -22,7 +22,6 @@
 		<module>omDao</module>
 		<module>omInterface</module>
 		<module>omService</module>
-		<module>omWeb</module>
 	</modules>
 	<!-- tomcat插件 -->
 	<build>
