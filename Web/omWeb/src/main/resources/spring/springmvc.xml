@@ -14,8 +14,9 @@
 	<!-- @Controller扫描 -->
 	<context:component-scan base-package="org.ppl.mall.controller" />
 
-	<!-- RESTful规定下需要对静态资源解析，否则都会转发到DispatcherServlet -->
+	<!-- 静态资源映射 -->
 	<mvc:resources location="/js/" mapping="/js/**" />
+	<mvc:resources location="/css/" mapping="/css/**" />
 
 	<!-- 注解方式的HandlerMapping和HandlerAdapter -->
 	<mvc:annotation-driven />

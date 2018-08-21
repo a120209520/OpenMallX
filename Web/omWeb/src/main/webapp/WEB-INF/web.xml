@@ -33,7 +33,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>omManager</servlet-name>
-		<!-- 这里/不包括jsp -->
+		<!-- /不包括jsp,但包括其他所有静态资源 -->
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 </web-app>
