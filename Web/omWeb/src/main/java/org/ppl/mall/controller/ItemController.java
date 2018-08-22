@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -32,7 +33,9 @@ public class ItemController {
 	//获取商品列表
 	@RequestMapping("/list")
 	@ResponseBody
-	public DataGridResult<TbItem> getItemList(Integer page, Integer rows) {
-		return itemService.getItemList(page, rows);
+	public DataGridResult<TbItem> getItemList(
+			@RequestParam("page") Integer pageNum, 
+			@RequestParam("rows") Integer pageSize) {
+		return itemService.getItemList(pageNum, pageSize);
 	}
 }
