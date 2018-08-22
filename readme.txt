@@ -18,8 +18,14 @@
         * pom文件中需要使用dependencyManagement，仅用来管理，不实际依赖
 
 3. hostname记录
-    omService  localhost:8080/
+    omService  localhost:8082/
     omWeb      localhost:8081/
     dubbo      port=20880
     dubbo-registry(zookeeper)  localhost:2181/
     dubbo-monitor              localhost:8080/
+
+[tips]
+(1) dubbo 2.6.0 不支持jdk9 
+    dubbo 2.5.4 不支持jdk8 
+set JAVA_HOME=C:\Program Files\Java\jre1.8.0_162
+set JRE_HOME=C:\Program Files\Java\jre1.8.0_162
