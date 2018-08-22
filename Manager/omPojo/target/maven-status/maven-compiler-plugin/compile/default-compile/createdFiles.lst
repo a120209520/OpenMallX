@@ -30,6 +30,7 @@ org\ppl\mall\pojo\TbItemExample$Criteria.class
 org\ppl\mall\pojo\TbContentExample$Criterion.class
 org\ppl\mall\pojo\TbItemExample.class
 org\ppl\mall\pojo\TbOrderExample$Criterion.class
+org\ppl\mall\model\DataGridResult.class
 org\ppl\mall\pojo\TbItemParamExample.class
 org\ppl\mall\pojo\TbOrder.class
 org\ppl\mall\pojo\TbItemParam.class

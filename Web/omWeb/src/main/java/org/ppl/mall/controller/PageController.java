@@ -13,15 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PageController {
 	
+	//主页
 	@RequestMapping("/")
 	public String index() {
 		return "index";
 	}
 	
-	/*
-	 * 页面跳转方法
-	 * url对应同名称.jsp，比如 /item-list ---> item-list.jsp
-	 */
+	
+	//页面跳转，url对应同名称.jsp，比如 /item-list ---> item-list.jsp
 	@RequestMapping("/{pageName}")
 	public String page(@PathVariable("pageName") String pageName) {
 		return pageName;
