@@ -27,7 +27,9 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<!-- debug -->
 	<dubbo:service interface="org.ppl.mall.service.ItemService" ref="itemServiceImpl" timeout="600000"/>
+	<dubbo:service interface="org.ppl.mall.service.ItemCatService" ref="itemCatServiceImpl" timeout="600000"/>
 	<!-- release -->
 	<!-- <dubbo:service interface="org.ppl.mall.service.ItemService" ref="itemServiceImpl"/> -->
+	<!-- <dubbo:service interface="org.ppl.mall.service.ItemCatService" ref="itemCatServiceImpl"/> -->
 </beans>
 

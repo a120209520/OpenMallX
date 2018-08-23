@@ -31,6 +31,7 @@
 	<dubbo:application name="omWeb"/>
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>	
 	<dubbo:reference interface="org.ppl.mall.service.ItemService" id="itemService" />
+	<dubbo:reference interface="org.ppl.mall.service.ItemCatService" id="itemCatService" />
 
 </beans>
 

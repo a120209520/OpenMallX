@@ -35,6 +35,7 @@ org\ppl\mall\pojo\TbItemParamExample.class
 org\ppl\mall\pojo\TbOrder.class
 org\ppl\mall\pojo\TbItemParam.class
 org\ppl\mall\pojo\TbContentCategoryExample$Criterion.class
+org\ppl\mall\model\TreeNode.class
 org\ppl\mall\pojo\TbOrderShippingExample$Criteria.class
 org\ppl\mall\pojo\TbOrderShippingExample$Criterion.class
 org\ppl\mall\pojo\TbItemParamItemExample$Criterion.class
