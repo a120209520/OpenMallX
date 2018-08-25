@@ -7,11 +7,26 @@
             omDao                      打包方式:jar
             omPojo                     打包方式:jar
             omInteface                 打包方式:jar
-            omService                  打包方式:war
-            
+            omService                  打包方式:war  
         }
         omWeb Web层工程                  打包方式:war
     }
+
+    依赖关系：
+    omCommon 无依赖
+    omPojo   依赖omCommon
+    omDao    依赖omPojo, omCommon
+    omInterface    依赖omPojo, omCommon
+    omService 依赖omDao，omInterface, omPojo, omCommon
+    omWeb    依赖omInterface, omPojo, omCommon
+
+    Maven安装顺序：
+    omRoot
+    omCommon
+    omPojo
+    omDao / omInterface
+    omService / omWeb
+    
 
 2. omRoot
     2.1 细节说明

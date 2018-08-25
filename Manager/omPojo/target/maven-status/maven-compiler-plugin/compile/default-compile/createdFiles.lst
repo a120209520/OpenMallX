@@ -17,6 +17,7 @@ org\ppl\mall\pojo\TbUserExample.class
 org\ppl\mall\pojo\TbItemExample$Criterion.class
 org\ppl\mall\pojo\TbOrderExample$GeneratedCriteria.class
 org\ppl\mall\pojo\TbItemCatExample$Criterion.class
+META-INF\MANIFEST.MF
 org\ppl\mall\pojo\TbContentCategoryExample.class
 org\ppl\mall\pojo\TbContentExample.class
 org\ppl\mall\pojo\TbOrderItemExample$Criteria.class
@@ -24,7 +25,9 @@ org\ppl\mall\pojo\TbItemParamExample$Criterion.class
 org\ppl\mall\pojo\TbItem.class
 org\ppl\mall\pojo\TbOrderItem.class
 org\ppl\mall\pojo\TbItemDescExample$Criteria.class
+META-INF\maven\org.ppl.mall\omPojo\pom.properties
 org\ppl\mall\pojo\TbContentExample$Criteria.class
+META-INF\maven\org.ppl.mall\omPojo\pom.xml
 org\ppl\mall\pojo\TbItemDescExample$GeneratedCriteria.class
 org\ppl\mall\pojo\TbItemExample$Criteria.class
 org\ppl\mall\pojo\TbContentExample$Criterion.class

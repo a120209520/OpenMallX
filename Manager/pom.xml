@@ -23,17 +23,4 @@
 		<module>omInterface</module>
 		<module>omService</module>
 	</modules>
-	<!-- tomcat插件 -->
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<configuration>
-					<path>/mall</path>
-					<port>8080</port>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
