@@ -62,8 +62,13 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 		</dependency>
+		<!-- 文件上传 -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
 		<!-- pagehelper -->
-		<!-- web通过反序列化获取的实际类型是Page<E>，是ArrayList的子类 -->
+		<!-- web通过反序列化获取的实际类型是Page<E>，是ArrayList的子类，需要添加到Web层 -->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper</artifactId>
