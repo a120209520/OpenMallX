@@ -10,7 +10,6 @@
 	<packaging>war</packaging>
 	<properties>
 		<webVersion>2.5</webVersion>
-		<fastDFSVersion>1.25</fastDFSVersion>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -9,7 +9,8 @@
             omInteface                 打包方式:jar
             omService                  打包方式:war  
         }
-        omWeb Web层工程                  打包方式:war
+        omWeb Web层工程                 打包方式:war
+        omWebPortal Web层工程           打包方式:war
     }
 
     依赖关系：
@@ -19,13 +20,14 @@
     omInterface    依赖omPojo, omCommon
     omService 依赖omDao，omInterface, omPojo, omCommon
     omWeb    依赖omInterface, omPojo, omCommon
+    omWebPortal    依赖omInterface, omPojo, omCommon
 
     Maven安装顺序：
     omRoot
     omCommon
     omPojo
     omDao / omInterface
-    omService / omWeb
+    omService / omWeb / omWebPortal
     
 
 2. omRoot
@@ -35,10 +37,11 @@
 3. 端口
     omService  localhost:8082/
     omWeb      localhost:8081/
+    omWebPortal      localhost:8083/
     dubbo      :20880
     dubbo-registry(zookeeper)  localhost:2181/
     dubbo-monitor              localhost:8080/
-    ngnix      :82
+    ngnix      :80
 
 [tips]
 (1) dubbo 2.6.0 不支持jdk9 
