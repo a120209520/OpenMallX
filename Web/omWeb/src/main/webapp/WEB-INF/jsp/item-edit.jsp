@@ -68,7 +68,7 @@
 	var itemEditEditor ;
 	$(function(){
 		//实例化编辑器
-		itemEditEditor = E3.createEditor("#itemeEditForm [name=desc]");
+		itemEditEditor = MALL.createEditor("#itemeEditForm [name=desc]");
 	});
 	
 	function submitForm(){

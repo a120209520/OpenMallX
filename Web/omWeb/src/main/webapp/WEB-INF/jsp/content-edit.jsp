@@ -54,8 +54,8 @@
 <script type="text/javascript">
 var contentEditEditor ;
 $(function(){
-	contentEditEditor = E3.createEditor("#contentEditForm [name=content]");
-	E3.initOnePicUpload();
+	contentEditEditor = MALL.createEditor("#contentEditForm [name=content]");
+	MALL.initOnePicUpload();
 });
 
 var contentEditPage = {
@@ -70,7 +70,7 @@ var contentEditPage = {
 				if(data.status == 200){
 					$.messager.alert('提示','新增内容成功!');
 					$("#contentList").datagrid("reload");
-					E3.closeCurrentWindow();
+					MALL.closeCurrentWindow();
 				}
 			});
 		},

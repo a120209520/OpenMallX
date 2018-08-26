@@ -68,11 +68,11 @@
 	//页面初始化完毕后执行此方法
 	$(function(){
 		//创建富文本编辑器
-		itemAddEditor = E3.createEditor("#itemAddForm [name=desc]");
+		itemAddEditor = MALL.createEditor("#itemAddForm [name=desc]");
 		//初始化类目选择和图片上传器
-		E3.init({fun:function(node){
+		MALL.init({fun:function(node){
 			//根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
-			//E3.changeItemParam(node, "itemAddForm");
+			//MALL.changeItemParam(node, "itemAddForm");
 		}});
 	});
 	//提交表单
@@ -111,6 +111,7 @@
 		*/
 		//ajax的post方式提交表单
 		//$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
+		
 		$.post("/item/save",$("#itemAddForm").serialize(), function(data){
 			if(data.status == 200){
 				$.messager.alert('提示','新增商品成功!');

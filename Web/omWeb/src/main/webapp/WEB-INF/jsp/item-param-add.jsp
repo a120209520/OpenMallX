@@ -37,7 +37,7 @@
 </div>
 <script style="text/javascript">
 	$(function(){
-		E3.initItemCat({
+		MALL.initItemCat({
 			fun:function(node){
 			$(".addGroupTr").hide().find(".param").remove();
 				//  判断选择的目录是否已经添加过规格

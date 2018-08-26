@@ -19,7 +19,7 @@ Date.prototype.format = function(format){
     return format; 
 };
 
-var E3 = {
+var MALL = {
 	// 编辑器参数
 	kingEditorParams : {
 		//指定上传文件参数名称
@@ -84,7 +84,7 @@ var E3 = {
         	$(e).click(function(){
         		var form = $(this).parentsUntil("form").parent("form");
         		//打开图片上传窗口
-        		KindEditor.editor(E3.kingEditorParams).loadPlugin('multiimage',function(){
+        		KindEditor.editor(MALL.kingEditorParams).loadPlugin('multiimage',function(){
         			var editor = this;
         			editor.plugin.multiImageDialog({
 						clickFn : function(urlList) {
@@ -147,7 +147,7 @@ var E3 = {
     },
     
     createEditor : function(select){
-    	return KindEditor.create(select, E3.kingEditorParams);
+    	return KindEditor.create(select, MALL.kingEditorParams);
     },
     
     /**
@@ -234,7 +234,7 @@ var E3 = {
     initOnePicUpload : function(){
     	$(".onePicUpload").click(function(){
 			var _self = $(this);
-			KindEditor.editor(E3.kingEditorParams).loadPlugin('image', function() {
+			KindEditor.editor(MALL.kingEditorParams).loadPlugin('image', function() {
 				this.plugin.imageDialog({
 					showRemote : false,
 					clickFn : function(url, title, width, height, border, align) {

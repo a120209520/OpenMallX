@@ -22,8 +22,9 @@
 	<mvc:resources location="/css/" mapping="/css/**" />
 
 	<!-- 注解方式的HandlerMapping和HandlerAdapter -->
-	<mvc:annotation-driven ignore-default-model-on-redirect="true">
-		<!-- 这里配置IE的json格式兼容性 -->
+	<!-- 这里拦截会影响ajax数据读取 -->
+	<!-- <mvc:annotation-driven ignore-default-model-on-redirect="true">
+		这里配置IE的json格式兼容性
 		<mvc:message-converters register-defaults="false">
 			<bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
 			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
@@ -33,7 +34,8 @@
 				<property name="supportedMediaTypes" value="text/plain;charset=UTF-8" />
 			</bean>
 		</mvc:message-converters>
-	</mvc:annotation-driven>
+	</mvc:annotation-driven> -->
+	<mvc:annotation-driven/>
 
 	<!-- ViewResolver -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

@@ -3,6 +3,7 @@ package org.ppl.mall.controller;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.service.ItemService;
+import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,5 +38,26 @@ public class ItemController {
 			@RequestParam("page") Integer pageNum, 
 			@RequestParam("rows") Integer pageSize) {
 		return itemService.getItemList(pageNum, pageSize);
+	}
+	
+	//添加商品
+	@RequestMapping("/save")
+	@ResponseBody
+	public MsgResult addItem(TbItem item, String desc) {
+		return itemService.addItem(item, desc);
+	}
+	
+	//编辑商品-商品基本信息回显
+	@RequestMapping("/edit-query/item/{id}")
+	@ResponseBody
+	public MsgResult editItemQuery(@PathVariable("id") Long itemId) {
+		return MsgResult.ok(itemService.getItemById(itemId));
+	}
+	
+	//编辑商品-商品详情回显
+	@RequestMapping("/edit-query/item-desc/{id}")
+	@ResponseBody
+	public MsgResult editItemDescQuery(@PathVariable("id") Long itemId) {
+		return MsgResult.ok(itemService.getItemDescById(itemId));
 	}
 }

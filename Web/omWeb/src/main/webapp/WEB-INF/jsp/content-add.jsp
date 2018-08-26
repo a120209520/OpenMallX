@@ -53,8 +53,8 @@
 <script type="text/javascript">
 	var contentAddEditor ;
 	$(function(){
-		contentAddEditor = E3.createEditor("#contentAddForm [name=content]");
-		E3.initOnePicUpload();
+		contentAddEditor = MALL.createEditor("#contentAddForm [name=content]");
+		MALL.initOnePicUpload();
 		$("#contentAddForm [name=categoryId]").val($("#contentCategoryTree").tree("getSelected").id);
 	});
 	
@@ -70,7 +70,7 @@
 					if(data.status == 200){
 						$.messager.alert('提示','新增内容成功!');
     					$("#contentList").datagrid("reload");
-    					E3.closeCurrentWindow();
+    					MALL.closeCurrentWindow();
 					}
 				});
 			},
