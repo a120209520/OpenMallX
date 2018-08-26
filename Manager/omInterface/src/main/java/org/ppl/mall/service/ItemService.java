@@ -10,4 +10,8 @@ public interface ItemService {
 	TbItemDesc getItemDescById(long itemId);
 	DataGridResult<TbItem> getItemList(int pageNum, int pageSize);
 	MsgResult addItem(TbItem item, String desc);
+	MsgResult editItem(TbItem item, String desc);
+	MsgResult deleteItem(long itemId);
+	MsgResult unShelveItem(long itemId);
+	MsgResult reShelfItem(long itemId);
 }

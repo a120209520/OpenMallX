@@ -47,17 +47,57 @@ public class ItemController {
 		return itemService.addItem(item, desc);
 	}
 	
-	//编辑商品-商品基本信息回显
+	//编辑商品-基本信息回显
 	@RequestMapping("/edit-query/item/{id}")
 	@ResponseBody
 	public MsgResult editItemQuery(@PathVariable("id") Long itemId) {
 		return MsgResult.ok(itemService.getItemById(itemId));
 	}
 	
-	//编辑商品-商品详情回显
+	//编辑商品-描述回显
 	@RequestMapping("/edit-query/item-desc/{id}")
 	@ResponseBody
 	public MsgResult editItemDescQuery(@PathVariable("id") Long itemId) {
 		return MsgResult.ok(itemService.getItemDescById(itemId));
+	}
+	
+	//编辑商品-提交
+	@RequestMapping("/edit-submit")
+	@ResponseBody
+	public MsgResult editItem(TbItem item, String desc) {
+		return itemService.editItem(item, desc);
+	}
+	
+	//删除商品
+	@RequestMapping("/delete")
+	@ResponseBody
+	public MsgResult deleteItems(String ids) {
+		String[] idArray = ids.split(",");
+		for(String id:idArray) {
+			itemService.deleteItem(Long.parseLong(id));
+		}
+		return MsgResult.ok();
+	}
+	
+	//下架商品
+	@RequestMapping("/unshelve")
+	@ResponseBody
+	public MsgResult unShelveItems(String ids) {
+		String[] idArray = ids.split(",");
+		for(String id:idArray) {
+			itemService.unShelveItem(Long.parseLong(id));
+		}
+		return MsgResult.ok();
+	}
+	
+	//上架商品
+	@RequestMapping("/reshelf")
+	@ResponseBody
+	public MsgResult reShelfItems(String ids) {
+		String[] idArray = ids.split(",");
+		for(String id:idArray) {
+			itemService.reShelfItem(Long.parseLong(id));
+		}
+		return MsgResult.ok();
 	}
 }

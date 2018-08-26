@@ -72,6 +72,50 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setCreated(curTime);
 		itemDesc.setUpdated(curTime);
 		itemDescMapper.insert(itemDesc);
+		
+		return MsgResult.ok();
+	}
+
+	//编辑商品
+	@Override
+	public MsgResult editItem(TbItem item, String desc) {
+		itemMapper.updateByPrimaryKeySelective(item);
+		
+		TbItemDesc itemDesc = new TbItemDesc();
+		itemDesc.setItemId(item.getId());
+		itemDesc.setCreated(null);
+		itemDesc.setItemDesc(desc);
+		itemDesc.setUpdated(new Date());
+		itemDescMapper.updateByPrimaryKeySelective(itemDesc);
+		
+		return MsgResult.ok();
+	}
+	
+	//删除商品
+	@Override
+	public MsgResult deleteItem(long itemId) {
+		itemMapper.deleteByPrimaryKey(itemId);
+		itemDescMapper.deleteByPrimaryKey(itemId);
+		return MsgResult.ok();
+	}
+
+	//下架商品
+	@Override
+	public MsgResult unShelveItem(long itemId) {
+		TbItem item = new TbItem();
+		item.setId(itemId);
+		item.setStatus(TbItem.STATUS_SOLDOUT);
+		itemMapper.updateByPrimaryKeySelective(item);
+		return MsgResult.ok();
+	}
+
+	//上架商品
+	@Override
+	public MsgResult reShelfItem(long itemId) {
+		TbItem item = new TbItem();
+		item.setId(itemId);
+		item.setStatus(TbItem.STATUS_NORMAL);
+		itemMapper.updateByPrimaryKeySelective(item);
 		return MsgResult.ok();
 	}
 }

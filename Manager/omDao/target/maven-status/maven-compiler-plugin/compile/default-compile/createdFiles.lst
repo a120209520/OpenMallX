@@ -1,14 +1,11 @@
 org\ppl\mall\mapper\TbItemParamItemMapper.class
 org\ppl\mall\mapper\TbContentCategoryMapper.class
 org\ppl\mall\mapper\TbContentMapper.class
+org\ppl\mall\mapper\TbItemDescMapper.class
 org\ppl\mall\mapper\TbItemParamMapper.class
-META-INF\maven\org.ppl.mall\omDao\pom.properties
 org\ppl\mall\mapper\TbOrderShippingMapper.class
 org\ppl\mall\mapper\TbUserMapper.class
-org\ppl\mall\mapper\TbItemMapper.class
 org\ppl\mall\mapper\TbOrderMapper.class
+org\ppl\mall\mapper\TbItemMapper.class
 org\ppl\mall\mapper\TbItemCatMapper.class
-META-INF\MANIFEST.MF
-org\ppl\mall\mapper\TbItemDescMapper.class
-META-INF\maven\org.ppl.mall\omDao\pom.xml
 org\ppl\mall\mapper\TbOrderItemMapper.class
