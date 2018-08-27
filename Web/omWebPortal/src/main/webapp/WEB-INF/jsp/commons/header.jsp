@@ -14,7 +14,6 @@
         </div>
 		<a name="sfbest_hp_hp_head_logo" href="http://www.e3mall.cn" class="trackref logoleft">
 		</a>
-		<br/><br/><br/><br/><br/>
 		<div class="logo-text">
 			<img src="/images/html/logo_word.jpg">
 		</div>

@@ -1,0 +1,37 @@
+package org.ppl.mall.controller;
+
+import java.util.List;
+
+import org.ppl.mall.model.DataGridResult;
+import org.ppl.mall.model.TreeNode;
+import org.ppl.mall.pojo.TbItem;
+import org.ppl.mall.service.ContentCatService;
+import org.ppl.mall.service.ItemCatService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+/**
+ * 内容分类Controller
+ * @author Smith
+ *
+ */
+
+@Controller
+@RequestMapping("/content/cat")
+public class ContentCatController {
+	
+	@Autowired
+	private ContentCatService contentCatService;
+	
+	//获取内容分类列表
+	@RequestMapping("/list")
+	@ResponseBody
+	public List<TreeNode> getContentCatList(@RequestParam(name="id", defaultValue="0") Long parentId) {
+		return contentCatService.getContentCatList(parentId);
+	}
+	
+}

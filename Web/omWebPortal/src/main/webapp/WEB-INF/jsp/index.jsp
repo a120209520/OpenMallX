@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Cache-Control" content="no-transform">
 <meta http-equiv="Cache-Control" content="no-siteapp">
-<title>PPL商城-PPL旗下全球美食优选网购商城-进口食品、母婴、营养保健品、生鲜、粮油、酒水饮料、休闲食品-宜立方商城e3mall.cn</title>
+<title>宜立方商城-宜立方旗下全球美食优选网购商城-进口食品、母婴、营养保健品、生鲜、粮油、酒水饮料、休闲食品-宜立方商城e3mall.cn</title>
 <meta name="Keywords"
 	content="进口食品,网上超市,网上购物,进口奶粉,宜立方商城,sfbest,母婴用品,营养保健品,生鲜食品,粮油,酒水,休闲食品">
 <meta name="Description"
@@ -46,12 +46,12 @@
 			<div id="index_slide" class="slide_wrap">
 				<ol>
 					<%-- <c:forEach items="${ad1List}" var="node" varStatus="status">
-			<li>
-			  <a name="sfbest_hp_hp_focus_${status.index }" class="fore_pic trackref" href="${node.url }" target="_blank"> 
-				<img id="lunbo_1" alt="${node.title }"	src="${node.pic }">
-			  </a>
-			</li>
-			</c:forEach> --%>
+						<li>
+						  <a name="sfbest_hp_hp_focus_${status.index }" class="fore_pic trackref" href="${node.url }" target="_blank"> 
+							<img id="lunbo_1" alt="${node.title }"	src="${node.pic }">
+						  </a>
+						</li>
+					</c:forEach> --%>
 					<li><a name="sfbest_hp_hp_focus_1" class="fore_pic trackref"
 						href="/html/activity/1471934470.html" target="_blank"> <img
 							id="lunbo_1" alt="8.30-9.5 月饼"
@@ -114,17 +114,17 @@
 			</div>
 		</div>
 		<ul class="none" id="lunboNum">
-			<c:forEach items="${ad1List }" varStatus="status">
+			<%-- <c:forEach items="${ad1List }" varStatus="status">
 				<li class="<c:if test="${status.index==0 }">cur</c:if>">${status.index+1 }</li>
-			</c:forEach>
-			<!-- <li class="cur">1</li>
+			</c:forEach> --%>
+				<li class="cur">1</li>
 		        <li class="">2</li>
 		        <li class="">3</li>
 		        <li class="">4</li>
 		        <li class="">5</li>
 		        <li class="">6</li>
 		        <li class="">7</li>
-		        <li class="">8</li> -->
+		        <li class="">8</li>
 		</ul>
 		<div class="indexbg" id="indexbg">
 			<dl style="left: -1903px;">

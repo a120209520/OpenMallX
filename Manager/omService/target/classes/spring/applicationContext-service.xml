@@ -28,8 +28,10 @@
 	<!-- debug -->
 	<dubbo:service interface="org.ppl.mall.service.ItemService" ref="itemServiceImpl" timeout="600000"/>
 	<dubbo:service interface="org.ppl.mall.service.ItemCatService" ref="itemCatServiceImpl" timeout="600000"/>
+	<dubbo:service interface="org.ppl.mall.service.ContentCatService" ref="contentCatServiceImpl" timeout="600000"/>
 	<!-- release -->
 	<!-- <dubbo:service interface="org.ppl.mall.service.ItemService" ref="itemServiceImpl"/> -->
 	<!-- <dubbo:service interface="org.ppl.mall.service.ItemCatService" ref="itemCatServiceImpl"/> -->
+	<!-- <dubbo:service interface="org.ppl.mall.service.ContentCatService" ref="contentCatService"/> -->
 </beans>
 

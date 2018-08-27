@@ -1,2 +1,3 @@
 org\ppl\mall\service\ItemService.class
 org\ppl\mall\service\ItemCatService.class
+org\ppl\mall\service\ContentCatService.class
