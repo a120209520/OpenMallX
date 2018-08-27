@@ -7,6 +7,7 @@ import org.ppl.mall.model.TreeNode;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.service.ContentCatService;
 import org.ppl.mall.service.ItemCatService;
+import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -34,4 +35,10 @@ public class ContentCatController {
 		return contentCatService.getContentCatList(parentId);
 	}
 	
+	//添加内容分类
+	@RequestMapping("/add")
+	@ResponseBody
+	public MsgResult addContentCat(Long parentId, String name) {
+		return contentCatService.addContentCat(parentId, name);
+	}
 }

@@ -27,7 +27,7 @@ $(function(){
         	var _tree = $(this);
         	if(node.id == 0){
         		// 新增节点
-        		$.post("/content/cat/create",{parentId:node.parentId,name:node.text},function(data){
+        		$.post("/content/cat/add",{parentId:node.parentId,name:node.text},function(data){
         			if(data.status == 200){
         				_tree.tree("update",{
             				target : node.target,

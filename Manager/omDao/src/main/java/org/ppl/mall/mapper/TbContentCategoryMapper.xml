@@ -103,6 +103,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="org.ppl.mall.pojo.TbContentCategory" >
+    <selectKey keyProperty="id" resultType="long" order="AFTER">
+    	select last_insert_id()
+    </selectKey>
     insert into tb_content_category (id, parent_id, name, 
       status, sort_order, is_parent, 
       created, updated)
@@ -111,6 +114,9 @@
       #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="org.ppl.mall.pojo.TbContentCategory" >
+    <selectKey keyProperty="id" resultType="long" order="AFTER">
+    	select last_insert_id()
+    </selectKey>
     insert into tb_content_category
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

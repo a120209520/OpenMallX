@@ -1,6 +1,7 @@
 package org.ppl.mall.service.impl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.ppl.mall.mapper.TbContentCategoryMapper;
@@ -9,6 +10,7 @@ import org.ppl.mall.pojo.TbContentCategory;
 import org.ppl.mall.pojo.TbContentCategoryExample;
 import org.ppl.mall.pojo.TbContentCategoryExample.Criteria;
 import org.ppl.mall.service.ContentCatService;
+import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,5 +36,26 @@ public class ContentCatServiceImpl implements ContentCatService {
 			nodeList.add(node);
 		}
 		return nodeList;
+	}
+
+	//添加分类
+	@Override
+	public MsgResult addContentCat(long parentId, String name) {
+		TbContentCategory parentNode = contentCatMapper.selectByPrimaryKey(parentId);
+		parentNode.setIsParent(true);
+		contentCatMapper.updateByPrimaryKey(parentNode);
+		
+		Date curTime = new Date();
+		TbContentCategory newNode = new TbContentCategory();
+		newNode.setParentId(parentId);
+		newNode.setName(name);
+		newNode.setStatus(TbContentCategory.CONTENTCAT_NORMAL);
+		newNode.setSortOrder(1);
+		newNode.setIsParent(false);
+		newNode.setCreated(curTime);
+		newNode.setUpdated(curTime);
+		contentCatMapper.insertSelective(newNode);
+		
+		return MsgResult.ok(newNode);
 	}
 }

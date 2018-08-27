@@ -20,6 +20,9 @@ public class TbContentCategory implements Serializable {
 
     private Date updated;
 
+    public static final int CONTENTCAT_NORMAL = 1;
+    public static final int CONTENTCAT_DELETED = 2;
+    
     public Long getId() {
         return id;
     }
