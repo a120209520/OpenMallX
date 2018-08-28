@@ -58,4 +58,34 @@ public class ContentCatServiceImpl implements ContentCatService {
 		
 		return MsgResult.ok(newNode);
 	}
+
+	//更新分类
+	@Override
+	public MsgResult updateContentCat(Long id, String name) {
+		TbContentCategory cat = new TbContentCategory();
+		cat.setId(id);
+		cat.setName(name);
+		contentCatMapper.updateByPrimaryKeySelective(cat);
+		return MsgResult.ok();
+	}
+	
+	//删除分类(包括子节点)
+	@Override
+	public MsgResult deleteContentCat(Long id) {
+		deleteContentCatLoop(id);
+		return MsgResult.ok();
+	}
+	private void deleteContentCatLoop(Long id) {
+		TbContentCategory parent = contentCatMapper.selectByPrimaryKey(id);
+		contentCatMapper.deleteByPrimaryKey(id);
+		if(!parent.getIsParent())
+			return;
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andParentIdEqualTo(id);
+		List<TbContentCategory> list = contentCatMapper.selectByExample(example);
+		for(TbContentCategory c:list) {
+			deleteContentCatLoop(c.getId());	
+		}
+	}
 }

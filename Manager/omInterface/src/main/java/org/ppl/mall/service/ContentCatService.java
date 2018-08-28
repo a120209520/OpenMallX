@@ -8,4 +8,6 @@ import org.ppl.mall.util.MsgResult;
 public interface ContentCatService {
 	List<TreeNode> getContentCatList(long parentId);
 	MsgResult addContentCat(long parentId, String name);
+	MsgResult updateContentCat(Long id, String name);
+	MsgResult deleteContentCat(Long id);
 }

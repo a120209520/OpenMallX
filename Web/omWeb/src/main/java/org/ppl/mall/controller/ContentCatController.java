@@ -41,4 +41,18 @@ public class ContentCatController {
 	public MsgResult addContentCat(Long parentId, String name) {
 		return contentCatService.addContentCat(parentId, name);
 	}
+	
+	//添加内容分类
+	@RequestMapping("/update")
+	@ResponseBody
+	public MsgResult updateContentCat(Long id, String name) {
+		return contentCatService.updateContentCat(id, name);
+	}
+	
+	//删除内容分类
+	@RequestMapping("/delete")
+	@ResponseBody
+	public MsgResult deleteContentCat(Long id) {
+		return contentCatService.deleteContentCat(id);
+	}
 }

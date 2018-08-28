@@ -2,7 +2,7 @@
 <div class="easyui-panel" title="Nested Panel" data-options="width:'100%',minHeight:500,noheader:true,border:false" style="padding:10px;">
     <div class="easyui-layout" data-options="fit:true">
         <div data-options="region:'west',split:false" style="width:250px;padding:5px">
-            <ul id="contentCategoryTree" class="easyui-tree" data-options="url:'/content/category/list',animate: true,method : 'GET'">
+            <ul id="contentCategoryTree" class="easyui-tree" data-options="url:'/content/cat/list',animate: true,method : 'GET'">
             </ul>
         </div>
         <div data-options="region:'center'" style="padding:5px">
