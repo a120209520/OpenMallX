@@ -83,7 +83,6 @@ public class ItemServiceImpl implements ItemService {
 		
 		TbItemDesc itemDesc = new TbItemDesc();
 		itemDesc.setItemId(item.getId());
-		itemDesc.setCreated(null);
 		itemDesc.setItemDesc(desc);
 		itemDesc.setUpdated(new Date());
 		itemDescMapper.updateByPrimaryKeySelective(itemDesc);

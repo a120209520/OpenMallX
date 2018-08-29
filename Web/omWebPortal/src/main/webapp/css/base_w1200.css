@@ -168,7 +168,7 @@ margin:10px 0 0 0;
 #header{padding:0;height:104px;width:1200px;margin:0 auto;}
 .header_inner{width:1200px;margin:auto; position:relative;z-index:31;}
 .header_inner .logo{width:240px;margin:0px;float:left;padding:5px 0px 0px 0px;position:relative;}
-.header_inner .logo a.logoleft{display:block;position:absolute;left:0px;width:197px;padding:0px 0px 0px 0px;background:url(../images/logo66.png) 0px 0px no-repeat;_background:url(../images/indexImg20130307.jpg?v=1.1) -33px 0px no-repeat;height:66px;}
+.header_inner .logo a.logoleft{display:block;position:absolute;left:0px;width:197px;padding:0px 0px 0px 0px;background:url(../images/mmp.png) 0px 0px no-repeat;_background:url(../images/indexImg20130307.jpg?v=1.1) -33px 0px no-repeat;height:66px;}
 .header_inner .logo a.logoright{display:block;position:absolute;width:116px;right:0px;height:66px;background:url(../images/indexImg20130307.png?v=1.5) -160px 0px no-repeat;_background:url(../images/indexImg20130307.jpg?v=1.1) -160px 0px no-repeat;}
 .header_inner .logo .logoright_best{margin-top:12px;}
 .header_inner .logo div.logo-text{position:absolute;top:73px;left:0;color:#000;font-size:14px; font-family:Microsoft YaHei; clear:both;letter-spacing:1px; text-align:center;width:244px;}

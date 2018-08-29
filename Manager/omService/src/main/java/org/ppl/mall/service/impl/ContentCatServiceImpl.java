@@ -65,6 +65,7 @@ public class ContentCatServiceImpl implements ContentCatService {
 		TbContentCategory cat = new TbContentCategory();
 		cat.setId(id);
 		cat.setName(name);
+		cat.setUpdated(new Date());
 		contentCatMapper.updateByPrimaryKeySelective(cat);
 		return MsgResult.ok();
 	}
