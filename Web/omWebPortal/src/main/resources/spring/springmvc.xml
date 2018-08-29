@@ -11,6 +11,10 @@
 		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
+	<!-- 加载属性文件 -->
+	<context:property-placeholder location="classpath:conf/*.properties" />
+	
+
 	<!-- @Controller扫描 -->
 	<context:component-scan base-package="org.ppl.mall.portal.controller" />
 
@@ -41,8 +45,9 @@
 	</bean>
 	
 	<!-- 引用duddo服务 -->
-	<dubbo:application name="omWeb" />
+	<dubbo:application name="omWebPortal" />
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+	<dubbo:reference interface="org.ppl.mall.service.ContentService" id="contentService" />
 	
 </beans>
 
