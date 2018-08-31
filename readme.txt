@@ -14,12 +14,12 @@
     }
 
     依赖关系：
-    omCommon 无依赖
-    omPojo   依赖omCommon
-    omDao    依赖omPojo, omCommon
+    omCommon       无依赖
+    omPojo         依赖omCommon
+    omDao          依赖omPojo, omCommon
     omInterface    依赖omPojo, omCommon
-    omService 依赖omDao，omInterface, omPojo, omCommon
-    omWeb    依赖omInterface, omPojo, omCommon
+    omService      依赖omDao，omInterface, omPojo, omCommon
+    omWeb          依赖omInterface, omPojo, omCommon
     omWebPortal    依赖omInterface, omPojo, omCommon
 
     Maven安装顺序：
@@ -35,13 +35,16 @@
         * pom文件中需要使用dependencyManagement，仅用来管理，不实际依赖
 
 3. 端口
-    omService  localhost:8082/
-    omWeb      localhost:8081/
-    omWebPortal      localhost:8083/
-    dubbo      :20880
+    omService                  localhost:8082/
+    omWeb                      localhost:8081/
+    omWebPortal                localhost:8083/
+    dubbo                      :20880
     dubbo-registry(zookeeper)  localhost:2181/
     dubbo-monitor              localhost:8080/
-    ngnix      :80
+    ngnix                      :80
+    fastdfs                    192.168.25.133:22122/
+    redis                      192.168.25.133:6379/
+    redis集群                  192.168.25.133:7001~7006
 
 [tips]
 (1) dubbo 2.6.0 不支持jdk9 

@@ -56,5 +56,10 @@
 			<groupId>fastdfs_client</groupId>
 			<artifactId>fastdfs_client</artifactId>
 		</dependency>
+		<!-- redis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
 	</dependencies>
 </project>
