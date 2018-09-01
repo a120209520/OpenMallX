@@ -1,12 +1,9 @@
 package org.ppl.mall.service.impl;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
-import org.jboss.netty.util.internal.StringUtil;
 import org.ppl.mall.jedis.JedisClient;
 import org.ppl.mall.mapper.TbContentMapper;
 import org.ppl.mall.model.DataGridResult;
@@ -20,7 +17,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.alibaba.druid.support.json.JSONUtils;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
@@ -55,8 +51,7 @@ public class ContentServiceImpl implements ContentService {
 	@Override
 	public List<TbContent> getContentList(Long catId) {
 		//优先查询redis
-		
-		String json = jedisClient.hget(CONTENT_LIST, catId+"");
+		String json = jedisClient.hget(CONTENT_LIST, catId.toString());
 		if(StringUtils.isNotBlank(json)) {
 			List<TbContent> list = JsonUtils.jsonToList(json, TbContent.class);
 			System.out.println("get data from Redis!!!");
@@ -68,10 +63,9 @@ public class ContentServiceImpl implements ContentService {
 		criteria.andCategoryIdEqualTo(catId);
 		List<TbContent> list = contentMapper.selectByExampleWithBLOBs(example);
 		System.out.println("get data from Mysql!!!");
-		System.out.println(list instanceof Collection);
 		
-		//首次查询，将结果保存到缓存
-		jedisClient.hset(CONTENT_LIST, catId+"", JsonUtils.objectToJson(list));
+		//首次查询，将结果保存到redis
+		jedisClient.hset(CONTENT_LIST, catId.toString(), JsonUtils.objectToJson(list));
 		return list;
 	}
 	
@@ -82,13 +76,20 @@ public class ContentServiceImpl implements ContentService {
 		content.setCreated(curTime);
 		content.setUpdated(curTime);
 		contentMapper.insertSelective(content);
+		//更新数据后删除redis
+		jedisClient.hdel(CONTENT_LIST, content.getCategoryId().toString());
 		return MsgResult.ok();
 	}
 
 	//删除内容
 	@Override
-	public MsgResult deleteContents(long id) {
+	public MsgResult deleteContents(Long id) {
+		//删除前保留cid用于删除缓存
+		TbContent content = contentMapper.selectByPrimaryKey(id);
+		Long cid = content.getCategoryId();
 		contentMapper.deleteByPrimaryKey(id);
+		//更新数据后删除redis
+		jedisClient.hdel(CONTENT_LIST, cid.toString());
 		return MsgResult.ok();
 	}
 
@@ -97,6 +98,8 @@ public class ContentServiceImpl implements ContentService {
 	public MsgResult editContent(TbContent content) {
 		content.setUpdated(new Date());
 		contentMapper.updateByPrimaryKeySelective(content);
+		//更新数据后删除redis
+		jedisClient.hdel(CONTENT_LIST, content.getCategoryId().toString());
 		return MsgResult.ok();
 	}
 

@@ -10,6 +10,6 @@ public interface ContentService {
 	DataGridResult<TbContent> getContentList(Long catId, Integer pageNum, Integer pageSize);
 	List<TbContent> getContentList(Long catId);
 	MsgResult addContent(TbContent content);
-	MsgResult deleteContents(long id);
+	MsgResult deleteContents(Long id);
 	MsgResult editContent(TbContent content);
 }
