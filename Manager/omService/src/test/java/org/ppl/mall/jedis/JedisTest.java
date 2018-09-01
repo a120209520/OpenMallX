@@ -1,9 +1,11 @@
-package org.ppl.mall.test.redis;
+package org.ppl.mall.jedis;
 
 import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.Jedis;
@@ -34,7 +36,7 @@ public class JedisTest {
 		jedis.close();
 	}
 	
-	@Test
+	//@Test
 	//Jedis集群
 	public void testJedisCluster() throws Exception {
 		Set<HostAndPort> nodes = new HashSet<>();
@@ -47,5 +49,14 @@ public class JedisTest {
 		JedisCluster cluster = new JedisCluster(nodes);
 		cluster.set("cluster1","hello redis");
 		cluster.close();
+	}
+
+	//@Test
+	//Jedis工具类测试
+	public void testJedisClient() throws Exception {
+		ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-redis.xml");
+		JedisClient client = context.getBean(JedisClient.class);
+		client.set("hahaha", "gggggggggg");
+		System.out.println(client.get("hahaha"));
 	}
 }
