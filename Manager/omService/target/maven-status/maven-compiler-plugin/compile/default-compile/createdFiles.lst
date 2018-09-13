@@ -1,4 +1,5 @@
-org\ppl\mall\service\impl\ItemServiceImpl.class
-org\ppl\mall\service\impl\ContentCatServiceImpl.class
 org\ppl\mall\service\impl\ItemCatServiceImpl.class
 org\ppl\mall\service\impl\ContentServiceImpl.class
+org\ppl\mall\service\impl\ContentCatServiceImpl.class
+org\ppl\mall\service\impl\ItemServiceImpl.class
+org\ppl\mall\service\search\impl\SearchItemServiceImpl.class

@@ -2,6 +2,7 @@ package org.ppl.mall.mapper;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.ppl.mall.model.SearchItem;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemExample;
 
@@ -27,4 +28,7 @@ public interface TbItemMapper {
     int updateByPrimaryKeySelective(TbItem record);
 
     int updateByPrimaryKey(TbItem record);
+    
+    /* 自定义接口 */
+    List<SearchItem> getSearchItemList();
 }

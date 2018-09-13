@@ -58,6 +58,7 @@
 	<dubbo:reference interface="org.ppl.mall.service.ItemCatService" id="itemCatService" />
 	<dubbo:reference interface="org.ppl.mall.service.ContentCatService" id="contentCatService" />
 	<dubbo:reference interface="org.ppl.mall.service.ContentService" id="contentService" />
+	<dubbo:reference interface="org.ppl.mall.service.search.SearchItemService" id="searchItemService" />
 
 </beans>
 

@@ -16,9 +16,9 @@ public class PageHelperTest {
 	@Test
 	public void testPageHelper() throws Exception {
 		//初始化Spring容器
-		ApplicationContext application  = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
+		ApplicationContext appDao  = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
 		//获取代理对象
-		TbItemMapper itemMapper = (TbItemMapper) application.getBean(TbItemMapper.class);
+		TbItemMapper itemMapper = (TbItemMapper) appDao.getBean(TbItemMapper.class);
 		//设置Page信息
 		PageHelper.startPage(2, 10);
 		//执行sql
