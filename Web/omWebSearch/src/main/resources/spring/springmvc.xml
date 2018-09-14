@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+	<!-- 加载属性文件 -->
+	<context:property-placeholder location="classpath:conf/*.properties" />
+	
+
+	<!-- @Controller扫描 -->
+	<context:component-scan base-package="org.ppl.mall.search.controller" />
+
+	<!-- 配置为*.html不需要静态资源映射 -->
+	<!-- <mvc:resources location="/js/" mapping="/js/**" /> -->
+	<!-- <mvc:resources location="/css/" mapping="/css/**" /> -->
+
+	<!-- 注解方式的HandlerMapping和HandlerAdapter -->
+	<!-- 这里拦截会影响ajax数据读取 -->
+	<!-- <mvc:annotation-driven ignore-default-model-on-redirect="true">
+		这里配置IE的json格式兼容性
+		<mvc:message-converters register-defaults="false">
+			<bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes" value="text/plain;charset=UTF-8" />
+			</bean>
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="supportedMediaTypes" value="text/plain;charset=UTF-8" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven> -->
+	<mvc:annotation-driven/>
+
+	<!-- ViewResolver -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<!-- 引用duddo服务 -->
+	<dubbo:application name="omWebSearch" />
+	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+	<dubbo:reference interface="org.ppl.mall.service.search.SearchItemService" id="searchItemService" />
+	
+</beans>
+

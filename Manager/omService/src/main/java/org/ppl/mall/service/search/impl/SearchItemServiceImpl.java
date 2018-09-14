@@ -3,11 +3,14 @@ package org.ppl.mall.service.search.impl;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.common.SolrInputDocument;
+import org.ppl.mall.dao.SearchDao;
 import org.ppl.mall.mapper.TbItemMapper;
 import org.ppl.mall.model.SearchItem;
+import org.ppl.mall.model.SearchResult;
 import org.ppl.mall.service.search.SearchItemService;
 import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +23,12 @@ public class SearchItemServiceImpl implements SearchItemService {
 	private TbItemMapper itemMapper;
 	
 	@Autowired
+	private SearchDao searchDao;
+	
+	@Autowired
 	private SolrServer solrServer;
 	
+	//导入所有商品
 	@Override
 	public MsgResult importAllItems() {
 		try {
@@ -46,4 +53,23 @@ public class SearchItemServiceImpl implements SearchItemService {
 		}
 		return MsgResult.build(500, "import failed!");
 	}
+
+	//搜索商品
+	@Override
+	public SearchResult searchItems(String key, int page, int rows) {
+		SolrQuery query = new SolrQuery();
+		query.setQuery(key);
+		if(page <= 0) 
+			page = 1;
+		query.setStart((page-1)*rows);
+		query.setRows(rows);
+		query.set("df", "item_title");
+		query.setHighlight(true);
+		query.addHighlightField("item_title");
+		query.setHighlightSimplePre("<em style=\"color:red\">");
+		query.setHighlightSimplePost("</em>");
+		SearchResult result = searchDao.search(query);
+		result.setPageCount((int) Math.ceil(result.getTotalCount() * 1.0 / rows));
+		return result;
+	}	
 }

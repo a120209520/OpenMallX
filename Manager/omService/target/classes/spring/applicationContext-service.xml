@@ -16,8 +16,8 @@
 	<!-- 加载配置文件 -->
 	<context:property-placeholder location="classpath:conf/*.properties" />
 
-	<!-- @Service扫描 -->
-	<context:component-scan base-package="org.ppl.mall.service" />
+	<!-- Bean扫描 -->
+	<context:component-scan base-package="org.ppl.mall" />
 	
 	<!-- 发布dubbo服务 -->
 	<!-- 提供方应用信息，用于计算依赖关系 -->

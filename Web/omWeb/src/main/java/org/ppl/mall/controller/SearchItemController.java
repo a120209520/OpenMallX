@@ -1,4 +1,4 @@
-package org.ppl.mall.controller.search;
+package org.ppl.mall.controller;
 
 import org.ppl.mall.service.search.SearchItemService;
 import org.ppl.mall.util.MsgResult;
