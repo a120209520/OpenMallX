@@ -26,6 +26,7 @@ public class SearchController {
 	@Value("${SEARCH_ROWS}")
 	private int SEARCH_ROWS;
 	
+	//搜索商品
 	@RequestMapping("search.html")
 	public String searchItems(String keyword, 
 			@RequestParam(defaultValue="1") int page,
@@ -42,6 +43,14 @@ public class SearchController {
 		model.addAttribute("page", page);
 		model.addAttribute("recordCount", result.getTotalCount());
 		model.addAttribute("itemList", result.getItemList());
+		
 		return "search";
+	}
+	
+	//异常页面测试
+	@RequestMapping("exception.html")
+	public String exception() {
+		int test = 1/0;
+		return null;
 	}
 }

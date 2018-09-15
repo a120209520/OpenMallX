@@ -44,6 +44,9 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
+	<!-- 全局异常处理器 -->
+	<bean class="org.ppl.mall.exception.GlobalExceptionResolver"/>
+	
 	<!-- 引用duddo服务 -->
 	<dubbo:application name="omWebSearch" />
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
