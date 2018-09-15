@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../Manager/omService" />
+    <file type="web" url="file://$PROJECT_DIR$/../Web/omWeb" />
+    <file type="web" url="file://$PROJECT_DIR$/../Web/omWebPortal" />
+    <file type="web" url="file://$PROJECT_DIR$/../Web/omWebSearch" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../Manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../Common/pom.xml" />
+        <option value="$PROJECT_DIR$/../Web/omWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/../Web/omWebPortal/pom.xml" />
+        <option value="$PROJECT_DIR$/../Web/omWebSearch/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="JDK1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

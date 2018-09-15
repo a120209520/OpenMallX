@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../Common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Manager/omDao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Manager/omInterface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Manager/omPojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Manager/omService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Web/omWeb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Web/omWebPortal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Web/omWebSearch" charset="UTF-8" />
+  </component>
+</project>
