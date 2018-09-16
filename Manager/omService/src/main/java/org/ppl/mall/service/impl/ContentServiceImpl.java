@@ -50,7 +50,7 @@ public class ContentServiceImpl implements ContentService {
 	//查询内容列表
 	@Override
 	public List<TbContent> getContentList(Long catId) {
-		//优先查询redis
+		//优先查询redis缓存
 		String json = jedisClient.hget(CONTENT_LIST, catId.toString());
 		if(StringUtils.isNotBlank(json)) {
 			List<TbContent> list = JsonUtils.jsonToList(json, TbContent.class);
@@ -64,7 +64,7 @@ public class ContentServiceImpl implements ContentService {
 		List<TbContent> list = contentMapper.selectByExampleWithBLOBs(example);
 		System.out.println("get data from Mysql!!!");
 		
-		//首次查询，将结果保存到redis
+		//首次查询，将结果保存到redis缓存
 		jedisClient.hset(CONTENT_LIST, catId.toString(), JsonUtils.objectToJson(list));
 		return list;
 	}

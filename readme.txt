@@ -36,9 +36,10 @@
 
 3. 端口
     omService                  localhost:8082/
-    omWeb                      localhost:8081/
+    omWeb                      localhost:8086/
     omWebPortal                localhost:8083/
     omWebSearch                localhost:8084/
+    omWebItem                  localhost:8085/
     dubbo                      :20880
     dubbo-registry(zookeeper)  localhost:2181/
     dubbo-monitor              localhost:8080/

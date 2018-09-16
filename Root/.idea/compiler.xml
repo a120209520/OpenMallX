@@ -12,6 +12,7 @@
         <module name="omPojo" />
         <module name="omService" />
         <module name="omWeb" />
+        <module name="omWebItem" />
         <module name="omWebPortal" />
         <module name="omWebSearch" />
       </profile>

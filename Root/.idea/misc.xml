@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../Manager/omService" />
     <file type="web" url="file://$PROJECT_DIR$/../Web/omWeb" />
+    <file type="web" url="file://$PROJECT_DIR$/../Web/omWebItem" />
     <file type="web" url="file://$PROJECT_DIR$/../Web/omWebPortal" />
     <file type="web" url="file://$PROJECT_DIR$/../Web/omWebSearch" />
   </component>
@@ -16,6 +17,7 @@
         <option value="$PROJECT_DIR$/../Web/omWeb/pom.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebPortal/pom.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebSearch/pom.xml" />
+        <option value="$PROJECT_DIR$/../Web/omWebItem/pom.xml" />
       </list>
     </option>
   </component>

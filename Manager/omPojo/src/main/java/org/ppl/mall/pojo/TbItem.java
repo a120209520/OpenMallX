@@ -1,5 +1,7 @@
 package org.ppl.mall.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -106,5 +108,11 @@ public class TbItem implements Serializable {
 
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+    /*自定义*/
+    @JsonIgnore
+    public String[] getImages() {
+        return image.split(",");
     }
 }

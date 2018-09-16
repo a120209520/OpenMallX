@@ -1,27 +1,27 @@
 package org.ppl.mall.service.impl;
 
-import java.util.Date;
-import java.util.List;
-
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import org.apache.commons.lang3.StringUtils;
+import org.ppl.mall.jedis.JedisClient;
 import org.ppl.mall.mapper.TbItemDescMapper;
 import org.ppl.mall.mapper.TbItemMapper;
 import org.ppl.mall.model.DataGridResult;
+import org.ppl.mall.pojo.TbContent;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemDesc;
 import org.ppl.mall.pojo.TbItemExample;
 import org.ppl.mall.service.ItemService;
 import org.ppl.mall.service.message.ItemAddMessageDispatcher;
 import org.ppl.mall.util.IDUtils;
+import org.ppl.mall.util.JsonUtils;
 import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jms.core.JmsTemplate;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-
-import javax.annotation.Resource;
-import javax.jms.Destination;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 商品管理Service
@@ -39,15 +39,60 @@ public class ItemServiceImpl implements ItemService {
 	@Autowired
     private ItemAddMessageDispatcher itemAddMessageDispatcher;
 
+	@Autowired
+    private JedisClient jedisClient;
+	@Value("${redis.item.prefix}")
+    private String ITEM_PREFIX;
+	@Value("${redis.item_desc.prefix}")
+    private String ITEM_DESC_PREFIX;
+
+	//redis存活时间
+	private static final int ITEM_CACHE_TIMEOUT = 3600;
+    private static final int ITEM_DESC_CACHE_TIMEOUT = 3600;
+
 	//通过id查询单个商品
 	@Override
 	public TbItem getItemById(long itemId) {
-		return itemMapper.selectByPrimaryKey(itemId);
+        //优先查询redis缓存
+        String json = jedisClient.get(ITEM_PREFIX+itemId);
+        if(StringUtils.isNotBlank(json)) {
+            TbItem item = JsonUtils.jsonToPojo(json, TbItem.class);
+            System.out.println("get data from Redis!!!");
+            return item;
+        }
+
+        TbItem item = itemMapper.selectByPrimaryKey(itemId);
+        System.out.println("get data from Mysql!!!");
+
+        //从数据库查询后，存入redis缓存
+        if(item != null) {
+            jedisClient.set(ITEM_PREFIX+itemId, JsonUtils.objectToJson(item));
+            jedisClient.expire(ITEM_PREFIX+itemId, ITEM_CACHE_TIMEOUT);
+        }
+
+		return item;
 	}
 	
 	@Override
 	public TbItemDesc getItemDescById(long itemId) {
-		return itemDescMapper.selectByPrimaryKey(itemId);
+        //优先查询redis缓存
+        String json = jedisClient.get(ITEM_DESC_PREFIX+itemId);
+        if(StringUtils.isNotBlank(json)) {
+            TbItemDesc itemDesc = JsonUtils.jsonToPojo(json, TbItemDesc.class);
+            System.out.println("get data from Redis!!!");
+            return itemDesc;
+        }
+
+        TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+        System.out.println("get data from Mysql!!!");
+
+        //从数据库查询后，存入redis缓存
+        if(itemDesc != null) {
+            jedisClient.set(ITEM_DESC_PREFIX+itemId, JsonUtils.objectToJson(itemDesc));
+            jedisClient.expire(ITEM_DESC_PREFIX+itemId, ITEM_DESC_CACHE_TIMEOUT);
+        }
+
+		return itemDesc;
 	}
 	
 	//获取商品列表
