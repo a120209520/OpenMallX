@@ -10,13 +10,18 @@ import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemDesc;
 import org.ppl.mall.pojo.TbItemExample;
 import org.ppl.mall.service.ItemService;
+import org.ppl.mall.service.message.ItemAddMessageDispatcher;
 import org.ppl.mall.util.IDUtils;
 import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
+import javax.annotation.Resource;
+import javax.jms.Destination;
 
 /**
  * 商品管理Service
@@ -31,7 +36,9 @@ public class ItemServiceImpl implements ItemService {
 	private TbItemMapper itemMapper;
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
-	
+	@Autowired
+    private ItemAddMessageDispatcher itemAddMessageDispatcher;
+
 	//通过id查询单个商品
 	@Override
 	public TbItem getItemById(long itemId) {
@@ -72,7 +79,9 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setCreated(curTime);
 		itemDesc.setUpdated(curTime);
 		itemDescMapper.insert(itemDesc);
-		
+
+        itemAddMessageDispatcher.sendMsg(itemId);
+
 		return MsgResult.ok();
 	}
 

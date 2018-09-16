@@ -27,7 +27,7 @@ public class SearchItemServiceImpl implements SearchItemService {
 	
 	@Autowired
 	private SolrServer solrServer;
-	
+
 	//导入所有商品
 	@Override
 	public MsgResult importAllItems() {
@@ -54,12 +54,35 @@ public class SearchItemServiceImpl implements SearchItemService {
 		return MsgResult.build(500, "import failed!");
 	}
 
+
+	//添加单个商品
+	@Override
+	public MsgResult importItem(long id) {
+        SearchItem item = itemMapper.getSearchItemById(id);
+        SolrInputDocument document = new SolrInputDocument();
+        document.addField("id", item.getId());
+        document.addField("item_title", item.getTitle());
+        document.addField("item_sell_point", item.getSellPoint());
+        document.addField("item_price", item.getPrice());
+        document.addField("item_image", item.getImage());
+        document.addField("item_category_name", item.getCatName());
+        try {
+            solrServer.add(document);
+            solrServer.commit();
+        } catch (SolrServerException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		return MsgResult.ok();
+	}
+
 	//搜索商品
 	@Override
 	public SearchResult searchItems(String key, int page, int rows) {
 		SolrQuery query = new SolrQuery();
 		query.setQuery(key);
-		if(page <= 0) 
+		if(page <= 0)
 			page = 1;
 		query.setStart((page-1)*rows);
 		query.setRows(rows);
@@ -71,5 +94,5 @@ public class SearchItemServiceImpl implements SearchItemService {
 		SearchResult result = searchDao.search(query);
 		result.setPageCount((int) Math.ceil(result.getTotalCount() * 1.0 / rows));
 		return result;
-	}	
+	}
 }

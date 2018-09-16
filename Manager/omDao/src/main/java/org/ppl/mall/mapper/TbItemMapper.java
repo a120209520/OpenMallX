@@ -31,4 +31,5 @@ public interface TbItemMapper {
     
     /* 自定义接口 */
     List<SearchItem> getSearchItemList();
+    SearchItem getSearchItemById(long id);
 }

@@ -7,9 +7,14 @@
     <file url="file://$PROJECT_DIR$/../Manager/omInterface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Manager/omPojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Manager/omService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Manager/omService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Web/omWeb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Web/omWeb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Web/omWebPortal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Web/omWebPortal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Web/omWebSearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Web/omWebSearch" charset="UTF-8" />
   </component>
 </project>

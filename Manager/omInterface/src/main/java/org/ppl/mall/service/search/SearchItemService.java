@@ -5,5 +5,6 @@ import org.ppl.mall.util.MsgResult;
 
 public interface SearchItemService {
 	MsgResult importAllItems();
-	SearchResult searchItems(String key, int page, int rows);
+    MsgResult importItem(long id);
+    SearchResult searchItems(String key, int page, int rows);
 }

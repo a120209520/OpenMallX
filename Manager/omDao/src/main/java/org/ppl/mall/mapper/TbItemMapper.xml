@@ -318,5 +318,20 @@
    	WHERE
    		i.`status` = 1
   </select>
+  <select id="getSearchItemById" parameterType="long" resultType="org.ppl.mall.model.SearchItem" >
+    SELECT
+    	i.id id,
+    	i.title title,
+    	i.sell_point sellPoint,
+    	i.price price,
+    	i.image image,
+    	ic.name catName
+   	FROM
+   		tb_item i
+   	LEFT JOIN tb_item_cat ic ON i.cid = ic.id
+   	WHERE
+   		i.`status` = 1
+   		AND i.id = #{id}
+  </select>
   
 </mapper>

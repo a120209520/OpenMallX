@@ -20,13 +20,13 @@ import org.springframework.stereotype.Repository;
  * @author Smith
  *
  */
-
 @Repository
 public class SearchDao {
 	
 	@Autowired
 	private SolrServer solrServer;
-	
+
+	//搜索指定条件商品
 	public SearchResult search(SolrQuery query) {
 		SearchResult result = null;
 		try {
@@ -35,7 +35,7 @@ public class SearchDao {
 			long numFound = list.getNumFound();
 			result = new SearchResult();
 			result.setTotalCount(numFound);
-			
+
 			Map<String, Map<String, List<String>>> highlighting = response.getHighlighting();
 			List<SearchItem> resList = new ArrayList<SearchItem>();
 			for (SolrDocument doc : list) {
