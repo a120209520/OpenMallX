@@ -12,6 +12,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  */
 public class MsgResult implements Serializable{
 
+    public static final int SUCCESS = 200;
+    public static final int REQUEST_ERROR = 400;
+    public static final int SERVER_ERROR = 500;
+
     // 定义jackson对象
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
@@ -33,7 +37,7 @@ public class MsgResult implements Serializable{
     }
 
     private MsgResult(Object data) {
-        this.status = 200;
+        this.status = SUCCESS;
         this.msg = "OK";
         this.data = data;
     }

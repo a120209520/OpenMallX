@@ -51,7 +51,7 @@ public class SearchItemServiceImpl implements SearchItemService {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return MsgResult.build(500, "import failed!");
+		return MsgResult.build(MsgResult.SERVER_ERROR, "import failed!");
 	}
 
 

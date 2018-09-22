@@ -12,5 +12,9 @@
     <file url="file://$PROJECT_DIR$/../Web/omWebItem" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Web/omWebPortal" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Web/omWebSearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Web/omWebSso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../omSso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../omSso/omInterfaceSso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../omSso/omServiceSso" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+
+
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- 加载配置文件 -->
+	<context:property-placeholder location="classpath:conf/*.properties" />
+
+	<!-- Bean扫描 -->
+	<context:component-scan base-package="org.ppl.mall" />
+	
+	<!-- 发布dubbo服务 -->
+	<!-- 提供方应用信息，用于计算依赖关系 -->
+	<dubbo:application name="omSso" />
+	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+		<!-- address="192.168.25.154:2181,192.168.25.154:2182,192.168.25.154:2183" /> -->
+		
+	<!-- 用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol name="dubbo" port="20880" />
+	<dubbo:service interface="org.ppl.mall.sso.service.RegisterService" ref="registerServiceImpl" timeout="600000"/>
+	<dubbo:service interface="org.ppl.mall.sso.service.LoginService" ref="loginServiceImpl" timeout="600000"/>
+	<!-- 声明需要暴露的服务接口 -->
+</beans>
+

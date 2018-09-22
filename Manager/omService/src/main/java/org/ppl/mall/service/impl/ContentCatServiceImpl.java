@@ -8,7 +8,6 @@ import org.ppl.mall.mapper.TbContentCategoryMapper;
 import org.ppl.mall.model.TreeNode;
 import org.ppl.mall.pojo.TbContentCategory;
 import org.ppl.mall.pojo.TbContentCategoryExample;
-import org.ppl.mall.pojo.TbContentCategoryExample.Criteria;
 import org.ppl.mall.service.ContentCatService;
 import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,7 @@ public class ContentCatServiceImpl implements ContentCatService {
 	@Override
 	public List<TreeNode> getContentCatList(long parentId) {
 		TbContentCategoryExample example = new TbContentCategoryExample();
-		Criteria criteria = example.createCriteria();
+		TbContentCategoryExample.Criteria criteria = example.createCriteria();
 		criteria.andParentIdEqualTo(parentId);
 		List<TbContentCategory> result = contentCatMapper.selectByExample(example);
 		List<TreeNode> nodeList = new ArrayList<>();
@@ -82,7 +81,7 @@ public class ContentCatServiceImpl implements ContentCatService {
 		if(!parent.getIsParent())
 			return;
 		TbContentCategoryExample example = new TbContentCategoryExample();
-		Criteria criteria = example.createCriteria();
+		TbContentCategoryExample.Criteria criteria = example.createCriteria();
 		criteria.andParentIdEqualTo(id);
 		List<TbContentCategory> list = contentCatMapper.selectByExample(example);
 		for(TbContentCategory c:list) {

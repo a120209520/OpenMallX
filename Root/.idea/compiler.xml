@@ -9,12 +9,15 @@
         <module name="omCommon" />
         <module name="omDao" />
         <module name="omInterface" />
+        <module name="omInterfaceSso" />
         <module name="omPojo" />
         <module name="omService" />
+        <module name="omServiceSso" />
         <module name="omWeb" />
         <module name="omWebItem" />
         <module name="omWebPortal" />
         <module name="omWebSearch" />
+        <module name="omWebSso" />
       </profile>
     </annotationProcessing>
   </component>

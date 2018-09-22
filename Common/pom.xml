@@ -36,6 +36,11 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
 		<!-- quartz: 任务调度框架 -->
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>

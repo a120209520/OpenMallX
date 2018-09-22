@@ -40,6 +40,8 @@
     omWebPortal                localhost:8083/
     omWebSearch                localhost:8084/
     omWebItem                  localhost:8085/
+    omServiceSso               localhost:8086/
+    omWebSso                   localhost:8087/
     dubbo                      :20880
     dubbo-registry(zookeeper)  localhost:2181/
     dubbo-monitor              localhost:8080/
