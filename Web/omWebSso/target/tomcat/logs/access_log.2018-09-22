@@ -1,11 +1,1 @@
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:11 +0800] "GET /page/register HTTP/1.1" 200 8119 http-bio-8087-exec-1 1078
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /page/login HTTP/1.1" 200 10129 http-bio-8087-exec-4 321
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /js/png.js HTTP/1.1" 200 1749 http-bio-8087-exec-5 55
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /css/login.css HTTP/1.1" 200 6937 http-bio-8087-exec-6 48
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /images/06f42c372620f92b40da77a8b23cdf7f.png HTTP/1.1" 200 87441 http-bio-8087-exec-9 65
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /js/cas.login.js HTTP/1.1" 200 1038 http-bio-8087-exec-7 75
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /js/capsLock.js HTTP/1.1" 200 3197 http-bio-8087-exec-8 82
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /images/icon1.jpg HTTP/1.1" 200 639 http-bio-8087-exec-9 24
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /images/loginicon.png HTTP/1.1" 200 1321 http-bio-8087-exec-2 36
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /images/login_bg.jpg HTTP/1.1" 200 6007 http-bio-8087-exec-8 44
-0:0:0:0:0:0:0:1 - - [22/Sep/2018:15:13:17 +0800] "GET /images/icon2.jpg HTTP/1.1" 200 7757 http-bio-8087-exec-3 59
+0:0:0:0:0:0:0:1 - - [22/Sep/2018:16:50:23 +0800] "POST /user/login HTTP/1.1" 200 82 http-bio-8087-exec-1 1327

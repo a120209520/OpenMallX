@@ -53,5 +53,6 @@
 	<dubbo:application name="omWebPortal" />
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
 	<dubbo:reference interface="org.ppl.mall.sso.service.RegisterService" id="registerService" />
+	<dubbo:reference interface="org.ppl.mall.sso.service.LoginService" id="loginService" />
 </beans>
 

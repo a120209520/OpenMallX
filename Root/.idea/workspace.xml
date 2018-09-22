@@ -95,7 +95,7 @@
           <entry key="css" value="5" />
           <entry key="ftl" value="12" />
           <entry key="html" value="3" />
-          <entry key="java" value="95" />
+          <entry key="java" value="96" />
           <entry key="jsp" value="16" />
           <entry key="properties" value="12" />
           <entry key="sql" value="5" />
@@ -114,7 +114,7 @@
           <entry key="Database Element" value="10" />
           <entry key="FTL" value="12" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="95" />
+          <entry key="JAVA" value="96" />
           <entry key="JSP" value="16" />
           <entry key="Properties" value="12" />
           <entry key="Scratch" value="5" />
@@ -127,7 +127,7 @@
           <entry key="dummy" value="10" />
           <entry key="ftl" value="707" />
           <entry key="html" value="11" />
-          <entry key="java" value="4780" />
+          <entry key="java" value="4861" />
           <entry key="jsp" value="20" />
           <entry key="properties" value="152" />
           <entry key="sql" value="9" />
@@ -140,7 +140,7 @@
           <entry key="CSS" value="1" />
           <entry key="FTL" value="707" />
           <entry key="HTML" value="11" />
-          <entry key="JAVA" value="4780" />
+          <entry key="JAVA" value="4861" />
           <entry key="JSP" value="20" />
           <entry key="PLAIN_TEXT" value="70" />
           <entry key="Properties" value="152" />
@@ -171,8 +171,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Web/omWebSso/src/main/java/org/ppl/mall/sso/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="453">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding>
                 <element signature="e#718#719#0" expanded="true" />
                 <element signature="e#748#749#0" expanded="true" />
@@ -1052,7 +1052,7 @@
       <workItem from="1537363302967" duration="875000" />
       <workItem from="1537364441782" duration="7569000" />
       <workItem from="1537577218563" duration="455000" />
-      <workItem from="1537577701339" duration="17721000" />
+      <workItem from="1537577701339" duration="18705000" />
     </task>
     <servers />
   </component>
@@ -1089,7 +1089,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59930000" />
+    <option name="totallyTimeSpent" value="60914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1448,16 +1448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omSso/omServiceSso/src/main/java/org/ppl/mall/sso/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="e#774#792#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../omSso/omServiceSso/src/main/java/org/ppl/mall/sso/service/impl/RegisterServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="587">
@@ -1483,13 +1473,6 @@
             <element signature="e#963#964#0" expanded="true" />
             <element signature="e#1005#1006#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Common/src/main/java/org/ppl/mall/util/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3498">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1524,10 +1507,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../omSso/omServiceSso/src/main/java/org/ppl/mall/sso/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="e#774#792#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Common/src/main/java/org/ppl/mall/util/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../Web/omWebSso/src/main/java/org/ppl/mall/sso/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        <state relative-caret-position="453">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding>
             <element signature="e#718#719#0" expanded="true" />
             <element signature="e#748#749#0" expanded="true" />
