@@ -42,7 +42,8 @@
     omWebItem                  localhost:8085/
     omServiceSso               localhost:8086/
     omWebSso                   localhost:8087/
-    dubbo                      :20880
+    dubbo-omService            :20881
+    dubbo-omServiceSso         :20880
     dubbo-registry(zookeeper)  localhost:2181/
     dubbo-monitor              localhost:8080/
     ngnix                      localhost:80

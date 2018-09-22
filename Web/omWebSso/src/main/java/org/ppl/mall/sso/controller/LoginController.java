@@ -41,4 +41,11 @@ public class LoginController {
         }
         return result;
     }
+
+    //获取用户信息
+    @RequestMapping("/user/token/{token}")
+    @ResponseBody
+    public MsgResult getUserByToken(@PathVariable String token) {
+        return loginService.getUserByToken(token);
+    }
 }
