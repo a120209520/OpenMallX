@@ -43,12 +43,13 @@
     dubbo                      :20880
     dubbo-registry(zookeeper)  localhost:2181/
     dubbo-monitor              localhost:8080/
-    ngnix                      :80
+    ngnix                      localhost:80
     fastdfs                    192.168.25.133:22122/
     redis                      192.168.25.133:6379/
     redis集群                   192.168.25.133:7001~7006
     solr                       192.168.25.133:8080/solr
     activeMQ                   192.168.25.133:8161   (broker端口61616)
+    ngnix-静态资源服务器        localhost:8703/
 
 [tips]
 (1) dubbo 2.6.0 不支持jdk9 

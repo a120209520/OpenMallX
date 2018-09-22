@@ -36,12 +36,7 @@
 	</mvc:annotation-driven> -->
 	<mvc:annotation-driven/>
 
-	<!-- ViewResolver -->
-	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
-	
+
 	<!-- 引用duddo服务 -->
 	<dubbo:application name="omWebItem" />
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
