@@ -6,19 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="omCommon" />
         <module name="omDao" />
         <module name="omInterface" />
+        <module name="omInterfaceCart" />
         <module name="omInterfaceSso" />
         <module name="omPojo" />
         <module name="omService" />
+        <module name="omServiceCart" />
         <module name="omServiceSso" />
         <module name="omWeb" />
+        <module name="omWebCart" />
         <module name="omWebItem" />
         <module name="omWebPortal" />
         <module name="omWebSearch" />
         <module name="omWebSso" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Cart" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -3,8 +3,10 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../Manager/omService" />
+    <file type="web" url="file://$PROJECT_DIR$/../omCart/omServiceCart" />
     <file type="web" url="file://$PROJECT_DIR$/../omSso/omServiceSso" />
     <file type="web" url="file://$PROJECT_DIR$/../Web/omWeb" />
+    <file type="web" url="file://$PROJECT_DIR$/../Web/omWebCart" />
     <file type="web" url="file://$PROJECT_DIR$/../Web/omWebItem" />
     <file type="web" url="file://$PROJECT_DIR$/../Web/omWebPortal" />
     <file type="web" url="file://$PROJECT_DIR$/../Web/omWebSearch" />
@@ -22,6 +24,9 @@
         <option value="$PROJECT_DIR$/../Web/omWebItem/pom.xml" />
         <option value="$PROJECT_DIR$/../omSso/pom.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebSso/pom.xml" />
+        <option value="$PROJECT_DIR$/../Cart/pom.xml" />
+        <option value="$PROJECT_DIR$/../omCart/pom.xml" />
+        <option value="$PROJECT_DIR$/../Web/omWebCart/pom.xml" />
       </list>
     </option>
   </component>
