@@ -103,9 +103,9 @@
           <entry key="ftl" value="13" />
           <entry key="html" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="108" />
-          <entry key="js" value="7" />
-          <entry key="jsp" value="26" />
+          <entry key="java" value="110" />
+          <entry key="js" value="8" />
+          <entry key="jsp" value="28" />
           <entry key="properties" value="16" />
           <entry key="sql" value="5" />
           <entry key="tb_content" value="1" />
@@ -124,9 +124,9 @@
           <entry key="FTL" value="13" />
           <entry key="HTML" value="3" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="108" />
-          <entry key="JSP" value="26" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JAVA" value="110" />
+          <entry key="JSP" value="28" />
+          <entry key="JavaScript" value="8" />
           <entry key="Properties" value="16" />
           <entry key="Scratch" value="5" />
           <entry key="XML" value="170" />
@@ -138,7 +138,7 @@
           <entry key="dummy" value="10" />
           <entry key="ftl" value="707" />
           <entry key="html" value="11" />
-          <entry key="java" value="6304" />
+          <entry key="java" value="6511" />
           <entry key="js" value="23" />
           <entry key="jsp" value="58" />
           <entry key="properties" value="196" />
@@ -152,7 +152,7 @@
           <entry key="CSS" value="1" />
           <entry key="FTL" value="707" />
           <entry key="HTML" value="11" />
-          <entry key="JAVA" value="6304" />
+          <entry key="JAVA" value="6511" />
           <entry key="JSP" value="58" />
           <entry key="JavaScript" value="23" />
           <entry key="PLAIN_TEXT" value="70" />
@@ -169,51 +169,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/java/org/ppl/mall/cart/controller/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+            <state relative-caret-position="365">
+              <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#866#890#1" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Web/omWeb/src/main/java/org/ppl/mall/controller/ItemCatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Web/omWeb/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Web/omWebItem/src/main/java/org/ppl/mall/item/controller/ItemController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Web/omWebSso/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -221,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/WEB-INF/jsp/cart.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-704">
-              <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+            <state relative-caret-position="-968">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -230,8 +193,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/js/cart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="15" column="96" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
+            <state relative-caret-position="110">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -266,10 +229,12 @@
       <find>8082</find>
       <find>请登录</find>
       <find>.action</find>
-      <find>cart.</find>
       <find>ResponseBody</find>
       <find>&lt;url-pattern&gt;</find>
       <find>@ResponseBody</find>
+      <find>cart.</find>
+      <find>/update/num/</find>
+      <find>tQuantity</find>
     </findStrings>
     <replaceStrings>
       <replace>8085</replace>
@@ -334,11 +299,11 @@
         <option value="$PROJECT_DIR$/../Web/omWebCart/src/main/resources/conf/cat.properties" />
         <option value="$PROJECT_DIR$/../Web/omWebSearch/pom.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/WEB-INF/jsp/cart.jsp" />
-        <option value="$PROJECT_DIR$/../Web/omWebCart/src/main/java/org/ppl/mall/cart/controller/CartController.java" />
         <option value="$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/js/cart.js" />
         <option value="$PROJECT_DIR$/../Web/omWebItem/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebSso/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/../Web/omWebCart/src/main/java/org/ppl/mall/cart/controller/CartController.java" />
       </list>
     </option>
   </component>
@@ -393,6 +358,60 @@
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.ppl.mall.cart.controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omWebCart" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="jsp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="omWebSso" type="2674bda8:ScopeViewTreeModel$GroupNode" />
@@ -1045,7 +1064,7 @@
       <workItem from="1537620632969" duration="24000" />
       <workItem from="1537663491944" duration="1458000" />
       <workItem from="1537673869159" duration="2014000" />
-      <workItem from="1537755363102" duration="8617000" />
+      <workItem from="1537755363102" duration="11887000" />
     </task>
     <servers />
   </component>
@@ -1082,7 +1101,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79962000" />
+    <option name="totallyTimeSpent" value="83232000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1100,11 +1119,11 @@
       <window_info id="Favorites" order="0" side_tool="true" weight="0.32983872" />
       <window_info id="Designer" order="1" />
       <window_info id="Learn" order="2" weight="0.32983872" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49923897" visible="true" weight="0.19354838" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49923897" weight="0.2467742" />
       <window_info id="Web" order="4" side_tool="true" weight="0.32983872" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822084" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983871" visible="true" weight="0.43226787" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983871" weight="0.43226787" />
       <window_info anchor="bottom" id="TODO" order="3" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -1130,11 +1149,11 @@
       <window_info id="Favorites" order="0" side_tool="true" weight="0.32983872" />
       <window_info id="Designer" order="1" />
       <window_info id="Learn" order="2" weight="0.32983872" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49923897" visible="true" weight="0.19354838" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49923897" visible="true" weight="0.2467742" />
       <window_info id="Web" order="4" side_tool="true" weight="0.32983872" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822084" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983871" weight="0.43226787" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983871" visible="true" weight="0.43226787" />
       <window_info anchor="bottom" id="TODO" order="3" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -1168,13 +1187,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Manager/omService/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Web/omWebPortal/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-711" />
@@ -1391,11 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/WEB-INF/jsp/cartSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1414,31 +1421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/WEB-INF/jsp/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-704">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/js/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="96" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/java/org/ppl/mall/cart/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#866#890#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1474,6 +1456,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Manager/omPojo/src/main/java/org/ppl/mall/pojo/TbItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/WEB-INF/jsp/cartSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/webapp/WEB-INF/jsp/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/java/org/ppl/mall/cart/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

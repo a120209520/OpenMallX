@@ -87,6 +87,23 @@ public class CartController {
         return MsgResult.ok();
     }
 
+    //商品删除
+    @RequestMapping("/delete/{itemId}")
+    public String deleteCartItem(@PathVariable Long itemId,
+                                 HttpServletRequest request,
+                                 HttpServletResponse response) {
+        List<TbItem> list = getCartListFromCookie(request);
+        for (TbItem item:list) {
+            if (item.getId() == itemId.longValue()) {
+                list.remove(item);
+                break;
+            }
+        }
+        CookieUtils.setCookie(request, response, "cart",
+                JsonUtils.objectToJson(list), COOKIE_CART_TIMEOUT, true);
+        return "redirect:/cart/cart.html";
+    }
+
     //从Cookie中获取购物车列表
     private List<TbItem> getCartListFromCookie(HttpServletRequest request) {
         String json = CookieUtils.getCookieValue(request, "cart", true);
