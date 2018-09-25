@@ -9,14 +9,17 @@
         <module name="omDao" />
         <module name="omInterface" />
         <module name="omInterfaceCart" />
+        <module name="omInterfaceOrder" />
         <module name="omInterfaceSso" />
         <module name="omPojo" />
         <module name="omService" />
         <module name="omServiceCart" />
+        <module name="omServiceOrder" />
         <module name="omServiceSso" />
         <module name="omWeb" />
         <module name="omWebCart" />
         <module name="omWebItem" />
+        <module name="omWebOrder" />
         <module name="omWebPortal" />
         <module name="omWebSearch" />
         <module name="omWebSso" />

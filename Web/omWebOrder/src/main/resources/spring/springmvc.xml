@@ -14,7 +14,7 @@
 	
 
 	<!-- @Controller扫描 -->
-	<context:component-scan base-package="org.ppl.mall.cart.controller" />
+	<context:component-scan base-package="org.ppl.mall.order.controller" />
 
 	<!-- 注解方式的HandlerMapping和HandlerAdapter -->
 	<!-- 这里拦截会影响ajax数据读取 -->
@@ -45,18 +45,10 @@
 		<property name="defaultEncoding" value="UTF-8" />
 	</bean>
 
-	<!--登陆拦截器-->
-	<mvc:interceptors>
-		<mvc:interceptor>
-			<mvc:mapping path="/**"/>
-			<bean class="org.ppl.mall.cart.interceptor.LoginInterceptor"/>
-		</mvc:interceptor>
-	</mvc:interceptors>
 	
 	<!-- 引用duddo服务 -->
 	<dubbo:application name="omWebPortal" />
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
-	<dubbo:reference interface="org.ppl.mall.service.ItemService" id="itemService" />
-    <dubbo:reference interface="org.ppl.mall.sso.service.LoginService" id="loginService" />
+
 </beans>
 

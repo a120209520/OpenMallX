@@ -6,7 +6,7 @@
         <artifactId>omRoot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>omWebCart</artifactId>
+    <artifactId>omWebOrder</artifactId>
     <packaging>war</packaging>
     <properties>
         <webVersion>2.5</webVersion>
@@ -14,17 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>org.ppl.mall</groupId>
-            <artifactId>omInterface</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.ppl.mall</groupId>
-            <artifactId>omInterfaceCart</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.ppl.mall</groupId>
-            <artifactId>omInterfaceSso</artifactId>
+            <artifactId>omInterfaceOrder</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!-- jsp&servlet -->
@@ -120,7 +110,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <path>/</path>
-                    <port>8089</port>
+                    <port>8092</port>
                 </configuration>
             </plugin>
         </plugins>

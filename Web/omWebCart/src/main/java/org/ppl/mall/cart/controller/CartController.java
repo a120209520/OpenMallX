@@ -2,6 +2,7 @@ package org.ppl.mall.cart.controller;
 
 import org.apache.commons.lang3.StringUtils;
 import org.ppl.mall.pojo.TbItem;
+import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.service.ItemService;
 import org.ppl.mall.util.CookieUtils;
 import org.ppl.mall.util.JsonUtils;
@@ -31,12 +32,33 @@ public class CartController {
     @Value("${COOKIE_CART_TIMEOUT}")
     private int COOKIE_CART_TIMEOUT;
 
-    //添加商品(游客状态)
+    //添加商品
     @RequestMapping("/add/{itemId}")
-    public String addCartToCookie(@PathVariable Long itemId,
+    public String addCart(@PathVariable Long itemId,
                           @RequestParam(defaultValue="1") Integer num,
                           HttpServletRequest request,
                           HttpServletResponse response) {
+        TbUser user = (TbUser) request.getAttribute("user");
+        if (user != null) {
+            //已登陆
+            return addCartWithLogin(itemId, num, user, request, response);
+        } else {
+            //未登陆
+            return addCartWithoutLogin(itemId, num, request, response);
+        }
+    }
+
+    //添加商品——登陆状态
+    private String addCartWithLogin(Long itemId, Integer num, TbUser user,
+                                    HttpServletRequest request,
+                                    HttpServletResponse response) {
+        return "cartSuccess";
+    }
+
+    //添加商品——非登录状态
+    private String addCartWithoutLogin(Long itemId, Integer num,
+                                       HttpServletRequest request,
+                                       HttpServletResponse response) {
         //001.从Cookie中获取购物车商品
         List<TbItem> list = getCartListFromCookie(request);
         //002.判断商品是否已经存在
@@ -59,6 +81,7 @@ public class CartController {
                 JsonUtils.objectToJson(list), COOKIE_CART_TIMEOUT, true);
         return "cartSuccess";
     }
+
 
     //购物车显示
     @RequestMapping("/cart")

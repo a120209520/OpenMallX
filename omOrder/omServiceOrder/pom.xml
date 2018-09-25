@@ -3,44 +3,21 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.ppl.mall</groupId>
-        <artifactId>omRoot</artifactId>
+        <artifactId>omOrder</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>omWebCart</artifactId>
+    <artifactId>omServiceOrder</artifactId>
     <packaging>war</packaging>
-    <properties>
-        <webVersion>2.5</webVersion>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.ppl.mall</groupId>
-            <artifactId>omInterface</artifactId>
+            <artifactId>omInterfaceOrder</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.ppl.mall</groupId>
-            <artifactId>omInterfaceCart</artifactId>
+            <artifactId>omDao</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.ppl.mall</groupId>
-            <artifactId>omInterfaceSso</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <!-- jsp&servlet -->
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jsp-api</artifactId>
-            <scope>provided</scope>
         </dependency>
         <!-- spring -->
         <dependency>
@@ -71,17 +48,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
         </dependency>
-        <!-- 文件上传 -->
-        <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-        </dependency>
-        <!-- pagehelper -->
-        <!-- web通过反序列化获取的实际类型是Page<E>，是ArrayList的子类，需要添加到Web层 -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-        </dependency>
         <!-- dubbo -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -106,10 +72,10 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
-        <!-- freemarker -->
+        <!-- solr -->
         <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-solrj</artifactId>
         </dependency>
     </dependencies>
     <build>
@@ -120,7 +86,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <path>/</path>
-                    <port>8089</port>
+                    <port>8091</port>
                 </configuration>
             </plugin>
         </plugins>
