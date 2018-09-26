@@ -82,7 +82,7 @@
     <session id="1766108771">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.16" value="1" />
@@ -119,7 +119,7 @@
           <entry key="tb_item" value="4" />
           <entry key="tb_order_shipping" value="1" />
           <entry key="tb_user" value="4" />
-          <entry key="xml" value="217" />
+          <entry key="xml" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -135,7 +135,7 @@
           <entry key="JavaScript" value="8" />
           <entry key="Properties" value="16" />
           <entry key="Scratch" value="5" />
-          <entry key="XML" value="217" />
+          <entry key="XML" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -150,7 +150,7 @@
           <entry key="properties" value="196" />
           <entry key="sql" value="9" />
           <entry key="txt" value="60" />
-          <entry key="xml" value="898" />
+          <entry key="xml" value="914" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -165,7 +165,7 @@
           <entry key="Properties" value="196" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="9" />
-          <entry key="XML" value="897" />
+          <entry key="XML" value="913" />
         </counts>
       </usages-collector>
     </session>
@@ -175,42 +175,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Web/omWebSearch/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-659" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Web/omWebSearch/src/main/java/org/ppl/mall/search/controller/SearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-              <folding>
-                <element signature="e#672#688#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/src/main/java/org/ppl/mall/order/controller/OrderController.java">
+        <entry file="file://$PROJECT_DIR$/../Manager/omService/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2023">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="351">
+              <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -270,7 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../omSso/omInterfaceSso/src/main/java/org/ppl/mall/sso/service/impl/RegisterService.java" />
         <option value="$PROJECT_DIR$/../omSso/omServiceSso/pom.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebSso/src/main/webapp/WEB-INF/jsp/register.jsp" />
         <option value="$PROJECT_DIR$/../omSso/omInterfaceSso/src/main/java/org/ppl/mall/sso/service/RegisterService.java" />
@@ -321,6 +289,7 @@
         <option value="$PROJECT_DIR$/../Web/omWebOrder/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebCart/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/../Web/omWebOrder/src/main/java/org/ppl/mall/order/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/../Manager/omService/pom.xml" />
       </list>
     </option>
   </component>
@@ -405,48 +374,12 @@
           <expand>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omWebOrder" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omManager and modules" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omWebOrder" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omWebOrder" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omWebOrder" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omWebOrder" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="org.ppl.mall.order.controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omWebOrder" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omWebOrder" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="omManager and modules" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -495,7 +428,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.omWebItem-run">
+  <component name="RunManager" selected="Maven.omWebOrder-run">
     <configuration name="ActiveMqSpringTest.testItemAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="omService" />
       <option name="PACKAGE_NAME" value="org.ppl.mall.mq" />
@@ -1088,7 +1021,7 @@
       <workItem from="1537673869159" duration="2014000" />
       <workItem from="1537755363102" duration="15033000" />
       <workItem from="1537884544601" duration="3491000" />
-      <workItem from="1537962631084" duration="5182000" />
+      <workItem from="1537962631084" duration="7104000" />
     </task>
     <servers />
   </component>
@@ -1125,7 +1058,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95051000" />
+    <option name="totallyTimeSpent" value="96973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1143,11 +1076,11 @@
       <window_info id="Favorites" order="0" side_tool="true" weight="0.32983872" />
       <window_info id="Designer" order="1" />
       <window_info id="Learn" order="2" weight="0.32983872" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49923897" visible="true" weight="0.2685484" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49923897" visible="true" weight="0.2685484" />
       <window_info id="Web" order="4" side_tool="true" weight="0.32983872" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32724506" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983871" visible="true" weight="0.43226787" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983871" weight="0.43226787" />
       <window_info anchor="bottom" id="TODO" order="3" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -1211,13 +1144,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Web/omWebItem/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://f3ecb157-796e-4e5b-9d7e-b89b45907d3a/schema/openmallx/table/tb_item">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1493,13 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="90" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Web/omWebCart/src/main/java/org/ppl/mall/cart/interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1525,34 +1444,48 @@
     <entry file="file://$PROJECT_DIR$/../Web/omWebSearch/src/main/java/org/ppl/mall/search/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-39">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="e#672#688#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/src/main/java/org/ppl/mall/order/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2023">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="61">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="418">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/src/main/java/org/ppl/mall/order/controller/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="51" column="90" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Web/omWebOrder/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Manager/omService/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
         </state>
       </provider>
     </entry>
