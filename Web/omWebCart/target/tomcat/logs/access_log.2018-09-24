@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [24/Sep/2018:16:50:23 +0800] "GET /cart/cart.html HTTP/1.1" 200 20022 http-bio-8089-exec-1 1479
-0:0:0:0:0:0:0:1 - - [24/Sep/2018:16:50:28 +0800] "GET /cart/add/153744835312342.html?num=1 HTTP/1.1" 200 18544 http-bio-8089-exec-3 345
-0:0:0:0:0:0:0:1 - - [24/Sep/2018:16:50:31 +0800] "GET /cart/cart.html HTTP/1.1" 200 22010 http-bio-8089-exec-4 9
-0:0:0:0:0:0:0:1 - - [24/Sep/2018:16:50:33 +0800] "GET /cart/delete/153744835312342.html HTTP/1.1" 302 - http-bio-8089-exec-5 8
-0:0:0:0:0:0:0:1 - - [24/Sep/2018:16:50:33 +0800] "GET /cart/cart.html HTTP/1.1" 200 20022 http-bio-8089-exec-6 5

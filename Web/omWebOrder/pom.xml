@@ -14,6 +14,11 @@
     <dependencies>
         <dependency>
             <groupId>org.ppl.mall</groupId>
+            <artifactId>omInterfaceCart</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ppl.mall</groupId>
             <artifactId>omInterfaceOrder</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

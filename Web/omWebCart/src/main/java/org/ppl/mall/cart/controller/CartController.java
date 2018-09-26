@@ -1,6 +1,7 @@
 package org.ppl.mall.cart.controller;
 
 import org.apache.commons.lang3.StringUtils;
+import org.ppl.mall.cart.service.CartService;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.service.ItemService;
@@ -29,6 +30,8 @@ public class CartController {
 
     @Autowired
     private ItemService itemService;
+    @Autowired
+    private CartService cartService;
     @Value("${COOKIE_CART_TIMEOUT}")
     private int COOKIE_CART_TIMEOUT;
 
@@ -130,10 +133,6 @@ public class CartController {
     //从Cookie中获取购物车列表
     private List<TbItem> getCartListFromCookie(HttpServletRequest request) {
         String json = CookieUtils.getCookieValue(request, "cart", true);
-        if (StringUtils.isBlank(json)) {
-            return new ArrayList<>();
-        }
-        List<TbItem> list = JsonUtils.jsonToList(json, TbItem.class);
-        return list;
+        return cartService.getCartListFromCookie(json);
     }
 }
