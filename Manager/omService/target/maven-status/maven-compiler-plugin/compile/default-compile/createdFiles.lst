@@ -1,9 +1,0 @@
-org\ppl\mall\service\impl\ItemCatServiceImpl.class
-org\ppl\mall\service\message\ItemAddMessageDispatcher$1.class
-org\ppl\mall\service\impl\ContentServiceImpl.class
-org\ppl\mall\service\impl\ItemServiceImpl.class
-org\ppl\mall\service\impl\ContentCatServiceImpl.class
-org\ppl\mall\service\message\ItemAddMessageListener.class
-org\ppl\mall\service\search\impl\SearchItemServiceImpl.class
-org\ppl\mall\service\message\ItemAddMessageDispatcher.class
-org\ppl\mall\service\message\DefaultMessageListener.class
