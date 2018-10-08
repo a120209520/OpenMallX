@@ -12,6 +12,7 @@
     <ignored path="$PROJECT_DIR$/../omManager/omPojo/target/" />
     <ignored path="$PROJECT_DIR$/../omPojo/target/" />
     <ignored path="$PROJECT_DIR$/../omDao/target/" />
+    <ignored path="$PROJECT_DIR$/../omInterface/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,48 +31,75 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1534" />
-          <entry key="xml" value="72" />
+          <entry key="java" value="1629" />
+          <entry key="xml" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1534" />
-          <entry key="XML" value="72" />
+          <entry key="JAVA" value="1629" />
+          <entry key="XML" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="20" />
-          <entry key="xml" value="8" />
+          <entry key="class" value="2" />
+          <entry key="java" value="30" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="20" />
-          <entry key="XML" value="8" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="30" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../omDao/src/main/java/org/ppl/mall/dao/SearchDao.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ContentCatService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+            <state relative-caret-position="132">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../omCommon/src/main/java/org/ppl/mall/Template.java">
+        <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ContentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="55" />
+            <state relative-caret-position="88">
+              <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/search/SearchItemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemCatService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -108,6 +136,12 @@
         <option value="$PROJECT_DIR$/../omPojo/pom.xml" />
         <option value="$PROJECT_DIR$/../omDao/pom.xml" />
         <option value="$PROJECT_DIR$/../omDao/src/main/java/org/ppl/mall/dao/SearchDao.java" />
+        <option value="$PROJECT_DIR$/../omInterface/pom.xml" />
+        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemCatService.java" />
+        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ContentCatService.java" />
+        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ContentService.java" />
+        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/search/SearchItemService.java" />
       </list>
     </option>
   </component>
@@ -168,29 +202,51 @@
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omDao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omInterface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omInterface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omDao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omDao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omInterface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="omDao" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omInterface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="org.ppl.mall.dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omInterface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.ppl.mall.service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omInterface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.ppl.mall.service.search" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omInterface" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="omManager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -217,7 +273,7 @@
     <property name="SearchEverywhereHistoryKey" value="te,&#9;PSI&#9;JAVA://org.ppl.mall.Template&#10;templat&#9;FILE&#9;file://G:/OneDrive/Study/Java/Project/OpenMallX-Pro/omCommon/src/main/java/org/ppl/mall/Template.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../omDao/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../omInterface/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -245,12 +301,12 @@
       <option name="presentableId" value="Default" />
       <updated>1539004250231</updated>
       <workItem from="1539004252514" duration="3252000" />
-      <workItem from="1539037554031" duration="4912000" />
+      <workItem from="1539037554031" duration="5524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8164000" />
+    <option name="totallyTimeSpent" value="8776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="87" y="-7" width="1296" height="788" extended-state="6" />
@@ -531,45 +587,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../omCommon/src/main/java/org/ppl/mall/Template.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/4.10.3/solr-solrj-4.10.3.jar!/org/apache/solr/common/SolrDocument.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="270" column="18" selection-start-line="270" selection-start-column="18" selection-end-line="270" selection-end-column="18" />
+          <folding>
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8113#8114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omDao/src/main/java/org/ppl/mall/dao/SearchDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../omManager/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="395">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../omPojo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="21" selection-start-line="13" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="308">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../omCommon/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
+        <state relative-caret-position="154">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../omDao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+        <state relative-caret-position="43">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omCommon/src/main/java/org/ppl/mall/Template.java">
+    <entry file="file://$PROJECT_DIR$/../omInterface/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="55" />
+        <state relative-caret-position="374">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omDao/src/main/java/org/ppl/mall/dao/SearchDao.java">
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemCatService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+        <state relative-caret-position="110">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ContentCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ContentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/search/SearchItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

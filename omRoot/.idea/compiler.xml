@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="omCommon" />
         <module name="omDao" />
+        <module name="omInterface" />
         <module name="omPojo" />
       </profile>
     </annotationProcessing>

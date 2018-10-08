@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/../omManager/pom.xml" />
         <option value="$PROJECT_DIR$/../omPojo/pom.xml" />
         <option value="$PROJECT_DIR$/../omDao/pom.xml" />
+        <option value="$PROJECT_DIR$/../omInterface/pom.xml" />
       </list>
     </option>
   </component>

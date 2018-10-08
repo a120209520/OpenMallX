@@ -5,6 +5,10 @@ import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemDesc;
 import org.ppl.mall.util.MsgResult;
 
+/**
+ * 商品Service接口
+ * @author PPL
+ */
 public interface ItemService {
 	TbItem getItemById(long itemId);
 	TbItemDesc getItemDescById(long itemId);
