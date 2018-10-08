@@ -3,10 +3,18 @@ package org.ppl.mall.jedis;
 
 import redis.clients.jedis.JedisCluster;
 
+/**
+ * Redis集群Client
+ * @author PPL
+ */
 public class JedisClientCluster implements JedisClient {
-	
+
+    /*********************Field**********************/
+    /*-------------------field-----------------------*/
 	private JedisCluster jedisCluster;
 
+    /*********************Method**********************/
+    /*-----------------public method-----------------*/
 	@Override
 	public String set(String key, String value) {
 		return jedisCluster.set(key, value);
@@ -51,5 +59,4 @@ public class JedisClientCluster implements JedisClient {
 	public Long hdel(String key, String... field) {
 		return jedisCluster.hdel(key, field);
 	}
-
 }

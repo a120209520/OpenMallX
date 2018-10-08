@@ -4,12 +4,18 @@ package org.ppl.mall.jedis;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
+/**
+ * Redis单机Client
+ * @author PPL
+ */
 public class JedisClientPool implements JedisClient {
-	
+
+    /*********************Field**********************/
+    /*-------------------field-----------------------*/
 	private JedisPool jedisPool;
 
-	
-	
+    /*********************Method**********************/
+    /*-----------------public method-----------------*/
 	@Override
 	public String set(String key, String value) {
 		Jedis jedis = jedisPool.getResource();
