@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Web层通用结果类
- * @author Smith
+ * @author PPL
  */
 public class MsgResult implements Serializable{
 
@@ -40,10 +40,10 @@ public class MsgResult implements Serializable{
     /*--------------public static method-------------*/
     /**
      * 创建对象
-     * @param status
-     * @param msg
-     * @param data
-     * @return
+     * @param status 状态
+     * @param msg 消息
+     * @param data 数据
+     * @return MsgResult对象
      */
     public static MsgResult build(Integer status, String msg, Object data) {
         return new MsgResult(status, msg, data);
@@ -51,9 +51,9 @@ public class MsgResult implements Serializable{
 
     /**
      * 创建对象
-     * @param status
-     * @param msg
-     * @return
+     * @param status 状态
+     * @param msg 消息
+     * @return MsgResult对象
      */
     public static MsgResult build(Integer status, String msg) {
         return build(status, msg, null);
@@ -61,8 +61,8 @@ public class MsgResult implements Serializable{
 
     /**
      * 创建SUCCESS对象
-     * @param data
-     * @return
+     * @param data 数据
+     * @return MsgResult对象
      */
     public static MsgResult ok(Object data) {
         return build(SUCCESS, "OK", data);
@@ -70,18 +70,18 @@ public class MsgResult implements Serializable{
 
     /**
      * 创建SUCCESS对象
-     * @return
+     * @return MsgResult对象
      */
     public static MsgResult ok() {
         return build(SUCCESS, "OK", null);
     }
 
     /**
-     * 将json结果集转化为MsgResult对象
+     * json ---> MsgResult(pojo)
      *
-     * @param jsonData json数据
+     * @param jsonData json
      * @param cla MsgResult中的object类型
-     * @return
+     * @return MsgResult对象
      */
     public static MsgResult formatToPojo(String jsonData, Class<?> cla) {
         try {
@@ -103,10 +103,10 @@ public class MsgResult implements Serializable{
     }
 
     /**
-     * 没有object对象的转化
+     * json ---> MsgResult(raw)
      *
-     * @param json
-     * @return
+     * @param json json
+     * @return MsgResult对象
      */
     public static MsgResult format(String json) {
         try {
@@ -118,11 +118,11 @@ public class MsgResult implements Serializable{
     }
 
     /**
-     * Object是集合转化
+     * json ---> MsgResult(List)
      *
-     * @param jsonData json数据
+     * @param jsonData json
      * @param cla 集合中的类型
-     * @return
+     * @return MsgResult对象
      */
     public static MsgResult formatToList(String jsonData, Class<?> cla) {
         try {

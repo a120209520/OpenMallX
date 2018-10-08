@@ -4,23 +4,29 @@ import java.util.Random;
 
 /**
  * ID生成器
- * @author Smith
+ * @author PPL
  */
 public class IDUtils {
+
+	/*********************Method**********************/
+    /*--------------public static method-------------*/
+
+    /**
+     * 生成图片名称ID
+     * 长度: 3位, 不足补0
+     * @return 图片名称ID的String
+     */
 	public static String genImageName() {
-		long millis = System.currentTimeMillis();
-		Random random = new Random();
-		int end3 = random.nextInt(999);
-		String str = millis + String.format("%03d", end3);
-		return str;
+		return System.currentTimeMillis() + String.format("%03d", new Random().nextInt(999));
 	}
 
+    /**
+     * 生成商品ID
+     * 长度: 2位, 不足补0
+     * @return 商品ID
+     */
 	public static long genItemId() {
-		long millis = System.currentTimeMillis();
-		Random random = new Random();
-		int end2 = random.nextInt(99);
-		String str = millis + String.format("%02d", end2);
-		long id = new Long(str);
-		return id;
+		String str = System.currentTimeMillis() + String.format("%02d", new Random().nextInt(99));
+		return Long.parseLong(str);
 	}
 }

@@ -1,26 +1,29 @@
 package org.ppl.mall.util;
 
-import java.util.List;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.util.List;
+
 /**
- * Json串和对象转换
+ * Json和对象转换
+ * @author PPL
  */
 public class JsonUtils {
 
-    // 定义jackson对象
+    /*********************Field**********************/
+    /*----------------static field-------------------*/
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
+
+    /*********************Method**********************/
+    /*--------------public static method-------------*/
+
     /**
-     * 将对象转换成json字符串。
-     * <p>Title: pojoToJson</p>
-     * <p>Description: </p>
-     * @param data
-     * @return
+     * object ---> json
+     * @param data object
+     * @return json
      */
     public static String objectToJson(Object data) {
     	try {
@@ -33,15 +36,14 @@ public class JsonUtils {
     }
     
     /**
-     * 将json结果集转化为对象
-     * 
-     * @param jsonData json数据
-     * @param clazz 对象中的object类型
-     * @return
+     * json ---> pojo
+     * @param json json
+     * @param beanType pojo类型
+     * @return pojo
      */
-    public static <T> T jsonToPojo(String jsonData, Class<T> beanType) {
+    public static <T> T jsonToPojo(String json, Class<T> beanType) {
         try {
-            T t = MAPPER.readValue(jsonData, beanType);
+            T t = MAPPER.readValue(json, beanType);
             return t;
         } catch (Exception e) {
         	e.printStackTrace();
@@ -50,23 +52,19 @@ public class JsonUtils {
     }
     
     /**
-     * 将json数据转换成pojo对象list
-     * <p>Title: jsonToList</p>
-     * <p>Description: </p>
-     * @param jsonData
-     * @param beanType
-     * @return
+     * json ---> List
+     * @param json json
+     * @param beanType List中pojo类型
+     * @return List<Pojo>
      */
-    public static <T>List<T> jsonToList(String jsonData, Class<T> beanType) {
+    public static <T>List<T> jsonToList(String json, Class<T> beanType) {
     	JavaType javaType = MAPPER.getTypeFactory().constructParametricType(List.class, beanType);
     	try {
-    		List<T> list = MAPPER.readValue(jsonData, javaType);
+    		List<T> list = MAPPER.readValue(json, javaType);
     		return list;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-    	
     	return null;
     }
-    
 }

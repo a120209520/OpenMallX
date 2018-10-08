@@ -2,7 +2,7 @@ package org.ppl.mall;
 
 /**
  * class模板
- * @author Smith
+ * @author PPL
  */
 public class Template {
     /*********************Field**********************/
@@ -18,7 +18,7 @@ public class Template {
     /*--------------public static method-------------*/
     /**
      * 创建对象
-     * @return
+     * @return demo
      */
     public static Template create() {
         return new Template();
@@ -29,7 +29,7 @@ public class Template {
 
     /**
      * 获取状态
-     * @return
+     * @return demo
      */
     public Integer getStatus() {
         return status;
