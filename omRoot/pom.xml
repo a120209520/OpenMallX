@@ -41,9 +41,11 @@
         <solrj.version>4.10.3</solrj.version>
         <dubbo.version>2.5.3</dubbo.version>
         <zookeeper.version>3.4.7</zookeeper.version>
+        <activemq.version>5.11.2</activemq.version>
         <zkclient.version>0.1</zkclient.version>
         <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.2</quartz.version>
+        <fastdfs.version>1.25</fastdfs.version>
     </properties>
 
     <dependencyManagement>
@@ -226,6 +228,12 @@
                 <groupId>org.freemarker</groupId>
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
+            </dependency>
+            <!-- fastdfs -->
+            <dependency>
+                <groupId>fastdfs_client</groupId>
+                <artifactId>fastdfs_client</artifactId>
+                <version>${fastdfs.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -21,7 +21,8 @@
         </dependency>
     </dependencies>
     <modules>
-        <module>omService</module>
+        <module>omService-Manager</module>
+        <module>omWeb-Manager</module>
     </modules>
 
 </project>

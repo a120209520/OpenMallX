@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/../omInterface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omManager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omManager/omPojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../omManager/omService-Manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../omManager/omWeb-Manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omPojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
   </component>

@@ -10,7 +10,13 @@
         <module name="omDao" />
         <module name="omInterface" />
         <module name="omPojo" />
+        <module name="omService-Manager" />
+        <module name="omWeb-Manager" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="omServiceManager" target="1.8" />
+      <module name="omWebManager" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
