@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="omCommon" />
-        <module name="omDao" />
-        <module name="omInterface" />
-        <module name="omPojo" />
-        <module name="omService-Manager" />
-        <module name="omWeb-Manager" />
+        <module name="Base.omCommon" />
+        <module name="Base.omDao" />
+        <module name="Base.omInterface" />
+        <module name="Base.omPojo" />
+        <module name="Manager.omService-Manager" />
+        <module name="Manager.omWeb-Manager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
