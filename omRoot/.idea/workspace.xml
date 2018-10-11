@@ -107,62 +107,62 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="42" />
-          <entry key="java" value="4197" />
+          <entry key="java" value="4298" />
           <entry key="properties" value="113" />
           <entry key="txt" value="18" />
-          <entry key="xml" value="300" />
+          <entry key="xml" value="336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4197" />
+          <entry key="JAVA" value="4298" />
           <entry key="PLAIN_TEXT" value="60" />
           <entry key="Properties" value="113" />
-          <entry key="XML" value="300" />
+          <entry key="XML" value="336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
+          <entry key="class" value="4" />
           <entry key="gitignore" value="1" />
           <entry key="iml" value="4" />
-          <entry key="java" value="83" />
+          <entry key="java" value="106" />
           <entry key="properties" value="8" />
           <entry key="sql" value="1" />
           <entry key="tb_item" value="1" />
-          <entry key="xml" value="66" />
+          <entry key="xml" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
+          <entry key="CLASS" value="4" />
           <entry key="Database Element" value="1" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="106" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="8" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="66" />
+          <entry key="XML" value="81" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-service.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/resources/spring/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            <state relative-caret-position="345">
+              <caret line="58" column="104" lean-forward="true" selection-start-line="58" selection-start-column="104" selection-end-line="58" selection-end-column="104" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/DubboConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="233">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,13 +171,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/RootConfig.java">
+        <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/search/impl/SearchItemServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="66">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -226,25 +223,17 @@
         <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ContentService.java" />
         <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/search/SearchItemService.java" />
         <option value="$PROJECT_DIR$/../omManager/pom.xml" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemCatServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ContentCatServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ContentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../omCommon/pom.xml" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/pom.xml" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/DefaultMessageListener.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMessageDispatcher.java" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/search/impl/SearchItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/test/java/org/ppl/mall/pagehelper/PageHelperTest.java" />
         <option value="$PROJECT_DIR$/../omManager/omWeb-Manager/pom.xml" />
-        <option value="$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/../omManager/omWeb-Manager/src/test/java/org/ppl/mall/test/FastDfsTest.java" />
         <option value="$PROJECT_DIR$/../omDao/pom.xml" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/conf/db.properties" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/conf/redis.properties" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/InitConfig.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/RedisConfig.java" />
@@ -253,8 +242,16 @@
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/RootConfig.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-trans.xml" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/DubboConfig.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemCatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ContentCatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/search/impl/SearchItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/DubboConfig.java" />
       </list>
     </option>
   </component>
@@ -274,6 +271,15 @@
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="omRoot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="omRoot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="omService-Manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -385,6 +391,24 @@
               <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.ppl.mall.service.message" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.ppl.mall.service.search.impl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -431,6 +455,41 @@
               <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="spring" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -468,8 +527,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="project.structure.side.proportion" value="0.242741" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -587,7 +646,7 @@
       <option name="presentableId" value="Default" />
       <updated>1539004250231</updated>
       <workItem from="1539004252514" duration="3252000" />
-      <workItem from="1539037554031" duration="23693000" />
+      <workItem from="1539037554031" duration="28542000" />
     </task>
     <servers />
   </component>
@@ -603,7 +662,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26945000" />
+    <option name="totallyTimeSpent" value="31794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="87" y="-7" width="1296" height="788" extended-state="6" />
@@ -611,7 +670,7 @@
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49923897" weight="0.2830645" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49923897" visible="true" weight="0.2830645" />
       <window_info id="Learn" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="0" />
@@ -686,121 +745,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/search/impl/SearchItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="101" column="29" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/test/java/org/ppl/mall/jedis/JedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.4.RELEASE/spring-beans-4.2.4.RELEASE-sources.jar!/org/springframework/beans/factory/BeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/test/java/org/ppl/mall/pagehelper/PageHelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/omWebManager.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" lean-forward="true" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/omWeb-Manager.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/controller/ContentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/controller/ContentCatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omCommon/src/main/java/org/ppl/mall/util/FastDFSClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/test/java/org/ppl/mall/test/FastDfsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../omInterface/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -873,13 +817,6 @@
             <element signature="e#809#827#0" expanded="true" />
             <element signature="e#872#888#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -975,18 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/SolrConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.4.RELEASE/spring-context-4.2.4.RELEASE-sources.jar!/org/springframework/context/annotation/Import.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -994,29 +919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-mq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.3/dubbo-2.5.3-sources.jar!/com/alibaba/dubbo/config/ServiceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="707" column="23" selection-start-line="707" selection-start-column="22" selection-end-line="707" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1031,6 +937,141 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/context/ContextLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="296" column="33" selection-start-line="296" selection-start-column="33" selection-end-line="296" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/context/ContextLoaderListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="e#5108#5109#0" expanded="true" />
+            <element signature="e#5167#5168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.7/dubbo-2.5.7.jar!/com/alibaba/dubbo/config/spring/context/annotation/DubboClassPathBeanDefinitionScanner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.7/dubbo-2.5.7-sources.jar!/com/alibaba/dubbo/config/annotation/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.7/dubbo-2.5.7-sources.jar!/com/alibaba/dubbo/config/spring/context/annotation/DubboClassPathBeanDefinitionScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.9/dubbo-2.5.9.jar!/com/alibaba/dubbo/config/spring/context/annotation/DubboComponentScan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.9/dubbo-2.5.9-sources.jar!/com/alibaba/dubbo/config/spring/context/annotation/DubboComponentScan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemCatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/DefaultMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMessageDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/RootConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1041,27 +1082,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/SolrConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="58" column="55" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="58" selection-end-column="55" />
+        <state relative-caret-position="433">
+          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/DubboConfig.java">
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ContentCatServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="158">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-service.xml">
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-trans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext-mq.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="58" column="104" lean-forward="true" selection-start-line="58" selection-start-column="104" selection-end-line="58" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/search/impl/SearchItemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/service/DubboConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,11 +1199,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Base.omCommon</last-edited>
+          <last-edited>Spring|Manager.omService-Manager</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.242741" />
               </list>
             </option>
           </splitter-proportions>

@@ -33,6 +33,7 @@
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
       <option name="myAdditionalJavadocTags" value="date" />
     </inspection_tool>
+    <inspection_tool class="SpringJavaInjectionPointsAutowiringInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="unused" enabled="true" level="WARNING" enabled_by_default="true" INNER_CLASS="false">
       <option name="LOCAL_VARIABLE" value="true" />
       <option name="FIELD" value="false" />

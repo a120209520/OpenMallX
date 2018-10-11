@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
  * @author PPL
  */
 @Service
+@com.alibaba.dubbo.config.annotation.Service
 public class SearchItemServiceImpl implements SearchItemService {
 
     /*********************Field**********************/

@@ -1,5 +1,6 @@
 package org.ppl.mall.service.impl;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,6 +19,7 @@ import org.springframework.stereotype.Service;
  * @author PPL
  */
 @Service
+@com.alibaba.dubbo.config.annotation.Service
 public class ContentCatServiceImpl implements ContentCatService {
 
     /*********************Field**********************/
@@ -106,8 +108,9 @@ public class ContentCatServiceImpl implements ContentCatService {
 	private void deleteContentCatLoop(Long id) {
 		TbContentCategory parent = contentCatMapper.selectByPrimaryKey(id);
 		contentCatMapper.deleteByPrimaryKey(id);
-		if(!parent.getIsParent())
-			return;
+		if(!parent.getIsParent()) {
+            return;
+        }
 		TbContentCategoryExample example = new TbContentCategoryExample();
 		TbContentCategoryExample.Criteria criteria = example.createCriteria();
 		criteria.andParentIdEqualTo(id);

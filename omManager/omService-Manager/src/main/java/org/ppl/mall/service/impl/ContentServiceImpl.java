@@ -24,6 +24,7 @@ import java.util.List;
  * @author PPL
  */
 @Service
+@com.alibaba.dubbo.config.annotation.Service
 public class ContentServiceImpl implements ContentService {
 
 	/*********************Field**********************/
