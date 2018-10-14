@@ -13,6 +13,8 @@ import org.ppl.mall.service.ContentCatService;
 import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 内容分类Service
@@ -37,6 +39,7 @@ public class ContentCatServiceImpl implements ContentCatService {
 	 * @return 结果集
 	 */
 	@Override
+	@Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public List<TreeNode> getContentCatList(long parentId) {
 		TbContentCategoryExample example = new TbContentCategoryExample();
 		TbContentCategoryExample.Criteria criteria = example.createCriteria();
@@ -60,6 +63,7 @@ public class ContentCatServiceImpl implements ContentCatService {
      * @return 添加是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult addContentCat(long parentId, String name) {
 		TbContentCategory parentNode = contentCatMapper.selectByPrimaryKey(parentId);
 		parentNode.setIsParent(true);
@@ -86,6 +90,7 @@ public class ContentCatServiceImpl implements ContentCatService {
      * @return 更新是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult updateContentCat(Long id, String name) {
 		TbContentCategory cat = new TbContentCategory();
 		cat.setId(id);
@@ -101,6 +106,7 @@ public class ContentCatServiceImpl implements ContentCatService {
      * @return 删除是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult deleteContentCat(Long id) {
 		deleteContentCatLoop(id);
 		return MsgResult.ok();

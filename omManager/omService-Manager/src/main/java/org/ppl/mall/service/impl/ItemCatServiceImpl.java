@@ -11,6 +11,8 @@ import org.ppl.mall.pojo.TbItemCatExample.Criteria;
 import org.ppl.mall.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 商品分类Service
@@ -35,6 +37,7 @@ public class ItemCatServiceImpl implements ItemCatService {
      * @return List<TreeNode>
      */
 	@Override
+	@Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public List<TreeNode> getItemCatList(long parentid) {
 		TbItemCatExample example = new TbItemCatExample();
 		Criteria criteria = example.createCriteria();

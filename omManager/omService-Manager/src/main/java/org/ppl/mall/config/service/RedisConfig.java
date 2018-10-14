@@ -21,6 +21,7 @@ public class RedisConfig {
 
     @Bean
     public JedisPool jedisPool() {
+        System.out.println("new jedis pool!!!!!");
         return new JedisPool(
                 env.getProperty("redis.host"),
                 env.getProperty("redis.port", Integer.class)

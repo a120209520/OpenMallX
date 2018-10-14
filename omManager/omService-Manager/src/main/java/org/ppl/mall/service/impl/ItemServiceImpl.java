@@ -19,6 +19,8 @@ import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -65,6 +67,7 @@ public class ItemServiceImpl implements ItemService {
      * @return pojo
      */
 	@Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public TbItem getItemById(long itemId) {
         //优先查询redis缓存
         String json = jedisClient.get(ITEM_PREFIX+itemId);
@@ -91,6 +94,7 @@ public class ItemServiceImpl implements ItemService {
      * @return pojo
      */
 	@Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public TbItemDesc getItemDescById(long itemId) {
         //优先查询redis缓存
         String json = jedisClient.get(ITEM_DESC_PREFIX+itemId);
@@ -119,6 +123,7 @@ public class ItemServiceImpl implements ItemService {
      * @return DataGrid格式结果集
      */
 	@Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public DataGridResult<TbItem> getItemList(int pageNum, int pageSize) {
 		PageHelper.startPage(pageNum, pageSize);
 		List<TbItem> list = itemMapper.selectByExample(new TbItemExample());
@@ -136,6 +141,7 @@ public class ItemServiceImpl implements ItemService {
      * @return 添加是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult addItem(TbItem item, String desc) {
 		Date curTime = new Date();
 		long itemId = IDUtils.genItemId();
@@ -144,7 +150,7 @@ public class ItemServiceImpl implements ItemService {
 		item.setCreated(curTime);
 		item.setUpdated(curTime);
 		itemMapper.insert(item);
-		
+
 		TbItemDesc itemDesc = new TbItemDesc();
 		itemDesc.setItemId(itemId);
 		itemDesc.setItemDesc(desc);
@@ -164,6 +170,7 @@ public class ItemServiceImpl implements ItemService {
      * @return 编辑是否成功
      */
 	@Override
+    @Transactional()
 	public MsgResult editItem(TbItem item, String desc) {
 		itemMapper.updateByPrimaryKeySelective(item);
 		
@@ -182,6 +189,7 @@ public class ItemServiceImpl implements ItemService {
      * @return 删除是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult deleteItem(long itemId) {
 		itemMapper.deleteByPrimaryKey(itemId);
 		itemDescMapper.deleteByPrimaryKey(itemId);
@@ -194,6 +202,7 @@ public class ItemServiceImpl implements ItemService {
      * @return 操作是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult unShelveItem(long itemId) {
 		TbItem item = new TbItem();
 		item.setId(itemId);
@@ -208,6 +217,7 @@ public class ItemServiceImpl implements ItemService {
      * @return 操作是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult reShelfItem(long itemId) {
 		TbItem item = new TbItem();
 		item.setId(itemId);

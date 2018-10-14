@@ -15,6 +15,8 @@ import org.ppl.mall.util.MsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -50,6 +52,7 @@ public class ContentServiceImpl implements ContentService {
      * @return DataGrid格式结果集
      */
 	@Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public DataGridResult<TbContent> getContentList(Long catId, Integer pageNum, Integer pageSize) {
 		PageHelper.startPage(pageNum, pageSize);
 		TbContentExample example = new TbContentExample();
@@ -69,6 +72,7 @@ public class ContentServiceImpl implements ContentService {
      * @return List<TbContent>
      */
 	@Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public List<TbContent> getContentList(Long catId) {
 		//优先查询redis缓存
 		String json = jedisClient.hget(CONTENT_LIST, catId.toString());
@@ -95,6 +99,7 @@ public class ContentServiceImpl implements ContentService {
      * @return 添加是否成功
      */
 	@Override
+	@Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult addContent(TbContent content) {
 		Date curTime = new Date();
 		content.setCreated(curTime);
@@ -111,6 +116,7 @@ public class ContentServiceImpl implements ContentService {
      * @return 删除是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult deleteContents(Long id) {
 		//删除前保留cid用于删除缓存
 		TbContent content = contentMapper.selectByPrimaryKey(id);
@@ -127,6 +133,7 @@ public class ContentServiceImpl implements ContentService {
      * @return 编辑是否成功
      */
 	@Override
+    @Transactional(propagation=Propagation.REQUIRED)
 	public MsgResult editContent(TbContent content) {
 		content.setUpdated(new Date());
 		contentMapper.updateByPrimaryKeySelective(content);

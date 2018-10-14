@@ -3,14 +3,14 @@ package org.ppl.mall.config.service;
 import com.alibaba.druid.pool.DruidDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.EnvironmentAware;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.ClassPathResource;
 
 import javax.sql.DataSource;
+import javax.xml.crypto.Data;
 
 /**
  * 持久层配置
@@ -39,14 +39,15 @@ public class DataSourceConfig implements EnvironmentAware {
         dataSource.setDriverClassName(env.getProperty("jdbc.driver"));
         dataSource.setMaxActive(env.getProperty("jdbc.max_active", Integer.class));
         dataSource.setMinIdle(env.getProperty("jdbc.min_idle", Integer.class));
+
         return dataSource;
     }
 
     //SqlSessionFactory
     @Bean
-    public SqlSessionFactoryBean sqlSessionFactory() {
+    public SqlSessionFactoryBean sqlSessionFactory(DataSource dataSource) {
         SqlSessionFactoryBean sqlSessionFactory = new SqlSessionFactoryBean();
-        sqlSessionFactory.setDataSource(dataSource());
+        sqlSessionFactory.setDataSource(dataSource);
         sqlSessionFactory.setConfigLocation(new ClassPathResource("mybatis/SqlMapConfig.xml"));
         return sqlSessionFactory;
     }
