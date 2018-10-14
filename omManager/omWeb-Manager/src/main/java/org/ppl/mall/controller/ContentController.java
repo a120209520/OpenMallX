@@ -1,5 +1,6 @@
 package org.ppl.mall.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.pojo.TbContent;
 import org.ppl.mall.service.ContentService;
@@ -12,15 +13,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 内容Controller
- * @author Smith
+ * @author PPL
  *
  */
 
 @Controller
 @RequestMapping("/content/")
 public class ContentController {
-	
-	@Autowired
+
+	@Reference
 	private ContentService contentService;
 	
 	//获取内容列表

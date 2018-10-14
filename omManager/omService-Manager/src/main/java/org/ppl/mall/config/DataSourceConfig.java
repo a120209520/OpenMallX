@@ -1,4 +1,4 @@
-package org.ppl.mall.config.service;
+package org.ppl.mall.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;

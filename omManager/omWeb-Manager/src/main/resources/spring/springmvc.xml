@@ -49,14 +49,7 @@
 		<property name="maxUploadSize" value="5242880"></property>
 	</bean>
 
-	<!-- 引用duddo服务 -->
-	<dubbo:application name="omWeb-Manager" />
-	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
-	<dubbo:reference interface="org.ppl.mall.service.ItemService" id="itemService" />
-	<dubbo:reference interface="org.ppl.mall.service.ItemCatService" id="itemCatService" />
-	<dubbo:reference interface="org.ppl.mall.service.ContentCatService" id="contentCatService" />
-	<dubbo:reference interface="org.ppl.mall.service.ContentService" id="contentService" />
-	<dubbo:reference interface="org.ppl.mall.service.search.SearchItemService" id="searchItemService" />
-
+    <!-- dubbo -->
+    <bean class="org.ppl.mall.config.DubboConfig"/>
 </beans>
 

@@ -1,4 +1,4 @@
-package org.ppl.mall.config.service;
+package org.ppl.mall.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

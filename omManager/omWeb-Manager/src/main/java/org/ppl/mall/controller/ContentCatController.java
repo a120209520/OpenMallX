@@ -2,6 +2,7 @@ package org.ppl.mall.controller;
 
 import java.util.List;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.model.TreeNode;
 import org.ppl.mall.pojo.TbItem;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 内容分类Controller
- * @author Smith
+ * @author PPL
  *
  */
 
@@ -25,7 +26,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/content/cat")
 public class ContentCatController {
 	
-	@Autowired
+	@Reference
 	private ContentCatService contentCatService;
 	
 	//获取内容分类列表

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 页面跳转Controller
- * @author Smith
+ * @author PPL
  *
  */
 

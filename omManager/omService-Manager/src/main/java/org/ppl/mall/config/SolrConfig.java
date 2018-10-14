@@ -1,4 +1,4 @@
-package org.ppl.mall.config.service;
+package org.ppl.mall.config;
 
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.springframework.beans.factory.annotation.Autowired;

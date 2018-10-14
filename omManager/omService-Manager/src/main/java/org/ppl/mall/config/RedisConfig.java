@@ -1,4 +1,4 @@
-package org.ppl.mall.config.service;
+package org.ppl.mall.config;
 
 import org.ppl.mall.jedis.JedisClientPool;
 import org.springframework.beans.factory.annotation.Autowired;

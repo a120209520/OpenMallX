@@ -1,5 +1,6 @@
 package org.ppl.mall.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.service.ItemService;
@@ -13,15 +14,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 商品管理Controller
- * @author Smith
+ * @author PPL
  *
  */
 
 @Controller
 @RequestMapping("/item")
 public class ItemController {
-	
-	@Autowired
+
+	@Reference
 	private ItemService itemService;
 	
 	//通过id查询单个商品

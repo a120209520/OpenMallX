@@ -2,6 +2,7 @@ package org.ppl.mall.controller;
 
 import java.util.List;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.model.TreeNode;
 import org.ppl.mall.pojo.TbItem;
@@ -15,15 +16,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 商品分类Controller
- * @author Smith
+ * @author PPL
  *
  */
 
 @Controller
 @RequestMapping("/item/cat")
 public class ItemCatController {
-	
-	@Autowired
+
+	@Reference
 	private ItemCatService itemCatService;
 	
 	//获取商品分类列表

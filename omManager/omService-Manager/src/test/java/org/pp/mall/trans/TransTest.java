@@ -2,7 +2,7 @@ package org.pp.mall.trans;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.ppl.mall.config.service.RootConfig;
+import org.ppl.mall.config.RootConfig;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package org.ppl.mall.config;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.ProtocolConfig;
+import com.alibaba.dubbo.config.ConsumerConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.context.annotation.Bean;
@@ -12,14 +12,21 @@ import org.springframework.context.annotation.Configuration;
  * @author PPL
  */
 @Configuration
-@DubboComponentScan(basePackages="org.ppl.mall.service")
+@DubboComponentScan(basePackages="org.ppl.mall.controller")
 public class DubboConfig {
 
     @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("omService-Manager");
+        applicationConfig.setName("omWeb-Manager");
         return applicationConfig;
+    }
+
+    @Bean
+    public ConsumerConfig consumerConfig() {
+        ConsumerConfig consumerConfig = new ConsumerConfig();
+        consumerConfig.setTimeout(3000);
+        return consumerConfig;
     }
 
     @Bean
@@ -28,13 +35,5 @@ public class DubboConfig {
         registryConfig.setAddress("127.0.0.1:2181");
         registryConfig.setProtocol("zookeeper");
         return registryConfig;
-    }
-
-    @Bean
-    public ProtocolConfig protocolConfig() {
-        ProtocolConfig protocolConfig = new ProtocolConfig();
-        protocolConfig.setName("dubbo");
-        protocolConfig.setPort(20881);
-        return protocolConfig;
     }
 }
