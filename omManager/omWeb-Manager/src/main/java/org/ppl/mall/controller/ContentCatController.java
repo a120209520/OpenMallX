@@ -28,7 +28,7 @@ public class ContentCatController {
 	
 	@Reference
 	private ContentCatService contentCatService;
-	
+
 	//获取内容分类列表
 	@RequestMapping("/list")
 	@ResponseBody

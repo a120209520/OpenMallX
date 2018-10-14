@@ -2,6 +2,11 @@ package org.ppl.mall.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+
+/**
+ * web启动配置(代替了web.xml)
+ * @author PPL
+ */
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     //Spring ApplicationContext
