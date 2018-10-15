@@ -13,7 +13,7 @@ import javax.servlet.ServletException;
  */
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    //Spring ApplicationContext
+    //Spring ApplicationContext (父容器, 无法访问SpringMVC ApplicationContext)
     //ContextLoarderListener创建与Web无关的其他Bean
     @Override
     protected Class<?>[] getRootConfigClasses() {
@@ -21,7 +21,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
         //return null;
     }
 
-    //SpringMVC ApplicationContext
+    //SpringMVC ApplicationContext (子容器, 可以访问Spring ApplicationContext, 同时也会覆盖父容器中同样的@Bean)
     //DispatcherServlet创建@Controller, ViewResolver等Web相关Bean
     @Override
     protected Class<?>[] getServletConfigClasses() {

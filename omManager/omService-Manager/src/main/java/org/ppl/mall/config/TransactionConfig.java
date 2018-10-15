@@ -8,6 +8,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
+
+/**
+ * 事务配置
+ * @author PPL
+ */
 @Configuration
 @EnableTransactionManagement
 public class TransactionConfig {

@@ -12,6 +12,9 @@
         <module name="Base.omPojo" />
         <module name="Manager.omService-Manager" />
         <module name="Manager.omWeb-Manager" />
+        <module name="omWebItem" />
+        <module name="omWebPortal" />
+        <module name="omWebSearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
