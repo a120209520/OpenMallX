@@ -1,0 +1,7 @@
+org\ppl\mall\controller\sso\RegisterController.class
+org\ppl\mall\config\WebAppInitializer.class
+org\ppl\mall\config\DubboConfig.class
+org\ppl\mall\config\FreeMarkerConfig.class
+org\ppl\mall\config\RootConfig.class
+org\ppl\mall\config\SpringMvcConfig.class
+org\ppl\mall\controller\sso\LoginController.class

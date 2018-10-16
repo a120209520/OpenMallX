@@ -1,0 +1,8 @@
+org\ppl\mall\config\RedisConfig.class
+org\ppl\mall\config\DataSourceConfig.class
+org\ppl\mall\config\SolrConfig.class
+org\ppl\mall\config\WebAppInitializer.class
+org\ppl\mall\service\cart\impl\CartServiceImpl.class
+org\ppl\mall\config\DubboConfig.class
+org\ppl\mall\config\TransactionConfig.class
+org\ppl\mall\config\RootConfig.class

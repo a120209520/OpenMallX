@@ -22,7 +22,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Import({DubboConfig.class})
 public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 
-    //ViewResolver
+    //视图解析器
     @Bean
     public ViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
