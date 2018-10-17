@@ -42,6 +42,8 @@
         <dubbo.version>2.5.9</dubbo.version>
         <zookeeper.version>3.4.7</zookeeper.version>
         <activemq.version>5.11.2</activemq.version>
+        <spring-rabbit.version>1.4.5.RELEASE</spring-rabbit.version>
+        <rabbit-client.version>3.5.1</rabbit-client.version>
         <zkclient.version>0.1</zkclient.version>
         <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.2</quartz.version>
@@ -227,6 +229,17 @@
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-all</artifactId>
                 <version>${activemq.version}</version>
+            </dependency>
+            <!-- rabbitMQ -->
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>${rabbit-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit</artifactId>
+                <version>${spring-rabbit.version}</version>
             </dependency>
             <!-- freemarker -->
             <dependency>
