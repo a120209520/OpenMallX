@@ -1,8 +1,9 @@
+org\ppl\mall\message\item\ItemAddMsgListener.class
 org\ppl\mall\config\WebAppInitializer.class
-org\ppl\mall\item\message\HtmlGenListener.class
-org\ppl\mall\item\controller\ItemController.class
+org\ppl\mall\tools\item\HtmlGenerator.class
 org\ppl\mall\config\DubboConfig.class
+org\ppl\mall\config\RabbitConfig.class
+org\ppl\mall\controller\item\ItemController.class
 org\ppl\mall\config\FreeMarkerConfig.class
 org\ppl\mall\config\RootConfig.class
 org\ppl\mall\config\SpringMvcConfig.class
-org\ppl\mall\item\tools\HtmlGenerator.class

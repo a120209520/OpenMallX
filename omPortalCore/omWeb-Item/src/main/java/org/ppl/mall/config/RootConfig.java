@@ -1,6 +1,7 @@
 package org.ppl.mall.config;
 
 import org.springframework.context.annotation.*;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
@@ -13,7 +14,15 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
         @ComponentScan.Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class),// 这个是为了不让扫描到springmvc相关的Bean
         @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class)   // 这个是为了不让扫描到Controller，否则会创建两次Controller
 })
-@Import({FreeMarkerConfig.class})
-@ImportResource("classpath:spring/applicationContext*.xml")
+@Import({
+        FreeMarkerConfig.class,
+        RabbitConfig.class
+})
+@PropertySource("classpath:conf/item.properties")
 public class RootConfig {
+
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
 }

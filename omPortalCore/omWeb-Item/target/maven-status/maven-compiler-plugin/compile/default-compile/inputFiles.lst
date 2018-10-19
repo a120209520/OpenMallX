@@ -1,8 +1,9 @@
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\config\DubboConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\config\SpringMvcConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\config\FreeMarkerConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\config\WebAppInitializer.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\item\controller\ItemController.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\config\RootConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\item\message\HtmlGenListener.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebItem\src\main\java\org\ppl\mall\item\tools\HtmlGenerator.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\controller\item\ItemController.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\tools\item\HtmlGenerator.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\config\DubboConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\config\FreeMarkerConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\config\SpringMvcConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\config\WebAppInitializer.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\config\RootConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\config\RabbitConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\java\org\ppl\mall\message\item\ItemAddMsgListener.java

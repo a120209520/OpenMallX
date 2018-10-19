@@ -9,6 +9,7 @@ import org.ppl.mall.pojo.TbItemDesc;
 import org.ppl.mall.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
 import java.io.FileWriter;
@@ -21,6 +22,7 @@ import java.util.Map;
  * 静态页面生成器
  * @author PPL
  */
+@Component
 public class HtmlGenerator {
 
     @Reference

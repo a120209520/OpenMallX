@@ -7,12 +7,11 @@ import org.ppl.mall.jedis.JedisClient;
 import org.ppl.mall.mapper.TbItemDescMapper;
 import org.ppl.mall.mapper.TbItemMapper;
 import org.ppl.mall.model.DataGridResult;
-import org.ppl.mall.pojo.TbContent;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemDesc;
 import org.ppl.mall.pojo.TbItemExample;
 import org.ppl.mall.service.ItemService;
-import org.ppl.mall.service.message.ItemAddMessageDispatcher;
+import org.ppl.mall.service.message.ItemAddMsgDispatcher;
 import org.ppl.mall.util.IDUtils;
 import org.ppl.mall.util.JsonUtils;
 import org.ppl.mall.util.MsgResult;
@@ -46,7 +45,7 @@ public class ItemServiceImpl implements ItemService {
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
 	@Autowired
-    private ItemAddMessageDispatcher itemAddMessageDispatcher;
+    private ItemAddMsgDispatcher itemAddMsgDispatcher;
 
 	@Autowired
     private JedisClient jedisClient;
@@ -158,7 +157,8 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setUpdated(curTime);
 		itemDescMapper.insert(itemDesc);
 
-        itemAddMessageDispatcher.sendMsg(itemId);
+        itemAddMsgDispatcher.sendMsgToSolr(itemId);
+		itemAddMsgDispatcher.sendMsgToStaticHtml(itemId);
 
 		return MsgResult.ok();
 	}
