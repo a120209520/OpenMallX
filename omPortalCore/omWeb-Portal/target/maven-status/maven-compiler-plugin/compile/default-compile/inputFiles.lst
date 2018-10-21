@@ -1,6 +1,6 @@
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebPortal\src\main\java\org\ppl\mall\config\FreeMarkerConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebPortal\src\main\java\org\ppl\mall\config\RootConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebPortal\src\main\java\org\ppl\mall\portal\controller\PageController.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebPortal\src\main\java\org\ppl\mall\config\DubboConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebPortal\src\main\java\org\ppl\mall\config\SpringMvcConfig.java
-G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWebPortal\src\main\java\org\ppl\mall\config\WebAppInitializer.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Portal\src\main\java\org\ppl\mall\controller\portal\PageController.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Portal\src\main\java\org\ppl\mall\config\RootConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Portal\src\main\java\org\ppl\mall\config\FreeMarkerConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Portal\src\main\java\org\ppl\mall\config\DubboConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Portal\src\main\java\org\ppl\mall\config\SpringMvcConfig.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Portal\src\main\java\org\ppl\mall\config\WebAppInitializer.java

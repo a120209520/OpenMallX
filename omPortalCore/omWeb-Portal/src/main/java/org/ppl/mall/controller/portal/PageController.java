@@ -5,7 +5,6 @@ import java.util.List;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.pojo.TbContent;
 import org.ppl.mall.service.ContentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,18 +21,20 @@ public class PageController {
 	@Reference
 	private ContentService contentService;
 	
-	@Value("${CONTENT_ROLL_ID}")
-	private Long CONTENT_ROLL_ID;
-
-	public PageController(){
-		System.out.println("new controller!");
-	}
+	@Value("${CONTENT_SHOW_NOW}")
+	private Long CONTENT_SHOW_NOW;
 	
 	//主页 
 	@RequestMapping("/index.html")
 	public String index(Model model) {
-		List<TbContent> adList1 = contentService.getContentList(CONTENT_ROLL_ID);
-		model.addAttribute("adList1", adList1);
+		List<TbContent> showNowList = contentService.getContentList(CONTENT_SHOW_NOW);
+		model.addAttribute("showNowList", showNowList);
 		return "index";
+	}
+
+
+	@RequestMapping("/blank.html")
+	public String blank() {
+		return "blank";
 	}
 }
