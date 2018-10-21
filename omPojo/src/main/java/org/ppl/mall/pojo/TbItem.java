@@ -1,5 +1,6 @@
 package org.ppl.mall.pojo;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.io.Serializable;
@@ -111,7 +112,6 @@ public class TbItem implements Serializable {
     }
 
     /*自定义*/
-    @JsonIgnore
     public String[] getImages() {
         return image.split(",");
     }

@@ -11,7 +11,6 @@ import org.springframework.core.env.Environment;
  * solr配置
  */
 @Configuration
-@PropertySource("classpath:/conf/solr.properties")
 public class SolrConfig {
 
     @Autowired

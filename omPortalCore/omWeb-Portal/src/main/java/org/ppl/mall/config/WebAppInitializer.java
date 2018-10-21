@@ -30,7 +30,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     //DispatcherServlet映射的地址
     @Override
     protected String[] getServletMappings() {
-        return new String[]{"*.html"};
+        return new String[]{"/"};
     }
 
     @Override

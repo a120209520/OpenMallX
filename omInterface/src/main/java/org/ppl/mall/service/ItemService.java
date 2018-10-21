@@ -11,6 +11,7 @@ import org.ppl.mall.util.MsgResult;
  */
 public interface ItemService {
 	TbItem getItemById(long itemId);
+	DataGridResult<TbItem> getItemByCatId(long catId, int pageNum, int pageSize);
 	TbItemDesc getItemDescById(long itemId);
 	DataGridResult<TbItem> getItemList(int pageNum, int pageSize);
 	MsgResult addItem(TbItem item, String desc);

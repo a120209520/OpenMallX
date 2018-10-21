@@ -3,22 +3,30 @@ package org.ppl.mall.pagehelper;
 import java.util.List;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.ppl.mall.config.DataSourceConfig;
+import org.ppl.mall.config.RootConfig;
 import org.ppl.mall.mapper.TbItemMapper;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemExample;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(classes={RootConfig.class})
 public class PageHelperTest {
-	@Test
+
+    @Autowired
+    private TbItemMapper itemMapper;
+
+	//@Test
 	public void testPageHelper() throws Exception {
-		//初始化Spring容器
-		ApplicationContext appDao  = new ClassPathXmlApplicationContext("classpath:spring/nnapplicationContext-dao.xml");
-		//获取代理对象
-		TbItemMapper itemMapper = appDao.getBean(TbItemMapper.class);
 		//设置Page信息
 		PageHelper.startPage(2, 10);
 		//执行sql

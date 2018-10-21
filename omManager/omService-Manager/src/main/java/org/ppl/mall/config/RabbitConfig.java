@@ -20,7 +20,6 @@ import org.springframework.core.env.Environment;
  */
 @Configuration
 @EnableRabbit
-@PropertySource("classpath:conf/rabbit.properties")
 public class RabbitConfig {
 
     @Autowired

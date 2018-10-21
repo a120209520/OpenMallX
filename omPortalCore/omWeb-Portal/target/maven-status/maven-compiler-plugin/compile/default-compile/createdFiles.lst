@@ -1,4 +1,5 @@
 org\ppl\mall\config\WebAppInitializer.class
+org\ppl\mall\controller\portal\ContentController.class
 org\ppl\mall\controller\portal\PageController.class
 org\ppl\mall\config\DubboConfig.class
 org\ppl\mall\config\FreeMarkerConfig.class

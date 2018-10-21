@@ -88,6 +88,26 @@ public class ItemServiceImpl implements ItemService {
 	}
 
     /**
+     * 查询商品
+     * @param catId 商品分类id
+     * @return DataGrid格式结果集
+     */
+    @Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
+    public DataGridResult<TbItem> getItemByCatId(long catId, int pageNum, int pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        TbItemExample itemExample = new TbItemExample();
+        TbItemExample.Criteria criteria = itemExample.createCriteria();
+        criteria.andCidEqualTo(catId);
+        List<TbItem> list = itemMapper.selectByExample(itemExample);
+        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        DataGridResult<TbItem> dgResult = new DataGridResult<>();
+        dgResult.setTotal(pageInfo.getTotal());
+        dgResult.setRows(pageInfo.getList());
+        return dgResult;
+    }
+
+    /**
      * 查询商品描述
      * @param itemId 商品ID
      * @return pojo

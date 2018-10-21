@@ -2,6 +2,7 @@ package org.ppl.mall.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+import org.springframework.core.io.ClassPathResource;
 
 /**
  * Spring根配置
@@ -16,6 +17,13 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
         DubboConfig.class,
         TransactionConfig.class,
         RabbitConfig.class
+})
+@PropertySource({
+        "classpath:/conf/db.properties",
+        "classpath:/conf/item.properties",
+        "classpath:/conf/rabbit.properties",
+        "classpath:/conf/redis.properties",
+        "classpath:/conf/solr.properties"
 })
 public class RootConfig {
     @Bean

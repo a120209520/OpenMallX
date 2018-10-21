@@ -13,7 +13,6 @@ import redis.clients.jedis.JedisPool;
  * @author PPL
  */
 @Configuration
-@PropertySource("classpath:/conf/redis.properties")
 public class RedisConfig {
 
     @Autowired

@@ -22,7 +22,7 @@ public class DataGridResult<T> implements Serializable{
 	public void setTotal(long total) {
 		this.total = total;
 	}
-	public List<?> getRows() {
+	public List<T> getRows() {
 		return rows;
 	}
 	public void setRows(List<T> rows) {

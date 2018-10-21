@@ -19,7 +19,6 @@ import javax.xml.crypto.Data;
  * @author PPL
  */
 @Configuration
-@PropertySource("classpath:/conf/db.properties")
 public class DataSourceConfig implements EnvironmentAware {
 
     private Environment env;

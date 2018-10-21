@@ -38,7 +38,7 @@ public class ItemCatServiceImpl implements ItemCatService {
      */
 	@Override
 	@Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
-	public List<TreeNode> getItemCatList(long parentid) {
+	public List<TreeNode> getItemCatTreeList(long parentid) {
 		TbItemCatExample example = new TbItemCatExample();
 		Criteria criteria = example.createCriteria();
 		criteria.andParentIdEqualTo(parentid);
@@ -53,4 +53,39 @@ public class ItemCatServiceImpl implements ItemCatService {
 		}
 		return result;
 	}
+
+    /**
+     * 查询当前父节点下的直接子节点商品分类列表
+     * @param parentid 父节点ID
+     * @return List<TbItemCat>
+     */
+    @Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
+    public List<TbItemCat> getItemCatList(long parentid) {
+        TbItemCatExample example = new TbItemCatExample();
+        Criteria criteria = example.createCriteria();
+        criteria.andParentIdEqualTo(parentid);
+        List<TbItemCat> list = itemCatMapper.selectByExample(example);
+        return list;
+    }
+
+    /**
+     * 查询所有根节点
+     * @return List<TreeNode>
+     */
+    @Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
+    public List<TreeNode> getRootItemCatTreeList() {
+        return getItemCatTreeList(0);
+    }
+
+    /**
+     * 查询所有根节点
+     * @return List<TreeNode>
+     */
+    @Override
+    @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
+    public List<TbItemCat> getRootItemCatList() {
+        return getItemCatList(0);
+    }
 }

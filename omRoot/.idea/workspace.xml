@@ -128,54 +128,56 @@
         <counts>
           <entry key="css" value="3" />
           <entry key="dummy" value="21" />
-          <entry key="java" value="8076" />
-          <entry key="jsp" value="288" />
-          <entry key="properties" value="215" />
+          <entry key="java" value="9116" />
+          <entry key="js" value="1166" />
+          <entry key="jsp" value="524" />
+          <entry key="properties" value="356" />
           <entry key="txt" value="18" />
-          <entry key="xml" value="545" />
+          <entry key="xml" value="567" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="JAVA" value="8076" />
-          <entry key="JSP" value="288" />
+          <entry key="JAVA" value="9116" />
+          <entry key="JSP" value="524" />
+          <entry key="JavaScript" value="1166" />
           <entry key="PLAIN_TEXT" value="39" />
-          <entry key="Properties" value="215" />
-          <entry key="XML" value="545" />
+          <entry key="Properties" value="356" />
+          <entry key="XML" value="567" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="12" />
+          <entry key="class" value="14" />
           <entry key="css" value="5" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="515" />
-          <entry key="js" value="5" />
-          <entry key="jsp" value="7" />
+          <entry key="java" value="566" />
+          <entry key="js" value="8" />
+          <entry key="jsp" value="16" />
           <entry key="png" value="8" />
-          <entry key="properties" value="46" />
+          <entry key="properties" value="50" />
           <entry key="tb_item" value="3" />
           <entry key="tb_item_desc" value="2" />
-          <entry key="xml" value="191" />
+          <entry key="xml" value="199" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="12" />
+          <entry key="CLASS" value="14" />
           <entry key="CSS" value="5" />
           <entry key="Database Element" value="5" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="Image" value="8" />
-          <entry key="JAVA" value="515" />
-          <entry key="JSP" value="7" />
-          <entry key="JavaScript" value="5" />
+          <entry key="JAVA" value="566" />
+          <entry key="JSP" value="16" />
+          <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="46" />
-          <entry key="XML" value="191" />
+          <entry key="Properties" value="50" />
+          <entry key="XML" value="199" />
         </counts>
       </usages-collector>
     </session>
@@ -183,46 +185,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/controller/portal/ContentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+            <state relative-caret-position="-16">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="769" column="12" selection-start-line="769" selection-start-column="12" selection-end-line="769" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/controller/portal/PageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-              <folding>
-                <element signature="e#559#580#1" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#884#912#1" expanded="true" />
+                <element signature="e#968#989#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,8 +200,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/resources/conf/content.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="88">
+              <caret line="4" column="23" selection-start-line="4" selection-end-line="4" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="159" column="71" selection-start-line="159" selection-start-column="71" selection-end-line="159" selection-end-column="71" />
+              <folding>
+                <element signature="e#100#172#0" />
+                <element signature="e#1000#1209#0" />
+                <element signature="e#5587#5595#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="109" column="74" selection-start-line="109" selection-start-column="74" selection-end-line="109" selection-end-column="74" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="96" column="87" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -262,6 +268,22 @@
       <find>tree-title</find>
       <find>logo</find>
       <find>wechat</find>
+      <find>menu-toggle</find>
+      <find>cart-dropdown</find>
+      <find>products-widget-slick</find>
+      <find>href</find>
+      <find>section-title</find>
+      <find>section-tab-nav tab-nav</find>
+      <find>section-nav</find>
+      <find>ajax-loader.gif</find>
+      <find>itemeEditForm</find>
+      <find>item/list</find>
+      <find>\n</find>
+      <find>product-main-img</find>
+      <find>products-slick</find>
+      <find>tab1</find>
+      <find>nnapplicationContext-dao.xml</find>
+      <find>add</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -279,21 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/config/SpringMvcConfig.java" />
-        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/config/DubboConfig.java" />
-        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/config/SpringMvcConfig.java" />
-        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Search/src/main/java/org/ppl/mall/config/DubboConfig.java" />
-        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Search/src/main/java/org/ppl/mall/config/SpringMvcConfig.java" />
-        <option value="$PROJECT_DIR$/../omManager/pom.xml" />
-        <option value="$PROJECT_DIR$/../omShopping/pom.xml" />
-        <option value="$PROJECT_DIR$/../omShopping/omService-Shopping/pom.xml" />
-        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/cart/CartService.java" />
-        <option value="$PROJECT_DIR$/../omShopping/omService-Shopping/src/main/java/org/ppl/mall/config/DubboConfig.java" />
-        <option value="$PROJECT_DIR$/../omShopping/omService-Shopping/src/main/resources/conf/redis.properties" />
-        <option value="$PROJECT_DIR$/../omShopping/omService-Shopping/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/../omShopping/omWeb-Cart/pom.xml" />
-        <option value="$PROJECT_DIR$/../omShopping/omWeb-Cart/src/main/java/org/ppl/mall/config/DubboConfig.java" />
-        <option value="$PROJECT_DIR$/../omShopping/omService-Shopping/src/main/java/org/ppl/mall/service/cart/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/../omShopping/omWeb-Cart/src/main/java/org/ppl/mall/config/SpringMvcConfig.java" />
         <option value="$PROJECT_DIR$/../omShopping/omWeb-Cart/src/main/java/org/ppl/mall/interceptor/cart/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/../omShopping/omWeb-Cart/src/main/webapp/WEB-INF/web.xml" />
@@ -306,30 +313,45 @@
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ListenerContainer.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddListener.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/test/java/org/ppl/mall/mq/RabbitMqTest.java" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/config/RabbitConfig.java" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMsgListener.java" />
         <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/conf/rabbit.properties" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMsgDispatcher.java" />
-        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RootConfig.java" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/resources/conf/rabbit.properties" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/tools/item/HtmlGenerator.java" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/message/item/ItemAddMsgListener.java" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/resources/conf/item.properties" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/config/RootConfig.java" />
-        <option value="$PROJECT_DIR$/../omCommon/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/blank.html" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/blank.jsp" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/common/footer.jsp" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/common/header.jsp" />
         <option value="$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/config/RootConfig.java" />
         <option value="$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/config/SpringMvcConfig.java" />
-        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/resources/conf/content.properties" />
+        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/conf/item.properties" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/SolrConfig.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RabbitConfig.java" />
+        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemCatService.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemCatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RootConfig.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/DataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/jsp/content.jsp" />
+        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/config/WebAppInitializer.java" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/controller/portal/PageController.java" />
         <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/../omPojo/src/main/java/org/ppl/mall/model/DataGridResult.java" />
+        <option value="$PROJECT_DIR$/../omPojo/pom.xml" />
+        <option value="$PROJECT_DIR$/../omCommon/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMsgDispatcher.java" />
+        <option value="$PROJECT_DIR$/../omManager/omService-Manager/src/test/java/org/ppl/mall/pagehelper/PageHelperTest.java" />
+        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/resources/conf/content.properties" />
+        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/controller/portal/ContentController.java" />
+        <option value="$PROJECT_DIR$/../omPojo/src/main/java/org/ppl/mall/pojo/TbItem.java" />
+        <option value="$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/js/main.js" />
       </list>
     </option>
   </component>
@@ -348,12 +370,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="omWeb-Item" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -428,30 +445,39 @@
           <expand>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omRoot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -459,7 +485,7 @@
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -468,16 +494,7 @@
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="org.ppl.mall.controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -485,11 +502,44 @@
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="omWeb-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="conf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.ppl.mall.pagehelper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="omService-Manager" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="org.ppl.mall.solr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="omRoot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -578,13 +628,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ppl.mall.controller.portal" />
       <recent name="org.ppl.mall.message.item" />
       <recent name="org.ppl.mall.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omManager\omService-Manager\src\main\resources\conf" />
       <recent name="G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Portal\src\main\webapp\WEB-INF\jsp\common" />
       <recent name="G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPortalCore\omWeb-Item\src\main\resources\conf" />
-      <recent name="G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omManager\omService-Manager\src\main\resources\conf" />
       <recent name="G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omManager\omService-Manager\src\test\java\org\ppl\mall\mq" />
       <recent name="G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omShopping\omService-Shopping\src\main\resources\conf" />
     </key>
@@ -601,7 +652,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Manager-W">
+  <component name="RunManager" selected="Maven.Manager-S">
     <configuration name="Cart-W" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -868,7 +919,7 @@
       <workItem from="1540001362531" duration="888000" />
       <workItem from="1540002303547" duration="39000" />
       <workItem from="1540002380454" duration="7670000" />
-      <workItem from="1540084467992" duration="8479000" />
+      <workItem from="1540084467992" duration="30533000" />
     </task>
     <servers />
   </component>
@@ -905,7 +956,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92841000" />
+    <option name="totallyTimeSpent" value="114895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -928,7 +979,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.34855404" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3455099" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39878234" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -957,7 +1008,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.34855404" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3455099" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39878234" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -995,18 +1046,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp</url>
           <line>47</line>
           <properties />
           <option name="timeStamp" value="12" />
@@ -1015,207 +1054,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/message/item/HtmlGenListener.java" />
-    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/search/SearchItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMsgListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RabbitConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/WebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/conf/rabbit.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMsgDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/resources/conf/rabbit.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/controller/item/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/message/item/ItemAddMsgListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/tools/item/HtmlGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/config/RabbitConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/resources/conf/item.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="99" selection-start-line="1" selection-start-column="99" selection-end-line="1" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/config/SpringMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item/src/main/java/org/ppl/mall/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="224" column="25" selection-start-line="224" selection-start-column="25" selection-end-line="224" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omCommon/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omCommon/src/main/java/org/ppl/mall/Template.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/css/ppl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1475">
-          <caret line="163" column="15" lean-forward="true" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/js/kindeditor-4.1.10/lang/ar.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/js/kindeditor-4.1.10/lang/en.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/js/kindeditor-4.1.10/lang/ko.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/js/kindeditor-4.1.10/lang/zh_CN.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1386" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/jsp/content.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/jsp/item-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/img/product01.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/img/hotdeal.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/img/product03.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/img/product04.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/img/logo-ppl.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/img/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/img/shop01.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/blank.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1244,24 +1082,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/config/SpringMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/config/RootConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/config/SpringMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1272,13 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1562">
           <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/resources/conf/content.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1296,43 +1113,327 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="769" column="12" selection-start-line="769" selection-start-column="12" selection-end-line="769" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RabbitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/SolrConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/DubboConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE-sources.jar!/org/springframework/core/io/ClassPathResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+          <folding>
+            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="e#2149#2150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE-sources.jar!/org/springframework/core/io/support/PropertiesLoaderSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+          <folding>
+            <element signature="e#2955#2956#0" expanded="true" />
+            <element signature="e#2988#2989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.4.RELEASE/spring-context-4.2.4.RELEASE-sources.jar!/org/springframework/context/annotation/PropertySource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/resources/conf/item.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemCatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="87" column="41" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+          <folding>
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#2668#2669#0" expanded="true" />
+            <element signature="e#2712#2713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/jsp/content.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/config/SpringMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="11171" selection-start-line="2" selection-start-column="11171" selection-end-line="2" selection-end-column="11171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/jsp/item-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/webapp/WEB-INF/jsp/item-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/controller/portal/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        <state relative-caret-position="182">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/config/SpringMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omWeb-Manager/src/main/java/org/ppl/mall/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1424">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/3.4.2-fix/pagehelper-3.4.2-fix.jar!/com/github/pagehelper/PageInfo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2860">
+          <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
           <folding>
-            <element signature="e#559#580#1" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4195#4196#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPojo/src/main/java/org/ppl/mall/model/DataGridResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0-sources.jar!/com/fasterxml/jackson/annotation/JsonIgnore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omCommon/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="84" column="47" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+        <state relative-caret-position="139">
+          <caret line="109" column="74" selection-start-line="109" selection-start-column="74" selection-end-line="109" selection-end-column="74" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/message/ItemAddMsgDispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="769" column="12" selection-start-line="769" selection-start-column="12" selection-end-line="769" selection-end-column="12" />
+        <state relative-caret-position="110">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/test/java/org/ppl/mall/pagehelper/PageHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPojo/src/main/java/org/ppl/mall/pojo/TbItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omManager/omService-Manager/src/main/java/org/ppl/mall/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="96" column="87" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/java/org/ppl/mall/controller/portal/ContentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="e#884#912#1" expanded="true" />
+            <element signature="e#968#989#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/resources/conf/content.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="23" selection-start-line="4" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="159" column="71" selection-start-line="159" selection-start-column="71" selection-end-line="159" selection-end-column="71" />
+          <folding>
+            <element signature="e#100#172#0" />
+            <element signature="e#1000#1209#0" />
+            <element signature="e#5587#5595#0" />
+          </folding>
         </state>
       </provider>
     </entry>
