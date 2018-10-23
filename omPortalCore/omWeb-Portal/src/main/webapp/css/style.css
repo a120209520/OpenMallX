@@ -1487,6 +1487,14 @@ textarea.input {
   font-size: 12px;
 }
 
+.product-details .product-price-prefix {
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #D10024;
+}
+
 .product-details .product-price {
   display: inline-block;
   font-size: 24px;

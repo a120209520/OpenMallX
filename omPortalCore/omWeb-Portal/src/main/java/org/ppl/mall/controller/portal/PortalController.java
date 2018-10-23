@@ -2,12 +2,14 @@ package org.ppl.mall.controller.portal;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.model.DataGridResult;
+import org.ppl.mall.model.NewProduct;
 import org.ppl.mall.pojo.TbContent;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemCat;
 import org.ppl.mall.service.ContentService;
 import org.ppl.mall.service.ItemCatService;
 import org.ppl.mall.service.ItemService;
+import org.ppl.mall.service.PortalService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +27,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/content")
-public class ContentController {
+public class PortalController {
 
     @Value("${DEFAULT_NEW_PRODUCT_CID}")
     private long DEFAULT_NEW_PRODUCT_CID;
@@ -36,14 +38,18 @@ public class ContentController {
     @Reference
     private ItemService itemService;
 
+    @Reference
+    private PortalService portalService;
+
+    //根据商品分类cid查询商品信息，显示到New-Product页面
     @RequestMapping("/newpro/item/{cid}")
     @ResponseBody
-    public List<TbItem> getNewProductByCat(Model model, @PathVariable Long cid) {
+    public List<NewProduct> getNewProductItemByCid(Model model, @PathVariable Long cid) {
         System.out.println("cid="+cid);
-        if ( DEFAULT_NEW_PRODUCT_CID == cid ) {
-            return itemService.getItemList(1, NEW_PRODUCT_SIZE).getRows();
+        if (DEFAULT_NEW_PRODUCT_CID == cid) {
+            return portalService.getNewProductByCid(null);
         }
-        DataGridResult<TbItem> dataGridResult = itemService.getItemByCatId(cid, 1, NEW_PRODUCT_SIZE);
-        return dataGridResult.getRows();
+        return portalService.getNewProductByCid(cid);
     }
+
 }

@@ -12,9 +12,7 @@
         <module name="Base.omPojo" />
         <module name="Manager.omService-Manager" />
         <module name="Manager.omWeb-Manager" />
-        <module name="PortalCore.omWeb-Item" />
         <module name="PortalCore.omWeb-Portal" />
-        <module name="PortalCore.omWeb-Search" />
         <module name="Shopping.omService-Shopping" />
         <module name="Shopping.omWeb-Cart" />
         <module name="Sso.omService-Sso" />
@@ -24,6 +22,8 @@
     <bytecodeTargetLevel>
       <module name="omServiceManager" target="1.8" />
       <module name="omWebManager" target="1.8" />
+      <module name="PortalCore.omWeb-Item" target="1.8" />
+      <module name="PortalCore.omWeb-Search" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

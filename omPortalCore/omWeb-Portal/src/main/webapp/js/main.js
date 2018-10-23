@@ -141,11 +141,19 @@
 	}
 
     showNewProductList(0);
+    showTopProductList();
+    showTopSellingList();
+    transferAllPrice();
     //主页
     $('.section-tab-nav.tab-nav > li').click(function () {
         var cid = $(this).children('a').attr('href');
         showNewProductList(cid);
     });
+
+    //搜索页面跳转
+    /*$('.header-search > form > button').click(function () {
+        alert($(this).parent().children('input').attr('value'));
+    })*/
 
 })(jQuery);
 
@@ -155,10 +163,38 @@ function showNewProductList(cid) {
         var $itemList = $('#new-product-list .product');
         for (var i = 0; i < data.length; i++) {
             var $item = $($itemList[i]);
-            $item.find('.product-category').text(data[i].cid);
+            $item.find('.product-category').text(data[i].catName);
             $item.find('.product-name').text(data[i].title);
             $item.find('.product-price').text(priceTrans(data[i].price));
-            $item.find('.product-img>img').attr('src', data[i].images[0]);
+            $item.find('.product-img>img').attr('src', data[i].image);
+        }
+    })
+}
+
+//展示'热销商品'列表
+function showTopProductList() {
+    $.getJSON('/content/newpro/item/0', function(data) {
+        var $itemList = $('#top-product-list .product');
+        for (var i = 0; i < data.length; i++) {
+            var $item = $($itemList[i]);
+            $item.find('.product-category').text(data[i].catName);
+            $item.find('.product-name').text(data[i].title);
+            $item.find('.product-price').text(priceTrans(data[i].price));
+            $item.find('.product-img>img').attr('src', data[i].image);
+        }
+    })
+}
+
+//展示'销量排行'列表
+function showTopSellingList() {
+    $.getJSON('/content/newpro/item/0', function(data) {
+        var $itemList = $('.products-widget-slick');
+        for (var i = 0; i < data.length; i++) {
+            var $item = $($itemList[i]);
+            $item.find('.product-category').text(data[i].catName);
+            $item.find('.product-name').text(data[i].title);
+            $item.find('.product-price').text(priceTrans(data[i].price));
+            $item.find('.product-img>img').attr('src', data[i].image);
         }
     })
 }
@@ -196,7 +232,17 @@ function reformatProductItem($itemList) {
     });
 }
 
-//把数据库中的价格改为前端显示方式
+//把数据库中的价格转为前端显示方式
 function priceTrans(serverPrice) {
     return serverPrice/100 + '.' + serverPrice/10%10 + serverPrice%10;
 }
+
+//修改价格显示格式
+function transferAllPrice() {
+    var nodes = $('.product-price');
+    for (var i=0; i<nodes.length; i++) {
+        var viewPrice = priceTrans($(nodes[i]).text());
+        $(nodes[i]).text(viewPrice);
+    }
+}
+

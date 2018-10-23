@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.ppl.mall.mapper.MixViewMapper" >
+    <resultMap id="NewProductMap" type="org.ppl.mall.model.NewProduct" >
+        <result column="title" property="title" jdbcType="VARCHAR" />
+        <result column="price" property="price" jdbcType="BIGINT" />
+        <result column="image" property="image" jdbcType="VARCHAR" />
+        <result column="name" property="catName" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="selectNewProductByCid" resultMap="NewProductMap" parameterType="java.lang.Long" >
+        SELECT
+        i.title,
+        i.price,
+        i.image,
+        i.cid,
+        ic.`name`
+        FROM tb_item i, tb_item_cat ic
+        WHERE i.cid = ic.id
+        AND i.cid = #{cid}
+        ORDER BY i.updated DESC
+        LIMIT 0, 4
+    </select>
+    <select id="selectNewProduct" resultMap="NewProductMap" >
+        SELECT
+        i.title,
+        i.price,
+        i.image,
+        i.cid,
+        ic.`name`
+        FROM tb_item i, tb_item_cat ic
+        WHERE i.cid = ic.id
+        ORDER BY i.updated DESC
+        LIMIT 0, 4
+    </select>
+</mapper>

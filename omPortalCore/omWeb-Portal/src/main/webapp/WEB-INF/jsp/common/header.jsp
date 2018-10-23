@@ -39,14 +39,14 @@
                 <!-- SEARCH BAR -->
                 <div class="col-md-6">
                     <div class="header-search">
-                        <form>
+                        <form action="/search/">
                             <select class="input-select">
-                                <option value="0">All Categories</option>
+                                <option value="0">所有分类</option>
                                 <option value="1">Category 01</option>
                                 <option value="1">Category 02</option>
                             </select>
-                            <input class="input" placeholder="Search here">
-                            <button class="search-btn">Search</button>
+                            <input class="input" placeholder="Search here" name="keyword" value="${query}">
+                            <button type="submit" class="search-btn">搜索</button>
                         </form>
                     </div>
                 </div>

@@ -1,8 +1,6 @@
 package org.ppl.mall.pojo;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -14,6 +12,7 @@ public class TbItem implements Serializable {
     private Integer num;
     private String barcode;
     private String image;
+    private String[] images;
     private Long cid;
     private Byte status;
     private Date created;
@@ -112,6 +111,9 @@ public class TbItem implements Serializable {
     }
 
     /*自定义*/
+    public void setImages(String[] images) {
+        this.images = images;
+    }
     public String[] getImages() {
         return image.split(",");
     }

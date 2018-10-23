@@ -15,9 +15,13 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="org.ppl.mall.controller.portal")
+@ComponentScan(basePackages="org.ppl.mall.controller")
 @Import({DubboConfig.class})
-@PropertySource("classpath:conf/content.properties")
+@PropertySource({
+        "classpath:conf/content.properties",
+        "classpath:conf/item.properties",
+        "classpath:conf/rabbit.properties"
+})
 public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 
     //视图解析器

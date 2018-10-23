@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @author PPL
  */
 @Configuration
-@DubboComponentScan(basePackages="org.ppl.mall.controller.portal")
+@DubboComponentScan(basePackages="org.ppl.mall.controller")
 public class DubboConfig {
 
     @Bean
