@@ -1,8 +1,0 @@
-org\ppl\mall\config\WebAppInitializer.class
-org\ppl\mall\exception\GlobalExceptionResolver.class
-org\ppl\mall\config\ExceptionConfig.class
-org\ppl\mall\config\DubboConfig.class
-org\ppl\mall\search\controller\SearchController.class
-org\ppl\mall\config\FreeMarkerConfig.class
-org\ppl\mall\config\RootConfig.class
-org\ppl\mall\config\SpringMvcConfig.class

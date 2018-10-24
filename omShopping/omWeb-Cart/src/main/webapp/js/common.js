@@ -315,7 +315,7 @@
 			$('#order_' + order_id).replaceWith(html);
 			var location = window.location.href;
 			if (location.match(/order\/list/g)){
-				// todo nothing
+
 			}else{
 				window.location.reload();
 			}

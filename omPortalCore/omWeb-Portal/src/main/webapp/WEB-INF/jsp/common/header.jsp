@@ -41,11 +41,11 @@
                     <div class="header-search">
                         <form action="/search/">
                             <select class="input-select">
-                                <option value="0">所有分类</option>
+                                <option value="0">All</option>
                                 <option value="1">Category 01</option>
                                 <option value="1">Category 02</option>
                             </select>
-                            <input class="input" placeholder="Search here" name="keyword" value="${query}">
+                            <input class="input" placeholder="在这里搜索" name="keyword" value="${query}">
                             <button type="submit" class="search-btn">搜索</button>
                         </form>
                     </div>
