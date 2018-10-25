@@ -13,8 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>omWeb-Portal</module>
-        <module>omWeb-Item</module>
-        <module>omWeb-Search</module>
     </modules>
 
     <dependencies>

@@ -4,8 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.service.ItemService;
-import org.ppl.mall.util.MsgResult;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.ppl.mall.util.WebResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,61 +43,61 @@ public class ItemController {
 	//添加商品
 	@RequestMapping("/save")
 	@ResponseBody
-	public MsgResult addItem(TbItem item, String desc) {
+	public WebResult addItem(TbItem item, String desc) {
 		return itemService.addItem(item, desc);
 	}
 	
 	//编辑商品-基本信息回显
 	@RequestMapping("/edit-query/item/{id}")
 	@ResponseBody
-	public MsgResult editItemQuery(@PathVariable("id") Long itemId) {
-		return MsgResult.ok(itemService.getItemById(itemId));
+	public WebResult editItemQuery(@PathVariable("id") Long itemId) {
+		return WebResult.ok(itemService.getItemById(itemId));
 	}
 	
 	//编辑商品-描述回显
 	@RequestMapping("/edit-query/item-desc/{id}")
 	@ResponseBody
-	public MsgResult editItemDescQuery(@PathVariable("id") Long itemId) {
-		return MsgResult.ok(itemService.getItemDescById(itemId));
+	public WebResult editItemDescQuery(@PathVariable("id") Long itemId) {
+		return WebResult.ok(itemService.getItemDescById(itemId));
 	}
 	
 	//编辑商品-提交
 	@RequestMapping("/edit-submit")
 	@ResponseBody
-	public MsgResult editItem(TbItem item, String desc) {
+	public WebResult editItem(TbItem item, String desc) {
 		return itemService.editItem(item, desc);
 	}
 	
 	//删除商品
 	@RequestMapping("/delete")
 	@ResponseBody
-	public MsgResult deleteItems(String ids) {
+	public WebResult deleteItems(String ids) {
 		String[] idArray = ids.split(",");
 		for(String id:idArray) {
 			itemService.deleteItem(Long.parseLong(id));
 		}
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 	
 	//下架商品
 	@RequestMapping("/unshelve")
 	@ResponseBody
-	public MsgResult unShelveItems(String ids) {
+	public WebResult unShelveItems(String ids) {
 		String[] idArray = ids.split(",");
 		for(String id:idArray) {
 			itemService.unShelveItem(Long.parseLong(id));
 		}
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 	
 	//上架商品
 	@RequestMapping("/reshelf")
 	@ResponseBody
-	public MsgResult reShelfItems(String ids) {
+	public WebResult reShelfItems(String ids) {
 		String[] idArray = ids.split(",");
 		for(String id:idArray) {
 			itemService.reShelfItem(Long.parseLong(id));
 		}
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 }

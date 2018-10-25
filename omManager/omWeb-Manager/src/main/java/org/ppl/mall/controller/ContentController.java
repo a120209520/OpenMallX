@@ -4,8 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.pojo.TbContent;
 import org.ppl.mall.service.ContentService;
-import org.ppl.mall.util.MsgResult;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.ppl.mall.util.WebResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -37,25 +36,25 @@ public class ContentController {
 	//添加内容
 	@RequestMapping("/add")
 	@ResponseBody
-	public MsgResult addContent(TbContent content) {
+	public WebResult addContent(TbContent content) {
 		return contentService.addContent(content);
 	}
 	
 	//删除内容
 	@RequestMapping("/delete")
 	@ResponseBody
-	public MsgResult deleteContents(String ids) {
+	public WebResult deleteContents(String ids) {
 		String[] idArray = ids.split(",");
 		for(String id:idArray) {
 			contentService.deleteContents(Long.parseLong(id));
 		}
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 	
 	//编辑内容
 	@RequestMapping("/edit")
 	@ResponseBody
-	public MsgResult editContent(TbContent content) {
+	public WebResult editContent(TbContent content) {
 		return contentService.editContent(content);
 	}
 }

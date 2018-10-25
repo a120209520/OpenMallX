@@ -140,25 +140,66 @@
 		});
 	}
 
-    showNewProductList(0);
-    showTopProductList();
-    showTopSellingList();
-    transferAllPrice();
-    //主页
-    $('.section-tab-nav.tab-nav > li').click(function () {
-        var cid = $(this).children('a').attr('href');
-        showNewProductList(cid);
+    //注册——用户名校验
+    $('#register-username > input').blur(function () {
+        var username = $(this).val();
+        $.getJSON('/user/check/username/'+username, function (data) {
+            if (data.status == 200) {
+                if (data.data == false) {
+                    $('#register-username > .warning').text('用户名已经被注册!换一个吧');
+                } else {
+                    $('#register-username > .warning').text('');
+                }
+            }
+        })
     });
 
-    //搜索页面跳转
-    /*$('.header-search > form > button').click(function () {
-        alert($(this).parent().children('input').attr('value'));
-    })*/
+    //注册——密码一致性校验
+    $('#register-confirm-password > input').blur(function () {
+        var confirmPass = $(this).val();
+        var pass = $('#register-password > input').val();
+        if (pass != confirmPass) {
+            $('#register-confirm-password > .warning').text('两次输入密码不一致!');
+        } else {
+            $('#register-confirm-password > .warning').text('');
+        }
+    });
 
+    //注册——手机号校验
+    $('#register-cellphone > input').blur(function () {
+        var cellphone = $('#register-cellphone > input').val();
+        $.getJSON('/user/check/cellphone/'+cellphone, function (data) {
+            if (data.status == 200) {
+                if (data.data == false) {
+                    $('#register-cellphone > .warning').text('手机号已经被注册!');
+                } else {
+                    $('#register-cellphone > .warning').text('');
+                }
+            }
+        })
+    });
+
+    //注册提交
+    $('#register-submit').click(function () {
+        $.post(
+            '/user/register',
+            $("#register-form").serialize(),
+            function (data) {
+                if (data.status != 200) {
+                    alert(data.msg);
+                    window.location.replace('/page/register');
+                } else {
+                    alert("注册成功！");
+                    window.location.replace('/page/login');
+                }
+            },
+            "json"
+        )
+    })
 })(jQuery);
 
 //展示'最新商品'列表
-function showNewProductList(cid) {
+/*function showNewProductList(cid) {
     $.getJSON('/content/newpro/item/'+cid, function(data) {
         var $itemList = $('#new-product-list .product');
         for (var i = 0; i < data.length; i++) {
@@ -169,80 +210,6 @@ function showNewProductList(cid) {
             $item.find('.product-img>img').attr('src', data[i].image);
         }
     })
-}
+}*/
 
-//展示'热销商品'列表
-function showTopProductList() {
-    $.getJSON('/content/newpro/item/0', function(data) {
-        var $itemList = $('#top-product-list .product');
-        for (var i = 0; i < data.length; i++) {
-            var $item = $($itemList[i]);
-            $item.find('.product-category').text(data[i].catName);
-            $item.find('.product-name').text(data[i].title);
-            $item.find('.product-price').text(priceTrans(data[i].price));
-            $item.find('.product-img>img').attr('src', data[i].image);
-        }
-    })
-}
-
-//展示'销量排行'列表
-function showTopSellingList() {
-    $.getJSON('/content/newpro/item/0', function(data) {
-        var $itemList = $('.products-widget-slick');
-        for (var i = 0; i < data.length; i++) {
-            var $item = $($itemList[i]);
-            $item.find('.product-category').text(data[i].catName);
-            $item.find('.product-name').text(data[i].title);
-            $item.find('.product-price').text(priceTrans(data[i].price));
-            $item.find('.product-img>img').attr('src', data[i].image);
-        }
-    })
-}
-
-//给主页的商品信息重新调整格式
-//Products Slick
-function reformatProductItem($itemList) {
-    $itemList = $itemList,
-        $nav = $itemList.attr('data-nav');
-
-    $itemList.slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        infinite: true,
-        speed: 300,
-        dots: false,
-        arrows: true,
-        appendArrows: $nav ? $nav : false,
-        responsive: [{
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-        ]
-    });
-}
-
-//把数据库中的价格转为前端显示方式
-function priceTrans(serverPrice) {
-    return serverPrice/100 + '.' + serverPrice/10%10 + serverPrice%10;
-}
-
-//修改价格显示格式
-function transferAllPrice() {
-    var nodes = $('.product-price');
-    for (var i=0; i<nodes.length; i++) {
-        var viewPrice = priceTrans($(nodes[i]).text());
-        $(nodes[i]).text(viewPrice);
-    }
-}
 

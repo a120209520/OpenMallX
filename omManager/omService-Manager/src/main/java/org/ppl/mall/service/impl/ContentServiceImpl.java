@@ -11,7 +11,7 @@ import org.ppl.mall.pojo.TbContentExample;
 import org.ppl.mall.pojo.TbContentExample.Criteria;
 import org.ppl.mall.service.ContentService;
 import org.ppl.mall.util.JsonUtils;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -100,14 +100,14 @@ public class ContentServiceImpl implements ContentService {
      */
 	@Override
 	@Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult addContent(TbContent content) {
+	public WebResult addContent(TbContent content) {
 		Date curTime = new Date();
 		content.setCreated(curTime);
 		content.setUpdated(curTime);
 		contentMapper.insertSelective(content);
 		//更新数据后删除redis
 		jedisClient.hdel(CONTENT_LIST, content.getCategoryId().toString());
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**
@@ -117,14 +117,14 @@ public class ContentServiceImpl implements ContentService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult deleteContents(Long id) {
+	public WebResult deleteContents(Long id) {
 		//删除前保留cid用于删除缓存
 		TbContent content = contentMapper.selectByPrimaryKey(id);
 		Long cid = content.getCategoryId();
 		contentMapper.deleteByPrimaryKey(id);
 		//更新数据后删除redis
 		jedisClient.hdel(CONTENT_LIST, cid.toString());
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**
@@ -134,11 +134,11 @@ public class ContentServiceImpl implements ContentService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult editContent(TbContent content) {
+	public WebResult editContent(TbContent content) {
 		content.setUpdated(new Date());
 		contentMapper.updateByPrimaryKeySelective(content);
 		//更新数据后删除redis
 		jedisClient.hdel(CONTENT_LIST, content.getCategoryId().toString());
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 }

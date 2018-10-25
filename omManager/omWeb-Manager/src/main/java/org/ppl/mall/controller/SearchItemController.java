@@ -2,8 +2,7 @@ package org.ppl.mall.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.service.search.SearchItemService;
-import org.ppl.mall.util.MsgResult;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.ppl.mall.util.WebResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,7 +21,7 @@ public class SearchItemController {
 	
 	@RequestMapping("/index/import")
 	@ResponseBody
-	public MsgResult importItemList() {
+	public WebResult importItemList() {
 		return searchItemService.importAllItems();
 	}
 }

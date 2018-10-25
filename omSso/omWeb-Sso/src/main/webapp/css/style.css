@@ -581,8 +581,12 @@ textarea.input {
   top: 0px;
 }
 
-.cart-dropdown .cart-list .product-widget .product-body .product-price .sso-title {
+.cart-dropdown .cart-list .product-widget .product-body .product-price .sso-title{
   color: #2B2D42;
+}
+
+.warning {
+  color: #D10024;
 }
 
 .cart-dropdown .cart-btns {

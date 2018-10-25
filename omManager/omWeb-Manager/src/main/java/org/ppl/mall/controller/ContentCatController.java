@@ -3,15 +3,10 @@ package org.ppl.mall.controller;
 import java.util.List;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.model.TreeNode;
-import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.service.ContentCatService;
-import org.ppl.mall.service.ItemCatService;
-import org.ppl.mall.util.MsgResult;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.ppl.mall.util.WebResult;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -39,21 +34,21 @@ public class ContentCatController {
 	//添加内容分类
 	@RequestMapping("/add")
 	@ResponseBody
-	public MsgResult addContentCat(Long parentId, String name) {
+	public WebResult addContentCat(Long parentId, String name) {
 		return contentCatService.addContentCat(parentId, name);
 	}
 	
 	//添加内容分类
 	@RequestMapping("/update")
 	@ResponseBody
-	public MsgResult updateContentCat(Long id, String name) {
+	public WebResult updateContentCat(Long id, String name) {
 		return contentCatService.updateContentCat(id, name);
 	}
 	
 	//删除内容分类
 	@RequestMapping("/delete")
 	@ResponseBody
-	public MsgResult deleteContentCat(Long id) {
+	public WebResult deleteContentCat(Long id) {
 		return contentCatService.deleteContentCat(id);
 	}
 }

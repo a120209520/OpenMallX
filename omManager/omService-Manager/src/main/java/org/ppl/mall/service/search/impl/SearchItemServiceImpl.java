@@ -12,7 +12,7 @@ import org.ppl.mall.mapper.TbItemMapper;
 import org.ppl.mall.model.SearchItem;
 import org.ppl.mall.model.SearchResult;
 import org.ppl.mall.service.search.SearchItemService;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -45,7 +45,7 @@ public class SearchItemServiceImpl implements SearchItemService {
      * @return 导入是否成功
      */
 	@Override
-	public MsgResult importAllItems() {
+	public WebResult importAllItems() {
 		try {
 			List<SearchItem> list = itemMapper.getSearchItemList();
 			SolrInputDocument document = new SolrInputDocument();
@@ -60,13 +60,13 @@ public class SearchItemServiceImpl implements SearchItemService {
 				solrServer.add(document);
 			}
 			solrServer.commit();
-			return MsgResult.ok();
+			return WebResult.ok();
 		} catch (SolrServerException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return MsgResult.build(MsgResult.SERVER_ERROR, "import failed!");
+		return WebResult.build(WebResult.SERVER_ERROR, "import failed!");
 	}
 
 
@@ -76,7 +76,7 @@ public class SearchItemServiceImpl implements SearchItemService {
      * @return 添加是否成功
      */
 	@Override
-	public MsgResult importItem(long id) {
+	public WebResult importItem(long id) {
         SearchItem item = itemMapper.getSearchItemById(id);
         SolrInputDocument document = new SolrInputDocument();
         document.addField("id", item.getId());
@@ -93,7 +93,7 @@ public class SearchItemServiceImpl implements SearchItemService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**

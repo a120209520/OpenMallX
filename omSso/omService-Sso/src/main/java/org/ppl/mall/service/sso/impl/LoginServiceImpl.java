@@ -7,7 +7,7 @@ import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.pojo.TbUserExample;
 import org.ppl.mall.service.sso.LoginService;
 import org.ppl.mall.util.JsonUtils;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -35,18 +35,18 @@ public class LoginServiceImpl implements LoginService {
     //用户登陆
     @Override
     @Transactional(propagation= Propagation.SUPPORTS, readOnly=true)
-    public MsgResult login(TbUser pUser) {
+    public WebResult login(TbUser pUser) {
         //001.登陆校验
         TbUserExample example = new TbUserExample();
         TbUserExample.Criteria criteria = example.createCriteria();
         criteria.andUsernameEqualTo(pUser.getUsername());
         List<TbUser> list = userMapper.selectByExample(example);
         if (list == null || list.size() == 0) {
-            return MsgResult.build(MsgResult.REQUEST_ERROR, "用户名或密码错误！");
+            return WebResult.build(WebResult.REQUEST_ERROR, "用户名或密码错误！");
         }
         TbUser user = list.get(0);
         if (!DigestUtils.md5DigestAsHex(pUser.getPassword().getBytes()).equals(user.getPassword())) {
-            return MsgResult.build(MsgResult.REQUEST_ERROR, "用户名或密码错误！");
+            return WebResult.build(WebResult.REQUEST_ERROR, "用户名或密码错误！");
         }
         //002.登陆成功——生成token
         String token = UUID.randomUUID().toString();
@@ -56,21 +56,21 @@ public class LoginServiceImpl implements LoginService {
         //004.设置过期时间
         jedisClient.expire("LOGIN-SESSION:"+token, LOGIN_TIMEOUT);
 
-        return MsgResult.ok(token);
+        return WebResult.ok(token);
     }
 
     //获取登陆信息(根据Cookie中token信息返回用户信息)
     @Override
     @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
-    public MsgResult getUserByToken(String token) {
+    public WebResult getUserByToken(String token) {
         //001.从redis获取登陆信息
         String json = jedisClient.get("LOGIN-SESSION:" + token);
         if (StringUtils.isBlank(json)) {
-            return MsgResult.build(MsgResult.REQUEST_ERROR, "请重新登陆！");
+            return WebResult.build(WebResult.REQUEST_ERROR, "请重新登陆！");
         }
         TbUser user = JsonUtils.jsonToPojo(json, TbUser.class);
         //002.更新过期时间
         jedisClient.expire("LOGIN-SESSION:"+token, LOGIN_TIMEOUT);
-        return MsgResult.ok(user);
+        return WebResult.ok(user);
     }
 }

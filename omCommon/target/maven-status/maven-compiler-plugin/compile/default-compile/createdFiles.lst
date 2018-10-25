@@ -2,8 +2,8 @@ org\ppl\mall\jedis\JedisClientPool.class
 org\ppl\mall\Template.class
 org\ppl\mall\jedis\JedisClient.class
 org\ppl\mall\util\JsonUtils.class
+org\ppl\mall\util\WebResult.class
 org\ppl\mall\util\FastDFSClient.class
 org\ppl\mall\util\CookieUtils.class
 org\ppl\mall\jedis\JedisClientCluster.class
-org\ppl\mall\util\MsgResult.class
 org\ppl\mall\util\IDUtils.class

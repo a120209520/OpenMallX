@@ -3,7 +3,7 @@ package org.ppl.mall.service;
 import org.ppl.mall.model.DataGridResult;
 import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.pojo.TbItemDesc;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 
 /**
  * 商品Service接口
@@ -14,9 +14,9 @@ public interface ItemService {
 	DataGridResult<TbItem> getItemByCatId(long catId, int pageNum, int pageSize);
 	TbItemDesc getItemDescById(long itemId);
 	DataGridResult<TbItem> getItemList(int pageNum, int pageSize);
-	MsgResult addItem(TbItem item, String desc);
-	MsgResult editItem(TbItem item, String desc);
-	MsgResult deleteItem(long itemId);
-	MsgResult unShelveItem(long itemId);
-	MsgResult reShelfItem(long itemId);
+	WebResult addItem(TbItem item, String desc);
+	WebResult editItem(TbItem item, String desc);
+	WebResult deleteItem(long itemId);
+	WebResult unShelveItem(long itemId);
+	WebResult reShelfItem(long itemId);
 }

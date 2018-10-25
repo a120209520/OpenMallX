@@ -14,7 +14,7 @@ import org.ppl.mall.service.ItemService;
 import org.ppl.mall.service.message.ItemAddMsgDispatcher;
 import org.ppl.mall.util.IDUtils;
 import org.ppl.mall.util.JsonUtils;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -161,7 +161,7 @@ public class ItemServiceImpl implements ItemService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult addItem(TbItem item, String desc) {
+	public WebResult addItem(TbItem item, String desc) {
 		Date curTime = new Date();
 		long itemId = IDUtils.genItemId();
 		item.setId(itemId);
@@ -180,7 +180,7 @@ public class ItemServiceImpl implements ItemService {
         itemAddMsgDispatcher.sendMsgToSolr(itemId);
 		itemAddMsgDispatcher.sendMsgToStaticHtml(itemId);
 
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**
@@ -191,7 +191,7 @@ public class ItemServiceImpl implements ItemService {
      */
 	@Override
     @Transactional()
-	public MsgResult editItem(TbItem item, String desc) {
+	public WebResult editItem(TbItem item, String desc) {
 		itemMapper.updateByPrimaryKeySelective(item);
 		
 		TbItemDesc itemDesc = new TbItemDesc();
@@ -200,7 +200,7 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setUpdated(new Date());
 		itemDescMapper.updateByPrimaryKeySelective(itemDesc);
 		
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**
@@ -210,10 +210,10 @@ public class ItemServiceImpl implements ItemService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult deleteItem(long itemId) {
+	public WebResult deleteItem(long itemId) {
 		itemMapper.deleteByPrimaryKey(itemId);
 		itemDescMapper.deleteByPrimaryKey(itemId);
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**
@@ -223,12 +223,12 @@ public class ItemServiceImpl implements ItemService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult unShelveItem(long itemId) {
+	public WebResult unShelveItem(long itemId) {
 		TbItem item = new TbItem();
 		item.setId(itemId);
 		item.setStatus(TbItem.STATUS_SOLDOUT);
 		itemMapper.updateByPrimaryKeySelective(item);
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**
@@ -238,11 +238,11 @@ public class ItemServiceImpl implements ItemService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult reShelfItem(long itemId) {
+	public WebResult reShelfItem(long itemId) {
 		TbItem item = new TbItem();
 		item.setId(itemId);
 		item.setStatus(TbItem.STATUS_NORMAL);
 		itemMapper.updateByPrimaryKeySelective(item);
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 }

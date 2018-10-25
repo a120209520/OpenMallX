@@ -7,7 +7,7 @@ import org.ppl.mall.service.ItemService;
 import org.ppl.mall.service.cart.CartService;
 import org.ppl.mall.util.CookieUtils;
 import org.ppl.mall.util.JsonUtils;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -97,7 +97,7 @@ public class CartController {
     //商品数量更新
     @RequestMapping("/update/num/{itemId}/{num}")
     @ResponseBody
-    public MsgResult updateCartNum(@PathVariable Long itemId,
+    public WebResult updateCartNum(@PathVariable Long itemId,
                                    @PathVariable Integer num,
                                    HttpServletRequest request,
                                    HttpServletResponse response) {
@@ -110,7 +110,7 @@ public class CartController {
         }
         CookieUtils.setCookie(request, response, "cart",
                 JsonUtils.objectToJson(list), COOKIE_CART_TIMEOUT, true);
-        return MsgResult.ok();
+        return WebResult.ok();
     }
 
     //商品删除

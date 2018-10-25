@@ -1,6 +1,5 @@
 package org.ppl.mall.service.impl;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,7 +9,7 @@ import org.ppl.mall.model.TreeNode;
 import org.ppl.mall.pojo.TbContentCategory;
 import org.ppl.mall.pojo.TbContentCategoryExample;
 import org.ppl.mall.service.ContentCatService;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -64,7 +63,7 @@ public class ContentCatServiceImpl implements ContentCatService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult addContentCat(long parentId, String name) {
+	public WebResult addContentCat(long parentId, String name) {
 		TbContentCategory parentNode = contentCatMapper.selectByPrimaryKey(parentId);
 		parentNode.setIsParent(true);
 		contentCatMapper.updateByPrimaryKey(parentNode);
@@ -80,7 +79,7 @@ public class ContentCatServiceImpl implements ContentCatService {
 		newNode.setUpdated(curTime);
 		contentCatMapper.insertSelective(newNode);
 		
-		return MsgResult.ok(newNode);
+		return WebResult.ok(newNode);
 	}
 
     /**
@@ -91,13 +90,13 @@ public class ContentCatServiceImpl implements ContentCatService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult updateContentCat(Long id, String name) {
+	public WebResult updateContentCat(Long id, String name) {
 		TbContentCategory cat = new TbContentCategory();
 		cat.setId(id);
 		cat.setName(name);
 		cat.setUpdated(new Date());
 		contentCatMapper.updateByPrimaryKeySelective(cat);
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 
     /**
@@ -107,9 +106,9 @@ public class ContentCatServiceImpl implements ContentCatService {
      */
 	@Override
     @Transactional(propagation=Propagation.REQUIRED)
-	public MsgResult deleteContentCat(Long id) {
+	public WebResult deleteContentCat(Long id) {
 		deleteContentCatLoop(id);
-		return MsgResult.ok();
+		return WebResult.ok();
 	}
 	private void deleteContentCatLoop(Long id) {
 		TbContentCategory parent = contentCatMapper.selectByPrimaryKey(id);

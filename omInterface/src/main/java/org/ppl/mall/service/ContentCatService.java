@@ -3,7 +3,7 @@ package org.ppl.mall.service;
 import java.util.List;
 
 import org.ppl.mall.model.TreeNode;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 
 /**
  * Web内容分类Service接口
@@ -12,7 +12,7 @@ import org.ppl.mall.util.MsgResult;
  */
 public interface ContentCatService {
 	List<TreeNode> getContentCatList(long parentId);
-	MsgResult addContentCat(long parentId, String name);
-	MsgResult updateContentCat(Long id, String name);
-	MsgResult deleteContentCat(Long id);
+	WebResult addContentCat(long parentId, String name);
+	WebResult updateContentCat(Long id, String name);
+	WebResult deleteContentCat(Long id);
 }

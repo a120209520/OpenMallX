@@ -4,7 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.service.sso.LoginService;
 import org.ppl.mall.util.CookieUtils;
-import org.ppl.mall.util.MsgResult;
+import org.ppl.mall.util.WebResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,9 +33,9 @@ public class LoginController {
     //用户登陆
     @RequestMapping(value="/user/login", method=RequestMethod.POST)
     @ResponseBody
-    public MsgResult login(TbUser user, HttpServletRequest request, HttpServletResponse response) {
-        MsgResult result = loginService.login(user);
-        if(result.getStatus() == MsgResult.SUCCESS) {
+    public WebResult login(TbUser user, HttpServletRequest request, HttpServletResponse response) {
+        WebResult result = loginService.login(user);
+        if(result.getStatus() == WebResult.SUCCESS) {
             String token = result.getData().toString();
             CookieUtils.setCookie(request, response, "login", token);
         }
@@ -45,7 +45,7 @@ public class LoginController {
     //获取用户信息
     @RequestMapping("/user/token/{token}")
     @ResponseBody
-    public MsgResult getUserByToken(@PathVariable String token) {
+    public WebResult getUserByToken(@PathVariable String token) {
         return loginService.getUserByToken(token);
     }
 }

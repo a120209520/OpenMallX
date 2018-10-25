@@ -5,8 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.service.sso.LoginService;
 import org.ppl.mall.util.CookieUtils;
-import org.ppl.mall.util.MsgResult;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.ppl.mall.util.WebResult;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -27,9 +26,9 @@ public class LoginInterceptor implements HandlerInterceptor {
             return true;
         }
         //003. 若有token，调用sso服务获取用户信息
-        MsgResult result = loginService.getUserByToken(token);
+        WebResult result = loginService.getUserByToken(token);
         //004. 若无用户信息，表示用户登陆过期，进入非登陆状态
-        if (result.getStatus() != MsgResult.SUCCESS) {
+        if (result.getStatus() != WebResult.SUCCESS) {
             return true;
         }
         //005. 若有用户信息，进入登陆状态

@@ -52,43 +52,30 @@
     <!-- form -->
     <div class="col-md-4">
         <form class="form-horizontal" id="register-form">
-            <h3 class="sso-title">注册</h3>
+            <h3 class="sso-title">登陆</h3>
             <span class="warning"></span>
             <hr/>
             <div class="control-group">
-                <div class="controls" id="register-username">
+                <div class="controls" id="login-username">
                     <input name="username" type="text" placeholder="用户名">
                     <span class="warning"></span>
                 </div>
             </div>
             <br/>
             <div class="control-group">
-                <div class="controls" id="register-password">
+                <div class="controls" id="login-password">
                     <input name="password" type="password" placeholder="密码">
                     <span class="warning"></span>
                 </div>
             </div>
             <br/>
             <div class="control-group">
-                <div class="controls" id="register-confirm-password">
-                    <input name="confirmPassword" type="password" placeholder="确认密码">
-                    <span class="warning"></span>
-                </div>
-            </div>
-            <br/>
-            <div class="control-group">
-                <div class="controls" id="register-cellphone">
-                    <input name="phone" type="text" placeholder="手机号">
-                    <span class="warning"></span>
-                </div>
-            </div>
-            <div class="control-group">
                 <div class="controls">
                     <label class="checkbox">
                         <input type="checkbox"> Remember me
                     </label>
                     <hr/>
-                    <button type="button" class="btn btn-large btn-primary" id="register-submit">注册</button>
+                    <button type="button" class="btn btn-large btn-primary" id="login-submit">登陆</button>
                 </div>
             </div>
         </form>
