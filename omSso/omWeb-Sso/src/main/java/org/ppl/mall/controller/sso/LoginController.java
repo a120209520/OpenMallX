@@ -5,6 +5,8 @@ import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.service.sso.LoginService;
 import org.ppl.mall.util.CookieUtils;
 import org.ppl.mall.util.WebResult;
+import org.springframework.http.MediaType;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,9 +45,20 @@ public class LoginController {
     }
 
     //获取用户信息
-    @RequestMapping("/user/token/{token}")
+    //@RequestMapping("/user/token/{token}")
+    @RequestMapping(value="/user/token/{token}", produces= MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
-    public WebResult getUserByToken(@PathVariable String token) {
-        return loginService.getUserByToken(token);
+    public Object getUserByToken(@PathVariable String token, String callback) {
+        WebResult result = loginService.getUserByToken(token);
+        if (result.getStatus() == WebResult.SUCCESS) {
+            //用户已登录
+            //通过jsonp进行跨域用户信息传输
+            MappingJacksonValue jValue = new MappingJacksonValue(result);
+            jValue.setJsonpFunction(callback);
+            return jValue;
+        } else {
+            //用户未登录
+            return result;
+        }
     }
 }

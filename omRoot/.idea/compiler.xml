@@ -14,7 +14,7 @@
         <module name="Manager.omWeb-Manager" />
         <module name="PortalCore.omWeb-Portal" />
         <module name="Shopping.omService-Shopping" />
-        <module name="Shopping.omWeb-Cart" />
+        <module name="Shopping.omWeb-Shopping" />
         <module name="Sso.omService-Sso" />
         <module name="Sso.omWeb-Sso" />
       </profile>

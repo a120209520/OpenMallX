@@ -8,7 +8,7 @@
     <file type="web" url="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal" />
     <file type="web" url="file://$PROJECT_DIR$/../omPortalCore/omWeb-Search" />
     <file type="web" url="file://$PROJECT_DIR$/../omShopping/omService-Shopping" />
-    <file type="web" url="file://$PROJECT_DIR$/../omShopping/omWeb-Cart" />
+    <file type="web" url="file://$PROJECT_DIR$/../omShopping/omWeb-Shopping" />
     <file type="web" url="file://$PROJECT_DIR$/../omSso/omService-Sso" />
     <file type="web" url="file://$PROJECT_DIR$/../omSso/omWeb-Sso" />
   </component>

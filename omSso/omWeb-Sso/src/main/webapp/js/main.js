@@ -196,6 +196,24 @@
             "json"
         )
     })
+
+    //登陆提交
+    $('#login-submit').click(function () {
+        $.post(
+            '/user/login',
+            $("#login-form").serialize(),
+            function (data) {
+                if (data.status != 200) {
+                    alert("登陆失败!");
+                } else {
+                    alert("登陆成功!");
+                }
+            },
+            "json"
+        )
+    })
+
+
 })(jQuery);
 
 //展示'最新商品'列表

@@ -47,7 +47,7 @@
 		<!-- NAVIGATION -->
         <jsp:include page="common/navigation.jsp" />
 
-		<!-- SHOW NOW -->
+		<!-- SHOP NOW -->
 		<div class="section">
 			<!-- container -->
 			<div class="container">
@@ -62,7 +62,7 @@
 							</div>
 							<div class="shop-body">
 								<h3>${node.title}<br>${node.subTitle}</h3><br><br>
-								<a href="#" class="cta-btn">现在抢购<i class="fa fa-arrow-circle-right"></i></a>
+								<a href="/search/?keyword=${node.title}" class="cta-btn">现在抢购<i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -73,7 +73,7 @@
 			</div>
 			<!-- /container -->
 		</div>
-		<!-- /SHOW NOW-->
+		<!-- /SHOP NOW-->
 
 		<!-- NEW PRODUCT -->
 		<div class="section">
@@ -117,7 +117,7 @@
                                             </div>
                                             <div class="product-body">
                                                 <p class="product-category"></p>
-                                                <h3 class="product-name"><a href="#"></a></h3>
+                                                <h3 class="product-name"><a href="aaa"></a></h3>
                                                 <h4 class="product-price"> <del class="product-old-price"></del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
@@ -785,7 +785,7 @@
 		<script src="/js/slick.min.js"></script>
 		<script src="/js/nouislider.min.js"></script>
 		<script src="/js/jquery.zoom.min.js"></script>
+		<script src="/js/jquery.cookie.js"></script>
 		<script src="/js/main.js"></script>
-
 	</body>
 </html>

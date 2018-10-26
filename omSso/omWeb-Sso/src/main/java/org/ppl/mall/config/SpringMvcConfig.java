@@ -17,7 +17,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 @ComponentScan(basePackages="org.ppl.mall.controller.sso")
 @Import({DubboConfig.class})
-@PropertySource("classpath:conf/content.properties")
+@PropertySource({
+        "classpath:conf/redis.properties",
+        "classpath:conf/sso.properties"
+})
 public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 
     //视图解析器

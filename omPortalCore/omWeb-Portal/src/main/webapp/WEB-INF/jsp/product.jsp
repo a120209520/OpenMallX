@@ -378,6 +378,7 @@ pageEncoding="UTF-8"%>
 		<script src="/js/slick.min.js"></script>
 		<script src="/js/nouislider.min.js"></script>
 		<script src="/js/jquery.zoom.min.js"></script>
+		<script src="/js/jquery.cookie.js"></script>
 		<script src="/js/main.js"></script>
 
 	</body>

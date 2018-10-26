@@ -51,7 +51,7 @@
 
     <!-- form -->
     <div class="col-md-4">
-        <form class="form-horizontal" id="register-form">
+        <form class="form-horizontal" id="login-form">
             <h3 class="sso-title">登陆</h3>
             <span class="warning"></span>
             <hr/>
@@ -97,6 +97,8 @@
 <script src="/js/slick.min.js"></script>
 <script src="/js/nouislider.min.js"></script>
 <script src="/js/jquery.zoom.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
 <script src="/js/main.js"></script>
+
 </body>
 </html>

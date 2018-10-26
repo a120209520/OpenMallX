@@ -84,9 +84,6 @@
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <label class="checkbox">
-                        <input type="checkbox"> Remember me
-                    </label>
                     <hr/>
                     <button type="button" class="btn btn-large btn-primary" id="register-submit">注册</button>
                 </div>
@@ -110,6 +107,7 @@
 <script src="/js/slick.min.js"></script>
 <script src="/js/nouislider.min.js"></script>
 <script src="/js/jquery.zoom.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
 <script src="/js/main.js"></script>
 </body>
 </html>

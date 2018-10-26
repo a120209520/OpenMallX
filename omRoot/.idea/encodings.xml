@@ -9,13 +9,11 @@
     <file url="file://$PROJECT_DIR$/../omManager/omWeb-Manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omPojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omPortalCore" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../omPortalCore/omWeb-Item" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../omPortalCore/omWeb-Search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omShopping" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omShopping/omService-Shopping" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../omShopping/omWeb-Cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../omShopping/omWeb-Shopping" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omSso" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omSso/omService-Sso" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../omSso/omWeb-Sso" charset="UTF-8" />

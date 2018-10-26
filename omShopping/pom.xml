@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>omService-Shopping</module>
-        <module>omWeb-Cart</module>
+        <module>omWeb-Shopping</module>
     </modules>
     <parent>
         <groupId>org.ppl.mall</groupId>

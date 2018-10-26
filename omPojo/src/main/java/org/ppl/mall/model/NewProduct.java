@@ -8,10 +8,19 @@ import java.io.Serializable;
  */
 public class NewProduct implements Serializable {
 
+    private Long id;
     private String title;
     private Long price;
     private String image;
     private String catName;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;

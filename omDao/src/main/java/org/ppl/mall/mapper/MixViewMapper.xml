@@ -10,6 +10,7 @@
 
     <select id="selectNewProductByCid" resultMap="NewProductMap" parameterType="java.lang.Long" >
         SELECT
+        i.id,
         i.title,
         i.price,
         i.image,
@@ -23,6 +24,7 @@
     </select>
     <select id="selectNewProduct" resultMap="NewProductMap" >
         SELECT
+        i.id,
         i.title,
         i.price,
         i.image,

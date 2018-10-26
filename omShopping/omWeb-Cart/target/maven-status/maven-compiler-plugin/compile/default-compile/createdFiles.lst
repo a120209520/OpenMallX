@@ -1,7 +1,0 @@
-org\ppl\mall\config\WebAppInitializer.class
-org\ppl\mall\controller\cart\CartController.class
-org\ppl\mall\interceptor\cart\LoginInterceptor.class
-org\ppl\mall\config\DubboConfig.class
-org\ppl\mall\config\FreeMarkerConfig.class
-org\ppl\mall\config\RootConfig.class
-org\ppl\mall\config\SpringMvcConfig.class

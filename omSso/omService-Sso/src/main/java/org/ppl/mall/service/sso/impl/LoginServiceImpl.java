@@ -31,6 +31,8 @@ public class LoginServiceImpl implements LoginService {
     private JedisClient jedisClient;
     @Value("${LOGIN_TIMEOUT}")
     private int LOGIN_TIMEOUT;
+    @Value("${LOGIN_TOKEN_PREFIX}")
+    private String LOGIN_TOKEN_PREFIX;
 
     //用户登陆
     @Override
@@ -51,10 +53,10 @@ public class LoginServiceImpl implements LoginService {
         //002.登陆成功——生成token
         String token = UUID.randomUUID().toString();
         //003.将token保存到redis
-        user.setPassword(null); //安全考虑，不保存密码信息到redis
-        jedisClient.set("LOGIN-SESSION:"+token, JsonUtils.objectToJson(user));
+        user.setPassword(null); //出于安全考虑，不保存密码信息到redis
+        jedisClient.set(LOGIN_TOKEN_PREFIX + token, JsonUtils.objectToJson(user));
         //004.设置过期时间
-        jedisClient.expire("LOGIN-SESSION:"+token, LOGIN_TIMEOUT);
+        jedisClient.expire(LOGIN_TOKEN_PREFIX + token, LOGIN_TIMEOUT);
 
         return WebResult.ok(token);
     }
@@ -64,13 +66,13 @@ public class LoginServiceImpl implements LoginService {
     @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
     public WebResult getUserByToken(String token) {
         //001.从redis获取登陆信息
-        String json = jedisClient.get("LOGIN-SESSION:" + token);
+        String json = jedisClient.get(LOGIN_TOKEN_PREFIX + token);
         if (StringUtils.isBlank(json)) {
             return WebResult.build(WebResult.REQUEST_ERROR, "请重新登陆！");
         }
         TbUser user = JsonUtils.jsonToPojo(json, TbUser.class);
         //002.更新过期时间
-        jedisClient.expire("LOGIN-SESSION:"+token, LOGIN_TIMEOUT);
+        jedisClient.expire(LOGIN_TOKEN_PREFIX + token, LOGIN_TIMEOUT);
         return WebResult.ok(user);
     }
 }
