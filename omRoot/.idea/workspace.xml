@@ -112,7 +112,7 @@
     <session id="1121229822">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.22" value="1" />
@@ -199,7 +199,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../omShopping/omWeb-Shopping/src/main/java/org/ppl/mall/controller/shopping/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
+            <state relative-caret-position="343">
               <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
             </state>
           </provider>
@@ -236,7 +236,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/common/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
@@ -248,7 +248,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
@@ -1046,7 +1046,7 @@
       <workItem from="1540379440118" duration="20165000" />
       <workItem from="1540551967129" duration="5101000" />
       <workItem from="1540559626167" duration="6234000" />
-      <workItem from="1540612588997" duration="26496000" />
+      <workItem from="1540612588997" duration="26757000" />
     </task>
     <servers />
   </component>
@@ -1083,7 +1083,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194798000" />
+    <option name="totallyTimeSpent" value="195059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1506,10 +1506,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omShopping/omWeb-Shopping/src/main/java/org/ppl/mall/controller/shopping/CartController.java">
+    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/cart/CartService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        <state relative-caret-position="176">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+          <folding>
+            <element signature="n#!!block;n#showNewProductList#0" />
+            <element signature="n#!!block;n#showTopProductList#0" />
+            <element signature="n#!!block;n#showTopSellingList#0" />
+            <element signature="n#!!block;n#reformatProductItem#0" />
+            <element signature="n#!!block;n#transferAllPrice#0" />
+            <element signature="n#!!block;n#getLoginInfo#0" />
+            <element signature="n#!!block;n#getCartInfo#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="368" column="59" selection-start-line="368" selection-start-column="52" selection-end-line="368" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1542,10 +1565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../omInterface/src/main/java/org/ppl/mall/service/cart/CartService.java">
+    <entry file="file://$PROJECT_DIR$/../omShopping/omWeb-Shopping/src/main/java/org/ppl/mall/controller/shopping/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="343">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1555,29 +1578,6 @@
           <caret line="80" column="57" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="57" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#header#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="368" column="59" selection-start-line="368" selection-start-column="52" selection-end-line="368" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../omPortalCore/omWeb-Portal/src/main/webapp/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
-          <folding>
-            <element signature="n#!!block;n#showNewProductList#0" />
-            <element signature="n#!!block;n#showTopProductList#0" />
-            <element signature="n#!!block;n#showTopSellingList#0" />
-            <element signature="n#!!block;n#reformatProductItem#0" />
-            <element signature="n#!!block;n#transferAllPrice#0" />
-            <element signature="n#!!block;n#getLoginInfo#0" />
-            <element signature="n#!!block;n#getCartInfo#0" />
           </folding>
         </state>
       </provider>
