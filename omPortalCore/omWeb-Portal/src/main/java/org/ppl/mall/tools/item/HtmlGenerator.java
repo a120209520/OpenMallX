@@ -33,6 +33,7 @@ public class HtmlGenerator {
     private String ITEM_STATIC_PATH;
 
     public void itemAdd(long id) {
+        System.out.println(itemService);
         TbItem item = itemService.getItemById(id);
         TbItemDesc itemDesc = itemService.getItemDescById(id);
         Map data = new HashMap<>();

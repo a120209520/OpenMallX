@@ -14,6 +14,8 @@
 		e.stopPropagation();
 	});
 
+
+
 	/////////////////////////////////////////
 
 	// Products Slick
@@ -145,12 +147,35 @@
     showTopSellingList();
     transferAllPrice();
     getLoginInfo();
+    getCartInfo();
+    
     //主页
     $('.section-tab-nav.tab-nav > li').click(function () {
         var cid = $(this).children('a').attr('href');
         showNewProductList(cid);
     });
 
+    //添加到购物车
+    $('.add-to-cart').click(function () {
+        var id = $(this).parent().find('.product-name > a').attr('href').split('/')[2];
+        var $bar = $(this).find('.add-to-cart-btn>span');
+        $.ajax({
+            url : "http://localhost:8089/cart/add/"+id+"/1/",
+            dataType : "jsonp",
+            type : "GET",
+            success : function(data) {
+                if(data.status == 200) {
+                    getCartInfo();  //更新购物车
+                    $bar.text('已添加!');
+                }
+            }
+        });
+    })
+
+    //鼠标移开后恢复购物车按钮
+    $('.add-to-cart').mouseout(function () {
+        $(this).find('.add-to-cart-btn > span').text('添加到购物车');
+    })
 
 })(jQuery);
 
@@ -249,14 +274,50 @@ function transferAllPrice() {
 //获取登陆信息
 function getLoginInfo() {
     $.ajax({
-        url : "http://localhost:8087/user/token/" + $.cookie('login'),
+        url : "http://localhost:8087/user/token/jsonp/" + $.cookie('login'),
         dataType : "jsonp",
         type : "GET",
         success : function(data) {
             if(data.status == 200) {
+                $.cookie('userId', data.data.id);
                 var username = data.data.username;
                 $('#user-info > span').text(username);
+                $('#header-account').show();
+            } else {
+                $('#user-info > span').text('请登录');
+                $('#header-account').hide();
             }
+        }
+    });
+}
+
+//获取购物车信息
+function getCartInfo() {
+    var userId = $.cookie('userId');
+    if(userId == null) {
+        userId = "";
+    }
+    $.ajax({
+        url : "http://localhost:8089/cart/list/" + userId,
+        dataType : "jsonp",
+        type : "GET",
+        success : function(data) {
+            var hiddenNode = $('.cart-list > .product-widget.hidden');
+            hiddenNode.siblings('.product-widget').remove();
+            var totalPrice = 0;
+            for (var i = 0; i < data.length; i++) {
+                var newCartItem = hiddenNode.clone();
+                newCartItem.removeClass('hidden');
+                newCartItem.find('.product-img > img').attr('src', data[i].image);
+                newCartItem.find('.product-name > a').text(data[i].title);
+                newCartItem.find('.cart-item-num').text(data[i].num+'x');
+                newCartItem.find('.cart-item-price').text(priceTrans(data[i].price));
+                $('.cart-list').append(newCartItem);
+                totalPrice += (data[i].price / 100.0) * data[i].num;
+            }
+            $('.cart-summary > small').text('共有'+data.length+'件商品');
+            $('.cart-summary > h5').text('小计: '+totalPrice.toFixed(2)+'元');
+            $('#cart-num').text(data.length);
         }
     });
 }

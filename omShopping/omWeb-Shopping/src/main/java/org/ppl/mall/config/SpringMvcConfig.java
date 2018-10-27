@@ -1,6 +1,7 @@
 package org.ppl.mall.config;
 
-import org.ppl.mall.interceptor.cart.LoginInterceptor;
+import org.ppl.mall.interceptor.LoginInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.web.servlet.ViewResolver;
@@ -17,10 +18,13 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="org.ppl.mall.controller.cart")
+@ComponentScan(basePackages="org.ppl.mall.controller.shopping")
 @Import({DubboConfig.class})
 @PropertySource("classpath:conf/cart.properties")
 public class SpringMvcConfig extends WebMvcConfigurerAdapter {
+
+    @Autowired
+    private LoginInterceptor loginInterceptor;
 
     //视图解析器
     @Bean
@@ -45,6 +49,6 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
     //添加拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(loginInterceptor).addPathPatterns("/**");
     }
 }

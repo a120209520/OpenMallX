@@ -590,9 +590,9 @@ textarea.input {
 
 .cart-dropdown .cart-btns>a {
   display: inline-block;
-  width: calc(50% - 0px);
+  width: calc(100% - 0px);
   padding: 12px;
-  background-color: #D10024;
+  background-color: #2B2D42;
   color: #FFF;
   text-align: center;
   font-weight: 700;
@@ -600,10 +600,6 @@ textarea.input {
   transition: 0.2s all;
 }
 
-.cart-dropdown .cart-btns>a:first-child {
-  margin-right: -4px;
-  background-color: #1e1f29;
-}
 
 .cart-dropdown .cart-btns>a:hover {
   opacity: 0.9;

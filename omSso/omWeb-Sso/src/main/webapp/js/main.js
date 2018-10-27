@@ -207,6 +207,7 @@
                     alert("登陆失败!");
                 } else {
                     alert("登陆成功!");
+                    window.location.replace('http://localhost:8083/index');
                 }
             },
             "json"

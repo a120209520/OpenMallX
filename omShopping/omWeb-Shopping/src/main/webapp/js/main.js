@@ -249,7 +249,7 @@ function transferAllPrice() {
 //获取登陆信息
 function getLoginInfo() {
     $.ajax({
-        url : "http://localhost:8087/user/token/" + $.cookie('login'),
+        url : "http://localhost:8087/user/token/jsonp/" + $.cookie('login'),
         dataType : "jsonp",
         type : "GET",
         success : function(data) {

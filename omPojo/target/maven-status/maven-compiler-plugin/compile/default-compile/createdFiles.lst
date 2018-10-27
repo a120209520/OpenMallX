@@ -1,1 +1,7 @@
 org\ppl\mall\model\NewProduct.class
+org\ppl\mall\pojo\TbCartItem.class
+org\ppl\mall\model\CartItem.class
+org\ppl\mall\pojo\TbCartItemExample$GeneratedCriteria.class
+org\ppl\mall\pojo\TbCartItemExample$Criterion.class
+org\ppl\mall\pojo\TbCartItemExample$Criteria.class
+org\ppl\mall\pojo\TbCartItemExample.class

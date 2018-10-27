@@ -23,6 +23,8 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class LoginController {
 
+    public static final String INVALID_PATHVALUE = "null";
+
     @Reference
     private LoginService loginService;
 
@@ -44,21 +46,20 @@ public class LoginController {
         return result;
     }
 
-    //获取用户信息
-    //@RequestMapping("/user/token/{token}")
-    @RequestMapping(value="/user/token/{token}", produces= MediaType.APPLICATION_JSON_UTF8_VALUE)
+    //获取用户信息(jsonp格式)
+    @RequestMapping(value="/user/token/jsonp/{token}", produces= MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
-    public Object getUserByToken(@PathVariable String token, String callback) {
+    public MappingJacksonValue getUserJsonpByToken(@PathVariable String token, String callback) {
         WebResult result = loginService.getUserByToken(token);
-        if (result.getStatus() == WebResult.SUCCESS) {
-            //用户已登录
-            //通过jsonp进行跨域用户信息传输
-            MappingJacksonValue jValue = new MappingJacksonValue(result);
-            jValue.setJsonpFunction(callback);
-            return jValue;
-        } else {
-            //用户未登录
-            return result;
-        }
+        MappingJacksonValue jValue = new MappingJacksonValue(result);
+        jValue.setJsonpFunction(callback);
+        return jValue;
+    }
+
+    //获取用户信息(json格式)
+    @RequestMapping(value="/user/token/{token}")
+    @ResponseBody
+    public WebResult getUserJsonpByToken(@PathVariable String token) {
+        return loginService.getUserByToken(token);
     }
 }

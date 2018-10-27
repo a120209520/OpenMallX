@@ -12,6 +12,7 @@ G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\p
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\model\DataGridResult.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbOrderItem.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbOrder.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbCartItem.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbContentCategoryExample.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbItemExample.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\model\SearchItem.java
@@ -20,6 +21,7 @@ G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\p
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbItemParamExample.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbContentCategory.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbOrderShipping.java
+G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbCartItemExample.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbContent.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbUser.java
 G:\OneDrive\Study\Java\Project\OpenMallX-Pro\omPojo\src\main\java\org\ppl\mall\pojo\TbUserExample.java

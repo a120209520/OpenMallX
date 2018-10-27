@@ -1,4 +1,4 @@
-package org.ppl.mall.interceptor.cart;
+package org.ppl.mall.interceptor;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.apache.commons.lang3.StringUtils;
@@ -6,26 +6,33 @@ import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.service.sso.LoginService;
 import org.ppl.mall.util.CookieUtils;
 import org.ppl.mall.util.WebResult;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@Component
 public class LoginInterceptor implements HandlerInterceptor {
     @Reference
     private LoginService loginService;
+
+    public LoginInterceptor() {
+        System.out.println("new LoginInterceptor");
+    }
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //Controller执行之前
         //001. 从Cookie中获取token
-        String token = CookieUtils.getCookieValue(request, "token");
+        String token = CookieUtils.getCookieValue(request, "login");
         //002. 若没有token，进入非登陆状态
         if (StringUtils.isBlank(token)) {
             return true;
         }
         //003. 若有token，调用sso服务获取用户信息
+        System.out.println(loginService);
         WebResult result = loginService.getUserByToken(token);
         //004. 若无用户信息，表示用户登陆过期，进入非登陆状态
         if (result.getStatus() != WebResult.SUCCESS) {
