@@ -9,6 +9,7 @@ import org.ppl.mall.service.ItemService;
 import org.ppl.mall.service.cart.CartService;
 import org.ppl.mall.util.CookieUtils;
 import org.ppl.mall.util.WebResult;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
@@ -33,6 +34,9 @@ public class CartController {
     @Reference
     private CartService cartService;
 
+    @Value("${PORTAL_INDEX_URL}")
+    private String PORTAL_INDEX_URL;
+
     //添加商品
     @RequestMapping(value="/add/{itemId}/{num}", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
@@ -41,8 +45,6 @@ public class CartController {
                           HttpServletRequest request,
                           String callback) {
         TbUser user = (TbUser) request.getAttribute("user");
-        System.out.println(user);
-        System.out.println(callback);
         WebResult result = null;
         if (user != null) {
             //已登陆
@@ -56,9 +58,16 @@ public class CartController {
         return jValue;
     }
 
-    //添加商品——登陆状态
-    private WebResult addCartWithLogin(Long itemId, Integer num, TbUser user) {
-        return cartService.addCartItem(user.getId(), itemId, num);
+    //清空购物车
+    //清空购物车时最好刷新页面，不用ajax，否则用户有种清空没生效的体验
+    @RequestMapping(value="/delete")
+    public String deleteCart(HttpServletRequest request) {
+        TbUser user = (TbUser) request.getAttribute("user");
+        if (user != null) {
+            //已登陆
+            cartService.deleteCart(user.getId());
+        }
+        return "redirect:"+PORTAL_INDEX_URL;
     }
 
     //购物车显示
@@ -69,5 +78,10 @@ public class CartController {
         MappingJacksonValue jValue = new MappingJacksonValue(cartList);
         jValue.setJsonpFunction(callback);
         return jValue;
+    }
+
+    //添加商品——登陆状态
+    private WebResult addCartWithLogin(Long itemId, Integer num, TbUser user) {
+        return cartService.addCartItem(user.getId(), itemId, num);
     }
 }

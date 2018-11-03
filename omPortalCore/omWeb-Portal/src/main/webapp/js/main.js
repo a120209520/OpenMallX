@@ -170,12 +170,12 @@
                 }
             }
         });
-    })
+    });
 
     //鼠标移开后恢复购物车按钮
     $('.add-to-cart').mouseout(function () {
         $(this).find('.add-to-cart-btn > span').text('添加到购物车');
-    })
+    });
 
 })(jQuery);
 

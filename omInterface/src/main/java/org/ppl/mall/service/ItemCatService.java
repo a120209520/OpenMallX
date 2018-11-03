@@ -10,8 +10,8 @@ import org.ppl.mall.pojo.TbItemCat;
  * @author PPL
  */
 public interface ItemCatService {
-	List<TreeNode> getItemCatTreeList(long parentId);
-    List<TbItemCat> getItemCatList(long parentId);
+	List<TreeNode> getItemCatTreeList(Long parentId);
+    List<TbItemCat> getItemCatList(Long parentId);
 	List<TreeNode> getRootItemCatTreeList();
 	List<TbItemCat> getRootItemCatList();
 }

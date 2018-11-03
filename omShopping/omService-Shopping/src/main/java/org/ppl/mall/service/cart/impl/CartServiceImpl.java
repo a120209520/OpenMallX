@@ -86,4 +86,23 @@ public class CartServiceImpl implements CartService {
         }
         return WebResult.build(WebResult.SERVER_ERROR, "商品不存在!");
     }
+
+    /**
+     * 删除购物车商品
+     * @param userId 用户id
+     * @param itemId 商品id
+     * @return WebResult
+     */
+    @Override
+    @Transactional(propagation=Propagation.REQUIRED)
+    public WebResult deleteCart(Long userId) {
+        if (userId == null) {
+            return WebResult.build(WebResult.REQUEST_ERROR, "删除商品失败!");
+        }
+        TbCartItemExample example = new TbCartItemExample();
+        TbCartItemExample.Criteria criteria = example.createCriteria();
+        criteria.andUserIdEqualTo(userId);
+        cartItemMapper.deleteByExample(example);
+        return WebResult.ok();
+    }
 }

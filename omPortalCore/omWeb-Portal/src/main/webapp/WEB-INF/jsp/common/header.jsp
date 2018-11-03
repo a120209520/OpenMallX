@@ -93,15 +93,14 @@
                                                 <span class="cart-item-price"></span>
                                             </h4>
                                         </div>
-                                        <button class="delete"><i class="fa fa-close"></i></button>
                                     </div>
                                 </div>
                                 <div class="cart-summary">
-                                    <small>3 Item(s) selected</small>
-                                    <h5>SUBTOTAL: $2940.00</h5>
+                                    <small></small>
+                                    <h5></h5>
                                 </div>
                                 <div class="cart-btns">
-                                    <a href="#">提交订单&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></a>
+                                    <a href="http://localhost:8089/cart/delete/">清空购物车&nbsp;&nbsp;<i class="fa fa-remove"></i></a>
                                 </div>
                             </div>
                         </div>

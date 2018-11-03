@@ -74,11 +74,10 @@ public class ContentServiceImpl implements ContentService {
 	@Override
     @Transactional(propagation=Propagation.SUPPORTS, readOnly=true)
 	public List<TbContent> getContentList(Long catId) {
-		//优先查询redis缓存
+		//取redis缓存
 		String json = jedisClient.hget(CONTENT_LIST, catId.toString());
 		if(StringUtils.isNotBlank(json)) {
 			List<TbContent> list = JsonUtils.jsonToList(json, TbContent.class);
-			System.out.println("get data from Redis!!!");
 			return list;
 		}
 		
@@ -86,9 +85,8 @@ public class ContentServiceImpl implements ContentService {
 		Criteria criteria = example.createCriteria();
 		criteria.andCategoryIdEqualTo(catId);
 		List<TbContent> list = contentMapper.selectByExampleWithBLOBs(example);
-		System.out.println("get data from Mysql!!!");
-		
-		//首次查询，将结果保存到redis缓存
+
+		//保存redis缓存
 		jedisClient.hset(CONTENT_LIST, catId.toString(), JsonUtils.objectToJson(list));
 		return list;
 	}

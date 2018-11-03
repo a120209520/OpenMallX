@@ -14,4 +14,5 @@ import java.util.List;
 public interface CartService {
     List<CartItem> getCartList(Long userId);
     WebResult addCartItem(Long userId, Long itemId, Integer num);
+    WebResult deleteCart(Long userId);
 }
