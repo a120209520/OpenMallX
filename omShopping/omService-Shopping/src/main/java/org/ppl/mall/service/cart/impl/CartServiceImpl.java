@@ -90,7 +90,6 @@ public class CartServiceImpl implements CartService {
     /**
      * 删除购物车商品
      * @param userId 用户id
-     * @param itemId 商品id
      * @return WebResult
      */
     @Override

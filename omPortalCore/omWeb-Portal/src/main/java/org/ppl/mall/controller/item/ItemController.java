@@ -22,12 +22,10 @@ public class ItemController {
     //商品详情
     @RequestMapping("/item/{itemId}")
     public String itemDetial(@PathVariable("itemId") Long id, Model model) {
-        System.out.println(id);
         TbItem tbItem = itemService.getItemById(id);
         TbItemDesc tbItemDesc = itemService.getItemDescById(id);
         model.addAttribute("item", tbItem);
         model.addAttribute("itemDesc", tbItemDesc);
-        System.out.println(tbItem.getImages()[0]);
         return "product";
     }
 }

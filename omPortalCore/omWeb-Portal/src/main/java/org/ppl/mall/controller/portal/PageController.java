@@ -31,13 +31,8 @@ public class PageController {
 	//主页 
 	@RequestMapping("/index")
 	public String index(Model model) {
-		List<TbContent> showNowList = contentService.getContentList(CONTENT_SHOW_NOW);
-		model.addAttribute("showNowList", showNowList);
-
-        List<TbItemCat> newProductCat = itemCatService.getRootItemCatList();
-        model.addAttribute("newProductCat", newProductCat);
-
-		return "index";
+	    //直接跳转到静态页面服务器
+		return "redirect:http://localhost:8703/";
 	}
 
 

@@ -1,24 +1,17 @@
 package org.ppl.mall.controller.portal;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import org.ppl.mall.model.DataGridResult;
-import org.ppl.mall.model.NewProduct;
-import org.ppl.mall.pojo.TbContent;
-import org.ppl.mall.pojo.TbItem;
-import org.ppl.mall.pojo.TbItemCat;
-import org.ppl.mall.service.ContentService;
-import org.ppl.mall.service.ItemCatService;
 import org.ppl.mall.service.ItemService;
 import org.ppl.mall.service.PortalService;
+import org.ppl.mall.util.JsonpUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 页面跳转Controller
@@ -42,14 +35,13 @@ public class PortalController {
     private PortalService portalService;
 
     //根据商品分类cid查询商品信息，显示到New-Product页面
-    @RequestMapping("/newpro/item/{cid}")
+    @RequestMapping(value="/newpro/item/{cid}", produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
-    public List<NewProduct> getNewProductItemByCid(Model model, @PathVariable Long cid) {
-        System.out.println("cid="+cid);
+    public MappingJacksonValue getNewProductItemByCid(Model model, @PathVariable Long cid, String callback) {
         if (DEFAULT_NEW_PRODUCT_CID == cid) {
-            return portalService.getNewProductByCid(null);
+            return JsonpUtils.jsonpResult(portalService.getNewProductByCid(null), callback);
         }
-        return portalService.getNewProductByCid(cid);
+        return JsonpUtils.jsonpResult(portalService.getNewProductByCid(cid), callback);
     }
 
 }

@@ -32,7 +32,6 @@ public class LoginInterceptor implements HandlerInterceptor {
             return true;
         }
         //003. 若有token，调用sso服务获取用户信息
-        System.out.println(loginService);
         WebResult result = loginService.getUserByToken(token);
         //004. 若无用户信息，表示用户登陆过期，进入非登陆状态
         if (result.getStatus() != WebResult.SUCCESS) {

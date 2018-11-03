@@ -54,7 +54,6 @@ public class PortalServiceImpl implements PortalService {
         TbItemCatExample.Criteria criteria = example.createCriteria();
         criteria.andParentIdEqualTo(cid);
         List<TbItemCat> itemCats = itemCatMapper.selectByExample(example);
-        System.out.println(itemCats.size());
         if (itemCats.size() != 0) {
             for (TbItemCat itemCat : itemCats) {
                 loopFindNewProduct(itemCat.getId(), res);

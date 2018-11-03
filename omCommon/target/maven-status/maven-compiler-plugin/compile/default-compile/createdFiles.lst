@@ -1,4 +1,5 @@
 org\ppl\mall\jedis\JedisClientPool.class
+org\ppl\mall\util\JsonpUtils.class
 org\ppl\mall\Template.class
 org\ppl\mall\jedis\JedisClient.class
 org\ppl\mall\util\JsonUtils.class

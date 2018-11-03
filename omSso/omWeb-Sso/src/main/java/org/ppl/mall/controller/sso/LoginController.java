@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import org.ppl.mall.pojo.TbUser;
 import org.ppl.mall.service.sso.LoginService;
 import org.ppl.mall.util.CookieUtils;
+import org.ppl.mall.util.JsonpUtils;
 import org.ppl.mall.util.WebResult;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.MappingJacksonValue;
@@ -51,9 +52,7 @@ public class LoginController {
     @ResponseBody
     public MappingJacksonValue getUserJsonpByToken(@PathVariable String token, String callback) {
         WebResult result = loginService.getUserByToken(token);
-        MappingJacksonValue jValue = new MappingJacksonValue(result);
-        jValue.setJsonpFunction(callback);
-        return jValue;
+        return JsonpUtils.jsonpResult(result, callback);
     }
 
     //获取用户信息(json格式)
