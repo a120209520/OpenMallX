@@ -1,18 +1,18 @@
 package org.ppl.mall.controller.portal;
 
-import java.util.List;
-
 import com.alibaba.dubbo.config.annotation.Reference;
-import org.ppl.mall.pojo.TbContent;
-import org.ppl.mall.pojo.TbItemCat;
+import org.ppl.mall.model.DataGridResult;
+import org.ppl.mall.pojo.TbItem;
 import org.ppl.mall.service.ContentService;
 import org.ppl.mall.service.ItemCatService;
+import org.ppl.mall.service.ItemService;
 import org.ppl.mall.tools.item.HtmlGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 页面跳转Controller
@@ -26,6 +26,8 @@ public class PageController {
 	private ContentService contentService;
 	@Reference
     private ItemCatService itemCatService;
+	@Reference
+    private ItemService itemService;
 	@Autowired
 	private HtmlGenerator htmlGenerator;
 	
@@ -46,8 +48,13 @@ public class PageController {
 	}
 
 	@RequestMapping("/refresh")
+    @ResponseBody
 	public String refresh() {
         htmlGenerator.genPortalIndex();
+        DataGridResult<TbItem> itemList = itemService.getItemList(1, 100);
+        itemList.getRows().forEach((item)->{
+            htmlGenerator.genItemDetail(item.getId());
+        });
 		return "ok";
 	}
 }

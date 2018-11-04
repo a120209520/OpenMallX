@@ -47,7 +47,7 @@
                 <!-- SEARCH BAR -->
                 <div class="col-md-6">
                     <div class="header-search">
-                        <form action="/search/">
+                        <form action="http://localhost:8083/search/">
                             <select class="input-select">
                                 <option value="0">All</option>
                             </select>

@@ -17,8 +17,7 @@ public class ItemAddMsgListener {
     public void staticHtmlItemAdd(Long id) {
         try {
             TimeUnit.MILLISECONDS.sleep(500);
-            System.out.println("staticHtmlItemAdd: " + id);
-            //htmlGenerator.genItemDetail(id);
+            htmlGenerator.genItemDetail(id);
             htmlGenerator.genPortalIndex();
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="shop-body">
                                     <h3>${node.title}<br>${node.subTitle}</h3><br><br>
-                                    <a href="/search/?keyword=${node.title}" class="cta-btn">现在抢购<i class="fa fa-arrow-circle-right"></i></a>
+                                    <a href="http://localhost:8083/search/?keyword=${node.title}" class="cta-btn">现在抢购<i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                                                 </div>
                                                 <div class="product-body">
                                                     <p class="product-category">${node.catName}</p>
-                                                    <h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+                                                    <h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
                                                     <h4 class="product-price"> <del class="product-old-price">${node.price?c}</del></h4>
                                                     <div class="product-rating">
                                                         <i class="fa fa-star"></i>
@@ -187,7 +187,7 @@
 								</li>
 							</ul>
 							<h2 class="text-uppercase">双11狂欢活动</h2>
-							<p>全场商品不止5折!</p>
+                            <p>Nintendo Switch 限时99元！</p>
 							<a class="primary-btn cta-btn" href="#">现在秒杀！</a>
 						</div>
 					</div>
@@ -237,7 +237,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">${node.catName}</p>
-												<h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+												<h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
 												<h4 class="product-price"><del class="product-old-price">${node.price?c}</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -301,7 +301,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">${node.catName}</p>
-                                            <h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+                                            <h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
                                             <h4 class="product-price"><del class="product-old-price">${node.price?c}</del></h4>
                                         </div>
                                     </div>
@@ -318,7 +318,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">${node.catName}</p>
-                                            <h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+                                            <h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
                                             <h4 class="product-price"><del class="product-old-price">${node.price?c}</del></h4>
                                         </div>
                                     </div>
@@ -346,7 +346,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">${node.catName}</p>
-                                            <h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+                                            <h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
                                             <h4 class="product-price"><del class="product-old-price">${node.price?c}</del></h4>
                                         </div>
                                     </div>
@@ -363,7 +363,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">${node.catName}</p>
-                                            <h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+                                            <h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
                                             <h4 class="product-price"><del class="product-old-price">${node.price?c}</del></h4>
                                         </div>
                                     </div>
@@ -393,7 +393,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">${node.catName}</p>
-                                            <h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+                                            <h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
                                             <h4 class="product-price"><del class="product-old-price">${node.price?c}</del></h4>
                                         </div>
                                     </div>
@@ -410,7 +410,7 @@
                                         </div>
                                         <div class="product-body">
                                             <p class="product-category">${node.catName}</p>
-                                            <h3 class="product-name"><a href="/items/${node.id?c}">${node.title}</a></h3>
+                                            <h3 class="product-name"><a href="/items/${node.id?c}.html">${node.title}</a></h3>
                                             <h4 class="product-price"><del class="product-old-price">${node.price?c}</del></h4>
                                         </div>
                                     </div>

@@ -56,6 +56,12 @@ public class HtmlGenerator {
     public void genItemDetail(long id) {
         TbItem item = itemService.getItemById(id);
         TbItemDesc itemDesc = itemService.getItemDescById(id);
+        if (item == null) {
+            item = new TbItem();
+        }
+        if (itemDesc == null) {
+            itemDesc = new TbItemDesc();
+        }
         Map data = new HashMap<>();
         data.put("item", item);
         data.put("itemDesc", itemDesc);

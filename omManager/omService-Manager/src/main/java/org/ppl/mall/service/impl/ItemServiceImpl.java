@@ -117,12 +117,10 @@ public class ItemServiceImpl implements ItemService {
         String json = jedisClient.get(ITEM_DESC_PREFIX+itemId);
         if(StringUtils.isNotBlank(json)) {
             TbItemDesc itemDesc = JsonUtils.jsonToPojo(json, TbItemDesc.class);
-            System.out.println("get data from Redis!!!");
             return itemDesc;
         }
 
         TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
-        System.out.println("get data from Mysql!!!");
 
         //从数据库查询后，存入redis缓存
         if(itemDesc != null) {
