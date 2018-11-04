@@ -142,18 +142,7 @@
 		});
 	}
 
-    //showNewProductList(0);
-    //showTopProductList();
-    //showTopSellingList();
-    transferAllPrice();
-    getLoginInfo();
-    getCartInfo();
-    
-    //主页
-    $('.section-tab-nav.tab-nav > li').click(function () {
-        var cid = $(this).children('a').attr('href');
-        showNewProductList(cid);
-    });
+
 
     //添加到购物车
     $('.add-to-cart').click(function () {
@@ -177,26 +166,24 @@
         $(this).find('.add-to-cart-btn > span').text('添加到购物车');
     });
 
+    showNewProductList();
+    //showTopProductList();
+    //showTopSellingList();
+    transferAllPrice();
+    getLoginInfo();
+    getCartInfo();
+
 })(jQuery);
 
 //展示'最新商品'列表
-function showNewProductList(cid) {
-    $.ajax({
-        url : 'http://localhost:8083/content/newpro/item/'+cid,
-        dataType : "jsonp",
-        type : "GET",
-        success : function(data) {
-            var $itemList = $('#new-product-list .product');
-            for (var i = 0; i < data.length; i++) {
-                var $item = $($itemList[i]);
-                $item.find('.product-category').text(data[i].catName);
-                $item.find('.product-name > a').text(data[i].title);
-                $item.find('.product-name > a').attr('href','/item/'+data[i].id);
-                $item.find('.product-price').text(priceTrans(data[i].price));
-                $item.find('.product-img>img').attr('src', data[i].image);
-            }
-        }
-    });
+function showNewProductList() {
+    //$('#tab0').siblings().addClass('hidden');
+    $('#tab0').removeClass('hidden');
+    $('#new-product-bar > li > a').click(function () {
+        var id = $(this).attr('href');
+        $('#tab'+id).siblings().addClass('hidden');
+        $('#tab'+id).removeClass('hidden');
+    })
 }
 
 //展示'热销商品'列表

@@ -82,14 +82,13 @@ public class HtmlGenerator {
     public void genPortalIndex() {
         List<TbContent> showNowList = contentService.getContentList(CONTENT_SHOW_NOW);
         List<TbItemCat> newProductCat = itemCatService.getRootItemCatList();
-        List<NewProduct>[] newProductArray = new List[newProductCat.size()];
+        List<NewProduct>[] newProductArray = new List[newProductCat.size()+1];
+        //页面首栏放最新商品
+        newProductArray[0] = portalService.getNewProductByCid(null);
+        //其他栏按cid的顺序填充
         for (int i=0; i<newProductCat.size(); i++) {
-            Long cid = newProductCat.get(0).getId();
-            if (cid == DEFAULT_NEW_PRODUCT_CID) {
-                newProductArray[i] = portalService.getNewProductByCid(null);
-            } else {
-                newProductArray[i] = portalService.getNewProductByCid(cid);
-            }
+            Long cid = newProductCat.get(i).getId();
+            newProductArray[i+1] = portalService.getNewProductByCid(cid);
         }
         Map data = new HashMap<>();
         data.put("showNowList", showNowList);

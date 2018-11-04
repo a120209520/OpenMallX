@@ -7,6 +7,8 @@ import org.ppl.mall.pojo.TbContent;
 import org.ppl.mall.pojo.TbItemCat;
 import org.ppl.mall.service.ContentService;
 import org.ppl.mall.service.ItemCatService;
+import org.ppl.mall.tools.item.HtmlGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +26,8 @@ public class PageController {
 	private ContentService contentService;
 	@Reference
     private ItemCatService itemCatService;
+	@Autowired
+	private HtmlGenerator htmlGenerator;
 	
 	@Value("${CONTENT_SHOW_NOW}")
 	private Long CONTENT_SHOW_NOW;
@@ -39,5 +43,11 @@ public class PageController {
 	@RequestMapping("/blank")
 	public String blank() {
 		return "blank";
+	}
+
+	@RequestMapping("/refresh")
+	public String refresh() {
+        htmlGenerator.genPortalIndex();
+		return "ok";
 	}
 }

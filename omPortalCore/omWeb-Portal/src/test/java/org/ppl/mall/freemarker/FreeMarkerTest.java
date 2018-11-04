@@ -15,11 +15,11 @@ import java.util.*;
  */
 public class FreeMarkerTest {
 
-    //@Test
     //基本测试
+    @Test
     public void testBasic() throws Exception {
         Configuration config = new Configuration(Configuration.getVersion());
-        config.setDirectoryForTemplateLoading(new File("G:/OneDrive/Study/Java/Project/OpenMallX-Pro/Web/omWebItem/src/main/webapp/WEB-INF/ftl"));
+        config.setDirectoryForTemplateLoading(new File("G:/OneDrive/Study/Java/Project/OpenMallX-Pro/omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/ftl/"));
         config.setDefaultEncoding("utf-8");
         Template template = config.getTemplate("test.ftl");
         Map data = new HashMap();
@@ -46,8 +46,23 @@ public class FreeMarkerTest {
         data.put("val", null);
         //006.引用其他ftl
         data.put("hi", "我是外来的");
+        //007.数组容器对象
+        List<TbItem>[] itemArray = new List[3];
+        itemArray[0] = new ArrayList<>();
+        itemArray[0].add(item1);
+        itemArray[0].add(item1);
+        itemArray[0].add(item1);
+        itemArray[1] = new ArrayList<>();
+        itemArray[1].add(item2);
+        itemArray[1].add(item2);
+        itemArray[1].add(item2);
+        itemArray[2] = new ArrayList<>();
+        itemArray[2].add(item3);
+        itemArray[2].add(item3);
+        itemArray[2].add(item3);
+        data.put("itemArray", itemArray);
 
-        Writer out = new FileWriter("G:/OneDrive/Study/Java/Project/OpenMallX-Pro/Web/omWebItem/src/main/webapp/WEB-INF/ftl/test.html");
+        Writer out = new FileWriter("G:/OneDrive/Study/Java/Project/OpenMallX-Pro/omPortalCore/omWeb-Portal/src/main/webapp/WEB-INF/ftl/test.html");
         template.process(data, out);
         out.close();
     }
